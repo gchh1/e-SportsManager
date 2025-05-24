@@ -1,37 +1,40 @@
-/*¾ãÀÖ²¿Àà*/
+/***********
+ * ä¿±ä¹éƒ¨ç±» *
+ ***********/
 
 #pragma once
 
 #include <string>
-#include <list>
+#include <vector>
 #include <algorithm>
+#include <memory> // Added for std::shared_ptr
 
 #include "Staff.h"
-#include "Log.h"
+//#include "Log.h"
+#include "../../include/IData.h"
 
-class Coach;
-class Player;
-class Log;
-class Club {
-    // Êı¾İ³ÉÔ±
-    int club_ID;                    // ¾ãÀÖ²¿ID
-    std::string club_name;          // ¾ãÀÖ²¿Ãû×Ö
-    std::string club_secret;        // ¾ãÀÖ²¿ÃÜÔ¿ 
-    int fund;                       // ¾ãÀÖ²¿×Ê½ğ
-    int points;                     // »ı·Ö    
-    std::list<Coach &> coach;       // ½ÌÁ·
-    std::list<Player &> players;    // Ñ¡ÊÖ
-    std::list<Log &> logs;          // ¶¯Ì¬£º×Ê½ğ±ä»¯¡¢Ñ¡ÊÖ±ä»¯¡¢½ÌÁ·±ä»¯¡¢»ı·ÖÅÅÃû±ä»¯
 
-    // ²Ù×÷·½·¨
+class Club : public IData {
+    // æ•°æ®æˆå‘˜
+    int club_ID;                    // ä¿±ä¹éƒ¨ID
+    std::string club_name;          // ä¿±ä¹éƒ¨åå­—
+    std::string club_secret;        // ä¿±ä¹éƒ¨å¯†é’¥ 
+    int fund;                       // ä¿±ä¹éƒ¨èµ„é‡‘
+    int points = 0;                     // ç§¯åˆ†    
+    std::vector<int> coach_ID;       // æ•™ç»ƒID
+    std::vector<int> player_ID;    // é€‰æ‰‹ID
+    // std::vector<std::unique_ptr<Log>> logs;          // åŠ¨æ€ï¼šèµ„é‡‘å˜åŒ–ã€é€‰æ‰‹å˜åŒ–ã€æ•™ç»ƒå˜åŒ–ã€ç§¯åˆ†æ’åå˜åŒ–
+
+    // æ“ä½œæ–¹æ³•
     public:
-        // ¹¹Ôìº¯Êı
-        Club() = default;           // Ä¬ÈÏ¹¹Ôìº¯Êı
+        // æ„é€ å‡½æ•°
+        Club() = default;           // é»˜è®¤æ„é€ å‡½æ•°
+        Club(std::string name, std::string secret, int fund) : 
+        club_name(name), club_secret(secret), fund(fund) {}
 
-        // ´´½¨ĞÂ¾ãÀÖ²¿
-        void createClub(std::string name, int fund, std::string secret);
+        void setID(int ID) {club_ID = ID;}
 
-        // ¸Ä±ä×Ê½ğ
+        // æ”¹å˜èµ„é‡‘
         bool changeFund(int change) {
             fund += change;
             if (fund <= 0) 
@@ -39,7 +42,7 @@ class Club {
             return true;
         }
 
-        // ¸Ä±ä»ı·Ö
+        // æ”¹å˜ç§¯åˆ†
         bool changePoints(int change) {
             points += change;
             if (points <= 0) 
@@ -47,18 +50,36 @@ class Club {
             return true;
         }
 
-        // Ìí¼Ó½ÌÁ·
-        bool addCoach(Coach & coach);
+        // æ·»åŠ æ•™ç»ƒ
+        bool addCoach(int coach_ID);
 
-        // ÒÆ³ı½ÌÁ·
-        bool removeCoach(const Coach & coach); 
+        // ç§»é™¤æ•™ç»ƒ
+        bool removeCoach(int coach_ID); 
 
-        // Ìí¼ÓÑ¡ÊÖ
-        bool addPlayer(Player & player);
+        // æ·»åŠ é€‰æ‰‹
+        bool addPlayer(int player_ID);
 
-        // ÒÆ³ıÑ¡ÊÖ
-        bool removePlayer(const Player & player);
+        // ç§»é™¤é€‰æ‰‹
+        bool removePlayer(int player_ID);
 
-        // Ìí¼Ó¶¯Ì¬
-        bool addLog(Log & log);
+        // æ·»åŠ åŠ¨æ€
+        //bool addLog(std::unique_ptr<Log> log);
+
+        // getæ–¹æ³•
+        int getID() const {return club_ID;}
+        std::string getName() const {return club_name;}
+        int getFund() const {return fund;}
+        int getPoints() const {return points;}
+        const std::vector<int> & getCoach() const {return coach_ID;}
+        const std::vector<int> & getPlayers() const {return player_ID;}
+        //const std::vector<std::unique_ptr<Log>> & getLogs() const {return logs;}
+
+        // éªŒè¯å¯†é’¥
+        bool verifySecret(std::string input) {return input == club_secret;}
+
+
+        // åºåˆ—åŒ–å’Œååºåˆ—åŒ–
+        bool load(std::ifstream & in) override;
+        
+        bool save(std::ofstream & out) override;
 };
