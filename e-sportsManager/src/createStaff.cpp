@@ -1,5 +1,5 @@
 /***************
- * ÓÃÓÚÌí¼ÓÖ°Ô± *
+ * ç”¨äºæ·»åŠ èŒå‘˜ *
  ***************/
 
 #include <iostream>
@@ -16,34 +16,34 @@ int main() {
    int choice;
    bool flag = true;
 
-   // Êä³öÒÑÓĞstaff
+   // è¾“å‡ºå·²æœ‰staff
    for (const auto & item : repo.getRepo()) {
-      std::cout << "ĞÕÃû£º" << item->getName() << "\t" << "Õ½Á¦£º" << item->getPower() << "\t" << "¼Û¸ñ£º" << item->getPrice() << std::endl;
+      std::cout << "å§“åï¼š" << item->getName() << "\t" << "æˆ˜åŠ›ï¼š" << item->getPower() << "\t" << "ä»·æ ¼ï¼š" << item->getPrice() << std::endl;
    }
 
 
    while (flag) {
-      std::cout << "==´´½¨Staff==\n"
-               << "1. ĞÂ½¨½ÌÁ·\n"
-               << "2. ĞÂ½¨Ñ¡ÊÖ\n"
-               << "0. ÍË³ö\n"
-               << "Ñ¡Ôñ£º";
+      std::cout << "==åˆ›å»ºStaff==\n"
+               << "1. æ–°å»ºæ•™ç»ƒ\n"
+               << "2. æ–°å»ºé€‰æ‰‹\n"
+               << "0. é€€å‡º\n"
+               << "é€‰æ‹©ï¼š";
       
       std::cin >> choice;
       if (choice == 1) {
          int a1, a2, a3, a4;
-         std::cout << "ÊäÈë½ÌÁ·ĞÕÃû£º";
+         std::cout << "è¾“å…¥æ•™ç»ƒå§“åï¼š";
          std::cin >> name;
-         std::cout << "ÊäÈëËÄÏîÊôĞÔ£º";
+         std::cout << "è¾“å…¥å››é¡¹å±æ€§ï¼š";
          std::cin >> a1 >> a2 >> a3 >> a4;
 
          auto coach = std::make_unique<Coach>(name, a1, a2, a3, a4);
          repo.addNewStaff(std::move(coach));
       } else if (choice == 2) {
          int a1, a2, a3, a4, a5, a6, a7, a8;
-         std::cout << "ÊäÈëÑ¡ÊÖĞÕÃû£º";
+         std::cout << "è¾“å…¥é€‰æ‰‹å§“åï¼š";
          std::cin >> name;
-         std::cout << "ÊäÈë°ËÏîÊôĞÔ£º";
+         std::cout << "è¾“å…¥å…«é¡¹å±æ€§ï¼š";
          std::cin >> a1 >> a2 >> a3 >> a4 >> a5 >> a6 >> a7 >> a8;
 
          auto player = std::make_unique<Player>(name, a1, a2, a3, a4, a5, a6, a7, a8);

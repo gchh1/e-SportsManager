@@ -1,5 +1,5 @@
 /*************
- * 主菜单视图 *
+ * 涓昏彍鍗曡鍥� *
  *************/
 
 
@@ -30,13 +30,13 @@ class MainMenuView : public IView {
 
 
         ViewState run() override {
-                system("cls");
+                //system("cls");
 
                 std::cout << "==主菜单==\n"
                           << "1. 俱乐部信息\n"
                           << "2. 市场\n"
                           << "3. 赛事\n"
-                          << "4. 排名\n"
+                          << "4. 排行榜\n"
                           << "0. 退出\n"
                           << "选择："; 
                 int choice;

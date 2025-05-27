@@ -1,5 +1,5 @@
 /***************
- * ÓÃÓÚÌí¼Ó¾ãÀÖ²¿ *
+ * åˆ›å»ºä¿±ä¹éƒ¨   *
  ***************/
 
 #include <iostream>
@@ -13,45 +13,44 @@
 #include "dataHandlers/BinaryClubDataRepo.h"
 
 int main() { 
-   //BinaryClubDataRepo repo;
-   std::shared_ptr<BinaryClubDataRepo> repo = std::make_shared<BinaryClubDataRepo>();
+   auto repo = std::make_shared<BinaryClubDataRepo>();
    repo->load();
    std::string name, secret;
    int choice, fund;
    bool flag = true;
 
-   // Êä³öÒÑÓĞ¾ãÀÖ²¿
-   std::cout << "==µ±Ç°ÒÑÓĞ¾ãÀÖ²¿==\n";
+   // è¾“å‡ºå·²æœ‰club
+   std::cout << "==å½“å‰ä¿±ä¹éƒ¨==\n";
    for (const auto & club : repo->getRepo()) {
-      std::cout << "Ãû³Æ£º" << club->getName() << "\t" 
-                << "×Ê½ğ£º" << club->getFund() << "\t" 
-                << "»ı·Ö£º" << club->getPoints() << std::endl;
+      std::cout << "ä¿±ä¹éƒ¨åç§°ï¼š" << club->getName() << "\t" 
+                << "ä¿±ä¹éƒ¨èµ„é‡‘ï¼š" << club->getFund() << "\t" 
+                << "ä¿±ä¹éƒ¨ç§¯åˆ†ï¼š" << club->getPoints() << std::endl;
    }
 
    while (flag) {
-      std::cout << "\n==¾ãÀÖ²¿¹ÜÀí==\n"
-               << "1. ´´½¨ĞÂ¾ãÀÖ²¿\n"
-               << "0. ÍË³ö\n"
-               << "Ñ¡Ôñ£º";
+      std::cout << "\n==åˆ›å»ºä¿±ä¹éƒ¨==\n"
+               << "1. æ–°å»ºä¿±ä¹éƒ¨\n"
+               << "0. é€€å‡º\n"
+               << "é€‰æ‹©ï¼š";
       
       std::cin >> choice;
       
       if (choice == 1) {
-         std::cout << "ÊäÈë¾ãÀÖ²¿Ãû³Æ£º";
+         std::cout << "ä¿±ä¹éƒ¨åç§°ï¼š";
          std::cin >> name;
-         std::cout << "ÊäÈë¾ãÀÖ²¿ÃÜÔ¿£º";
+         std::cout << "ä¿±ä¹éƒ¨å¯†é’¥ï¼š";
          std::cin >> secret;
-         std::cout << "ÊäÈë³õÊ¼×Ê½ğ£º";
+         std::cout << "ä¿±ä¹éƒ¨èµ„é‡‘ï¼š";
          std::cin >> fund;
 
-         auto club = std::make_shared<Club>(name, secret, fund);
-         repo->addNewClub(club);
-         std::cout << "¾ãÀÖ²¿ " << name << " ´´½¨³É¹¦£¡\n";
+         auto club = std::make_unique<Club>(name, secret, fund);
+         repo->addNewClub(std::move(club));
+         std::cout << "ä¿±ä¹éƒ¨ " << name << " åˆ›å»ºæˆåŠŸ\n";
       } else if (choice == 0) {
          flag = false;
-         std::cout << "ÍË³ö³ÌĞò£¬¾ãÀÖ²¿Êı¾İÒÑ±£´æ¡£\n";
+         std::cout << "é€€å‡ºåˆ›å»ºä¿±ä¹éƒ¨\n";
       } else {
-         std::cout << "ÎŞĞ§Ñ¡Ôñ£¬ÇëÖØĞÂÊäÈë£¡\n";
+         std::cout << "é€‰æ‹©é”™è¯¯ï¼Œè¯·é‡æ–°é€‰æ‹©\n";
       }
    }
    

@@ -23,7 +23,7 @@ class TournamentView : public IView {
         }
 
         ViewState run() override {
-                system("cls");
+                //system("cls");
 
             std::cout << "==赛事==\n";
 
@@ -36,11 +36,10 @@ class TournamentView : public IView {
 
             controller->selectTournament();
             controller->simulateTournament();
+            controller->printTournamentResult();
 
             std::cout << "0. 返回\n"
                       << "选择：";
-
-            controller->printTournamentResult();
 
             int choice;
             std::cin >> choice;

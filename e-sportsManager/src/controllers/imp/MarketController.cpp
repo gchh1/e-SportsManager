@@ -22,7 +22,7 @@ void MarketController::printMarket() {
 void MarketController::setSellStaff() {
 
     // 遍历仓库中的教练
-    for (auto coach_ID : current_club->getCoach()) {
+    for (const auto& coach_ID : current_club->getCoach()) {
         auto coach = staff_repo->getStaff(coach_ID);
         if (coach->getState()) {
             sell_staff.push_back(coach_ID);
@@ -72,7 +72,7 @@ void MarketController::handleBuy() {
 
     // 处理买入操作
     // 1. 扣除俱乐部资金
-    current_club->changeFund(target_staff->getPrice());
+    current_club->changeFund(-target_staff->getPrice());
 
     // 2. 添加选手
     
@@ -84,7 +84,10 @@ void MarketController::handleBuy() {
         current_club->addPlayer(target_player->getID());
     }
 
-    // 3. 市场中删除该选手
+    // 3. 更新俱乐部战力
+    current_club->setPower(staff_repo);
+
+    // 4. 市场中删除该选手
     market_staff.erase(it_target_staff);
 
 }
@@ -121,7 +124,10 @@ void MarketController::handleSell() {
         current_club->removePlayer(player_ptr->getID());
     }
 
-    // 3. 市场中添加该选手
+    // 3. 更新俱乐部战力
+    current_club->setPower(staff_repo);
+
+    // 4. 市场中添加该选手
     market_staff.push_back(target_staff->getID());
 
 }

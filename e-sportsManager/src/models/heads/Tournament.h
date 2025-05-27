@@ -18,27 +18,28 @@ class Tournament : public IData {
     int team_num;                           // 参赛队伍数量限制    
     int entryfee;                           // 参赛费用
     int bonus;                              // 赛事总奖金
-    int * fund_bonus;                       // 赛事奖金（根据排名划分）
-    int * points_bonus;                     // 积分奖励（根据排名划分）
-    std::vector<int> clubs;                // 参赛队伍列表（俱乐部ID）
+    std::vector<int> fund_bonus;            // 赛事奖金（根据排名划分）
+    std::vector<int> points_bonus;          // 积分奖励（根据排名划分）
      
     
     public:
         // 构造函数
         Tournament() = default;             // 默认构造函数
-        Tournament(std::string name, int fee, int num, int * fund, int * points) :
-        name(name), team_num(num), entryfee(fee), bonus(0), fund_bonus(fund), points_bonus(points) {}
-
-        // 设置参赛队伍
-        void setClubs(std::vector<int> c) {clubs = c;}
+        Tournament(std::string name, int num, int fee, std::vector<int> fund, std::vector<int> points) :
+        name(name), team_num(num), entryfee(fee), bonus(0), fund_bonus(fund), points_bonus(points) {
+            for (int i = 0; i < num; i++) {
+                bonus += fund[i];
+            }
+        }
 
         // get方法
         std::string getName() const {return name;}
         int getBonus() const {return bonus;}
-        std::vector<int> getResult() const {return clubs;}
+        int getTeamNum() const {return team_num;}
+        int getEntryFee() const {return entryfee;}
+        const std::vector<int> & getFundBonus() const {return fund_bonus;}
+        const std::vector<int> & getPointsBonus() const {return points_bonus;}
 
-        // 模拟赛事
-        void simulateTournament();
 
         // 序列化及反序列化方法
         bool load(std::ifstream & in) override;

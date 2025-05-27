@@ -14,7 +14,7 @@
 
 class BinaryStaffDataRepo : public IDataRepo {
     std::vector<std::unique_ptr<Staff>> repo;       // 俱乐部成员列表
-    std::string filename = "d:/yhc/cpp/e-sportsManger/e-sportsManager/data/staff_data.dat";        // 文件名
+    std::string filename = "d:/yhc/cpp/e-sportsManager/e-sportsManager/data/staff_data.dat";        // 文件名
 
     public:
         // 构造函数
@@ -115,7 +115,7 @@ class BinaryStaffDataRepo : public IDataRepo {
         }
 
         // 获取选手
-        Staff * getStaff(int ID) {
+        Staff * getStaff(int ID) const {
             for (const auto & e : repo) {
                 if (e->getID() == ID) {
                     return e.get();

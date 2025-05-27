@@ -23,7 +23,7 @@ class ClubLogView : public IView {
         }
 
         ViewState run() override {
-            system("cls");
+            //system("cls");
 
             std::cout << "==俱乐部动态==\n";
 

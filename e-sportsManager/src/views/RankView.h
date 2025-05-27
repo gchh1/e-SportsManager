@@ -1,5 +1,5 @@
 /***********
- * 排名视图 *
+ * 鎺掑悕瑙嗗浘 *
  ***********/
 
 #pragma once
@@ -21,7 +21,7 @@ class RankView : public IView {
         }
 
         ViewState run() override {
-                system("cls");
+                //system("cls");
 
             std::cout << "==排名==\n";
 

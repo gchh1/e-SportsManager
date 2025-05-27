@@ -12,7 +12,7 @@
 #include "Staff.h"
 //#include "Log.h"
 #include "../../include/IData.h"
-
+#include "../../dataHandlers/BinaryStaffDataRepo.h"
 
 class Club : public IData {
     // 数据成员
@@ -20,9 +20,10 @@ class Club : public IData {
     std::string club_name;          // 俱乐部名字
     std::string club_secret;        // 俱乐部密钥 
     int fund;                       // 俱乐部资金
-    int points = 0;                     // 积分    
+    int points = 0;                 // 积分    
     std::vector<int> coach_ID;       // 教练ID
     std::vector<int> player_ID;    // 选手ID
+    int power = 0;                  // 俱乐部战力
     // std::vector<std::unique_ptr<Log>> logs;          // 动态：资金变化、选手变化、教练变化、积分排名变化
 
     // 操作方法
@@ -32,7 +33,17 @@ class Club : public IData {
         Club(std::string name, std::string secret, int fund) : 
         club_name(name), club_secret(secret), fund(fund) {}
 
+
+        // set方法
         void setID(int ID) {club_ID = ID;}
+        void setPower(std::shared_ptr<BinaryStaffDataRepo> & staffRepo) {
+            for (size_t i = 0; i < coach_ID.size(); i++) {
+                power += staffRepo->getStaff(coach_ID[i])->getPower();
+            }
+            for (size_t i = 0; i < player_ID.size(); i++) {
+                power += staffRepo->getStaff(player_ID[i])->getPower();
+            }
+        }
 
         // 改变资金
         bool changeFund(int change) {
@@ -72,6 +83,7 @@ class Club : public IData {
         int getPoints() const {return points;}
         const std::vector<int> & getCoach() const {return coach_ID;}
         const std::vector<int> & getPlayers() const {return player_ID;}
+        int getPower() const {return power;}
         //const std::vector<std::unique_ptr<Log>> & getLogs() const {return logs;}
 
         // 验证密钥

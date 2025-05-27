@@ -23,7 +23,7 @@ class ClubInfoView : public IView {
         }
 
         ViewState run() override {
-                system("cls");
+                //system("cls");
                 
                 std::cout << "==俱乐部信息==\n";
 
@@ -31,7 +31,7 @@ class ClubInfoView : public IView {
 
                 std::cout << "1. 动态\n"
                           << "0. 返回\n"
-                          << "选择：\n";
+                          << "选择：";
                     
                 int choice;
                 std::cin >> choice;

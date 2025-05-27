@@ -1,5 +1,5 @@
 /*****************
- * 职员类方法定义 *
+ * Staff类方法实现 *
  *****************/
 
 
@@ -8,7 +8,7 @@
 
 Staff::~Staff() {}
 
-// Coach类方法
+// Coach序列化
 bool Coach::load(std::ifstream & in) {
     // ID
     in.read(reinterpret_cast<char *>(&staff_ID), sizeof(staff_ID));
@@ -20,7 +20,7 @@ bool Coach::load(std::ifstream & in) {
     staff_name.resize(len);
     in.read(&staff_name[0], len);
 
-    // 职员状态
+    // 状态
     in.read(reinterpret_cast<char *>(& state), sizeof(state));
 
     // 战力
@@ -29,7 +29,7 @@ bool Coach::load(std::ifstream & in) {
     // 价格
     in.read(reinterpret_cast<char *>(&price), sizeof(price));
 
-    // 教练属性
+    // 属性
     in.read(reinterpret_cast<char *>(&pause_ability), sizeof(pause_ability));
     in.read(reinterpret_cast<char *>(&strategy_rating), sizeof(strategy_rating));
     in.read(reinterpret_cast<char *>(&train_ability), sizeof(train_ability));
@@ -49,7 +49,7 @@ bool Coach::save(std::ofstream & out) {
     out.write(reinterpret_cast<const char *>(&len), sizeof(len));
     out.write(staff_name.c_str(), len);
 
-    // 职员状态
+    // 状态
     out.write(reinterpret_cast<const char *>(&state), sizeof(state));
 
     // 战力
@@ -69,7 +69,7 @@ bool Coach::save(std::ofstream & out) {
 
 
 
-// Player类方法
+// Player序列化
 bool Player::load(std::ifstream & in) {
     
     // ID
@@ -81,7 +81,7 @@ bool Player::load(std::ifstream & in) {
     staff_name.resize(len);
     in.read(&staff_name[0], len);
 
-    // 职员状态
+    // 状态
     in.read(reinterpret_cast<char *>(&state), sizeof(state));
 
     // 战力
@@ -90,7 +90,7 @@ bool Player::load(std::ifstream & in) {
     // 价格
     in.read(reinterpret_cast<char *>(&price), sizeof(price));
 
-    // 选手属性
+    // 属性
     in.read(reinterpret_cast<char *>(&firepower), sizeof(firepower));
     in.read(reinterpret_cast<char *>(&entrying), sizeof(entrying));
     in.read(reinterpret_cast<char *>(&trading), sizeof(trading));
@@ -118,7 +118,7 @@ bool Player::save(std::ofstream & out) {
     out.write(reinterpret_cast<const char *>(&len), sizeof(len));
     out.write(staff_name.c_str(), len);
 
-    // 职员状态
+    // 状态
     out.write(reinterpret_cast<const char *>(&state), sizeof(state));
 
     // 战力
@@ -127,7 +127,7 @@ bool Player::save(std::ofstream & out) {
     // 价格
     out.write(reinterpret_cast<const char *>(&price), sizeof(price));
 
-    // 选手属性
+    // 属性
     out.write(reinterpret_cast<const char *>(&firepower), sizeof(firepower));
     out.write(reinterpret_cast<const char *>(&entrying), sizeof(entrying));
     out.write(reinterpret_cast<const char *>(&trading), sizeof(trading));

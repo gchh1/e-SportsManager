@@ -16,7 +16,7 @@
 
 class BinaryClubDataRepo : public IDataRepo {
     std::vector<std::unique_ptr<Club>> repo;             // 俱乐部仓库
-    std::string filename = "d:/yhc/cpp/e-sportsManger/e-sportsManager/data/club_repo.dat";  // 文件路径
+    std::string filename = "d:/yhc/cpp/e-sportsManager/e-sportsManager/data/club_repo.dat";  // 文件路径
 
     public:
         // 构造函数
@@ -39,24 +39,6 @@ class BinaryClubDataRepo : public IDataRepo {
         }
 
         void load() override {
-            /*std::ifstream in(filename, std::ios::binary);
-            // 判断文件是否打开 
-            if (!in.is_open()) {
-                return;
-            }
-
-            repo.clear();
-            
-            while(!in.eof()) {  
-                auto club = std::make_unique<Club>();
-                if (!club->load(in)) {
-                    repo.clear();
-                    return;
-                }
-                repo.push_back(std::move(club));
-            }
-            */
-
             std::ifstream in(filename, std::ios::binary);
             if (!in) return;
     

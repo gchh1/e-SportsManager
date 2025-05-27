@@ -1,7 +1,7 @@
 /**************************************************
- *                   功能测试1                     *
+ *                    测试程序1                    *
  *------------------------------------------------*
- * 测试WelcomeView、MainView、ClubInfoView等简单IO *
+ * 测试除 log 外所有功能                            *
  **************************************************/
 
 #include <unordered_map>
@@ -36,17 +36,17 @@ int main() {
     // 数据仓库
     auto clubRepo = std::make_shared<BinaryClubDataRepo>();
     auto staffRepo = std::make_shared<BinaryStaffDataRepo>();
-    auto tourRepo = std::make_unique<BinaryTournamentDataRepo>();
+    auto tourRepo = std::make_shared<BinaryTournamentDataRepo>();
 
     clubRepo->load();
     staffRepo->load();
     tourRepo->load();
 
 
-    // 控制器 - 使用raw pointers而不是unique_ptr来传递给视图
+    //  控制器
     auto clubCtrl = new ClubController(clubRepo, staffRepo);
     auto marketCtrl = new MarketController(staffRepo, clubRepo);
-    auto tourCtrl = new TournamentController(std::move(tourRepo), clubRepo);
+    auto tourCtrl = new TournamentController(tourRepo, clubRepo);
 
 
     // 视图
@@ -62,6 +62,7 @@ int main() {
 
     ViewState state = ViewState::WelcomeView;
 
+    // 程序主循环
     while (state != ViewState::Exit) {
         if (state == ViewState::InitMainMenu) {
             views[ViewState::MainMenuView]->initCtrl();
@@ -70,7 +71,7 @@ int main() {
         state = views[state]->run();
     }
 
-    // 退出程序，保存数据
+    //  保存数据
     clubRepo->save();
     staffRepo->save();
     tourRepo->save();

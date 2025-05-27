@@ -116,10 +116,10 @@ void ClubController::printRank() {
     auto & rank_clubs = club_repo->getRepo();
 
     // 按积分进行排序
-    /*std::sort(rank_clubs.begin(), rank_clubs.end(),
+    std::sort(rank_clubs.begin(), rank_clubs.end(),
     [](const std::unique_ptr<Club>& club1, const std::unique_ptr<Club>& club2) {
         return club1->getPoints() >= club2->getPoints();
-    });*/
+    });
 
     // 打印排名
     int rank = 1;

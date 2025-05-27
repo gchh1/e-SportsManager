@@ -23,14 +23,14 @@ class MarketView : public IView {
         }
 
         ViewState run() override {
-                system("cls");
+                //system("cls");
 
             std::cout << "==市场==\n";
 
             if (!controller->isRepoEmpty()) {
                 controller->printMarket();
             } else {
-                std::cout << "暂无选手！\n";
+                std::cout << "空！\n";
                 return ViewState::MainMenuView;
             }
 
@@ -47,6 +47,7 @@ class MarketView : public IView {
                         controller->handleBuy();
                         return ViewState::MarketView;
                 case 2:
+                        controller->setSellStaff();
                         controller->printSellStaff();
                         controller->handleSell();
                         return ViewState::MarketView;

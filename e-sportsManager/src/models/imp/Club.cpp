@@ -64,6 +64,9 @@ bool Club::save(std::ofstream & out) {
     // 俱乐部积分
     out.write(reinterpret_cast<const char *>(&points), sizeof(points));
 
+    // 俱乐部战力
+    out.write(reinterpret_cast<const char *>(&power), sizeof(power));
+
     // 教练
     size_t count = coach_ID.size();
     out.write(reinterpret_cast<const char *>(&count), sizeof(count));
@@ -103,6 +106,9 @@ bool Club::load(std::ifstream & in) {
 
     // 俱乐部积分
     if (!in.read(reinterpret_cast<char *>(&points), sizeof(points))) return false;
+
+    // 俱乐部战力
+    if (!in.read(reinterpret_cast<char *>(&power), sizeof(power))) return false;
 
     // 教练
     size_t count;
