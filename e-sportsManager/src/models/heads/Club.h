@@ -11,8 +11,8 @@
 
 #include "Staff.h"
 //#include "Log.h"
-#include "../../include/IData.h"
-#include "../../dataHandlers/BinaryStaffDataRepo.h"
+#include "IData.h"
+#include "BinaryStaffDataRepo.h"
 
 class Club : public IData {
     // 数据成员
@@ -56,8 +56,6 @@ class Club : public IData {
         // 改变积分
         bool changePoints(int change) {
             points += change;
-            if (points <= 0) 
-                points = 0;
             return true;
         }
 

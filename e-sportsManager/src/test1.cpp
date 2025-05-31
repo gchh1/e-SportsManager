@@ -6,30 +6,24 @@
 
 #include <unordered_map>
 
-#include "models/heads/Club.h"
-#include "models/imp/Club.cpp"
-#include "models/heads/Staff.h"
-#include "models/imp/Staff.cpp"
-#include "models/heads/Tournament.h"
-#include "models/imp/Tournament.cpp"
+#include "Club.h"
+#include "Staff.h"
+#include "Tournament.h"
 
-#include "views/ClubInfoView.h"
-#include "views/MainMenuView.h"
-#include "views/MarketView.h"
-#include "views/RankView.h"
-#include "views/TournamentView.h"
-#include "views/WelcomeView.h"
+#include "ClubInfoView.h"
+#include "MainMenuView.h"
+#include "MarketView.h"
+#include "RankView.h"
+#include "TournamentView.h"
+#include "WelcomeView.h"
 
-#include "dataHandlers/BinaryClubDataRepo.h"
-#include "dataHandlers/BinaryStaffDataRepo.h"
-#include "dataHandlers/BinaryTournamentDataRepo.h"
+#include "BinaryClubDataRepo.h"
+#include "BinaryStaffDataRepo.h"
+#include "BinaryTournamentDataRepo.h"
 
-#include "controllers/heads/ClubController.h"
-#include "controllers/imp/Clubcontroller.cpp"
-#include "controllers/heads/MarketController.h"
-#include "controllers/imp/MarketController.cpp"
-#include "controllers/heads/TournamentController.h"
-#include "controllers/imp/TournamentController.cpp"
+#include "ClubController.h"
+#include "MarketController.h"
+#include "TournamentController.h"
 
 int main() {
     

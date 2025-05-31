@@ -11,7 +11,7 @@
 #include <string>
 #include <vector>
 
-#include "../../include/IData.h"
+#include "IData.h"
 
 
 // 基类Staff

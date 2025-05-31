@@ -9,8 +9,8 @@
 #include <string>
 #include <memory>
 
-#include "../../models/heads/Club.h"
-#include "../../include/IData.h"
+#include "Club.h"
+#include "IData.h"
 
 class Tournament : public IData {
     // 数据成员

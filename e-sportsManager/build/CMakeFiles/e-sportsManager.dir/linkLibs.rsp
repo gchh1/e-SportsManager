@@ -1,0 +1,1 @@
+ src/models/libmodels.a src/controllers/libcontrollers.a src/dataHandlers/libdataHandlers.a src/views/libviews.a src/controllers/libcontrollers.a src/dataHandlers/libdataHandlers.a src/models/libmodels.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

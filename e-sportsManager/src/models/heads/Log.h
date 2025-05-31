@@ -12,7 +12,7 @@
 #include <string>
 #include <ctime>
 #include <fstream>
-#include "../../include/IData.h"
+#include "IData.h"
 
 class Log : public IData {         
     public:

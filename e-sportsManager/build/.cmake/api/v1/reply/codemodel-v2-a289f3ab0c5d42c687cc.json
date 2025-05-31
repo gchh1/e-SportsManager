@@ -1,0 +1,210 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src/models",
+					"jsonFile" : "directory-src.models-Debug-d31e52dcd5d87d8e296d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src/models",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src/controllers",
+					"jsonFile" : "directory-src.controllers-Debug-2de5702e06629efddaf6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "src/controllers",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/dataHandlers",
+					"jsonFile" : "directory-src.dataHandlers-Debug-1f7fda98a8b511d03ca6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "src/dataHandlers",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src/views",
+					"jsonFile" : "directory-src.views-Debug-761cef8c4c011bcda108.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "src/views",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "e-sportsManager",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "models",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "controllers",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "dataHandlers",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "views",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "controllers::@0261cd8f181aa2ca38e1",
+					"jsonFile" : "target-controllers-Debug-f91e7043323710688b13.json",
+					"name" : "controllers",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "dataHandlers::@184710fed461df729bdb",
+					"jsonFile" : "target-dataHandlers-Debug-140bfcac2e0fdca23b5e.json",
+					"name" : "dataHandlers",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "e-sportsManager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-e-sportsManager-Debug-6458809b2a8552eef6b4.json",
+					"name" : "e-sportsManager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "models::@defad1a87623d8bf2693",
+					"jsonFile" : "target-models-Debug-30912cd911ac1410478a.json",
+					"name" : "models",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "views::@f0b93e8365e7aa7d892e",
+					"jsonFile" : "target-views-Debug-1270de36648de632dfb9.json",
+					"name" : "views",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/yhc/cpp/e-sportsManager/e-sportsManager/build",
+		"source" : "D:/yhc/cpp/e-sportsManager/e-sportsManager"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

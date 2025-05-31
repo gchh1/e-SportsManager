@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libmodels.a CMakeFiles/models.dir/Club.cpp.obj CMakeFiles/models.dir/Log.cpp.obj CMakeFiles/models.dir/Staff.cpp.obj CMakeFiles/models.dir/Tournament.cpp.obj
+C:\msys64\ucrt64\bin\ranlib.exe libmodels.a

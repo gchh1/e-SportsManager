@@ -10,10 +10,10 @@
 #include <iostream>
 #include <memory>
 
-#include "../../models/heads/Staff.h"
-#include "../../models/heads/Club.h"
-#include "../../dataHandlers/BinaryStaffDataRepo.h"
-#include "../../dataHandlers/BinaryClubDataRepo.h"
+#include "Staff.h"
+#include "Club.h"
+#include "BinaryStaffDataRepo.h"
+#include "BinaryClubDataRepo.h"
 
 
 class MarketController {

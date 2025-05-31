@@ -14,6 +14,5 @@ class IDataRepo {
         virtual void save() = 0;
 };
 
-// 纯虚析构函数的实现，这是必要的，即使是纯虚函数
-// 这个实现必须在头文件中，因为它是模板类
-IDataRepo::~IDataRepo() {}
+// 内联定义析构函数以避免多重定义问题
+inline IDataRepo::~IDataRepo() {}

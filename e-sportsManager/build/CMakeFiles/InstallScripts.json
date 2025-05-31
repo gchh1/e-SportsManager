@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/yhc/cpp/e-sportsManager/e-sportsManager/build/cmake_install.cmake",
+		"D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models/cmake_install.cmake",
+		"D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers/cmake_install.cmake",
+		"D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/dataHandlers/cmake_install.cmake",
+		"D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

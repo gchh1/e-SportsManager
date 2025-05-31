@@ -11,10 +11,10 @@
 #include <random>
 #include <algorithm>
 
-#include "../../models/heads/Club.h"
-#include "../../models/heads/Tournament.h"
-#include "../../dataHandlers/BinaryTournamentDataRepo.h"
-#include "../../dataHandlers/BinaryClubDataRepo.h"
+#include "Club.h"
+#include "Tournament.h"
+#include "BinaryTournamentDataRepo.h"
+#include "BinaryClubDataRepo.h"
 
 class TournamentController {
     Club * current_club;          // 当前俱乐部

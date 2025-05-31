@@ -11,9 +11,9 @@
 #include <memory>
 #include <algorithm>
 
-#include "../../models/heads/Club.h"
-#include "../../dataHandlers/BinaryClubDataRepo.h"
-#include "../../dataHandlers/BinaryStaffDataRepo.h"
+#include "Club.h"
+#include "BinaryClubDataRepo.h"
+#include "BinaryStaffDataRepo.h"
 
 
 class ClubController {
