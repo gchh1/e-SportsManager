@@ -12,6 +12,7 @@
 #include "Staff.h"
 //#include "Log.h"
 #include "IData.h"
+#include "Log.h"
 #include "BinaryStaffDataRepo.h"
 
 class Club : public IData {
@@ -24,7 +25,7 @@ class Club : public IData {
     std::vector<int> coach_ID;       // 教练ID
     std::vector<int> player_ID;    // 选手ID
     int power = 0;                  // 俱乐部战力
-    // std::vector<std::unique_ptr<Log>> logs;          // 动态：资金变化、选手变化、教练变化、积分排名变化
+    std::vector<std::unique_ptr<Log>> logs;          // 日志
 
     // 操作方法
     public:
@@ -71,8 +72,8 @@ class Club : public IData {
         // 移除选手
         bool removePlayer(int player_ID);
 
-        // 添加动态
-        //bool addLog(std::unique_ptr<Log> log);
+        // 添加日志
+        bool addLog(std::unique_ptr<Log> log); 
 
         // get方法
         int getID() const {return club_ID;}
@@ -82,7 +83,7 @@ class Club : public IData {
         const std::vector<int> & getCoach() const {return coach_ID;}
         const std::vector<int> & getPlayers() const {return player_ID;}
         int getPower() const {return power;}
-        //const std::vector<std::unique_ptr<Log>> & getLogs() const {return logs;}
+        const std::vector<std::unique_ptr<Log>> & getLogs() const {return logs;}
 
         // 验证密钥
         bool verifySecret(std::string input) {return input == club_secret;}

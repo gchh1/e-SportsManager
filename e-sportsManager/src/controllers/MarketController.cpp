@@ -90,6 +90,9 @@ void MarketController::handleBuy() {
     // 4. 市场中删除该选手
     market_staff.erase(it_target_staff);
 
+    // 5. 生成日志
+    log_controller->setStaff(target_staff);
+    log_controller->generateLog(LogOperation::BuyStaff, -(target_staff->getPrice()), 0);
 }
 
 
@@ -130,4 +133,7 @@ void MarketController::handleSell() {
     // 4. 市场中添加该选手
     market_staff.push_back(target_staff->getID());
 
+    // 5. 生成日志
+    log_controller->setStaff(target_staff);
+    log_controller->generateLog(LogOperation::SellStaff, target_staff->getPrice(), 0);
 }

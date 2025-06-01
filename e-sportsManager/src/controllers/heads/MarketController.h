@@ -20,6 +20,7 @@ class MarketController {
     Club * current_club;
     std::shared_ptr<BinaryStaffDataRepo> staff_repo;
     std::shared_ptr<BinaryClubDataRepo> club_repo;
+    LogController * log_controller;
     std::vector<int> market_staff;
     std::vector<int> sell_staff;
 
@@ -41,6 +42,9 @@ class MarketController {
 
         // 设置俱乐部
         void setClub(Club * club) {current_club = club;}
+
+        // 设置日志控制器
+        void setLogController(LogController * logController) {log_controller = logController;}
 
         // 打印市场选手
         void printMarket();

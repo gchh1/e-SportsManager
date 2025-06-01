@@ -15,6 +15,7 @@
 #include "Tournament.h"
 #include "BinaryTournamentDataRepo.h"
 #include "BinaryClubDataRepo.h"
+#include "LogController.h"
 
 class TournamentController {
     Club * current_club;          // 当前俱乐部
@@ -23,6 +24,7 @@ class TournamentController {
     Tournament * current_tour;                                  // 当前赛事
     std::vector<int> game_result;                               // 比赛结果
     std::vector<int> game_clubs;                                // 比赛队伍
+    LogController * log_controller;
 
     std::mt19937 rng;
 
@@ -57,4 +59,7 @@ class TournamentController {
 
         // 判断仓库是否为空
         bool isRepoEmpty() {return tournament_repo->getRepo().empty();}
+
+        // 设置日志控制器
+        void setLogController(LogController * logController) {log_controller = logController;}
 };

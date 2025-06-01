@@ -173,9 +173,9 @@ src/views/clean: src/views/CMakeFiles/views.dir/clean
 
 # All Build rule for target.
 CMakeFiles/e-sportsManager.dir/all: src/models/CMakeFiles/models.dir/all
-CMakeFiles/e-sportsManager.dir/all: src/views/CMakeFiles/views.dir/all
 CMakeFiles/e-sportsManager.dir/all: src/controllers/CMakeFiles/controllers.dir/all
 CMakeFiles/e-sportsManager.dir/all: src/dataHandlers/CMakeFiles/dataHandlers.dir/all
+CMakeFiles/e-sportsManager.dir/all: src/views/CMakeFiles/views.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=9,10 "Built target e-sportsManager"

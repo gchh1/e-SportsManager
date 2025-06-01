@@ -94,15 +94,15 @@
 		},
 		{
 			"backtrace" : 1,
-			"id" : "views::@f0b93e8365e7aa7d892e"
-		},
-		{
-			"backtrace" : 1,
 			"id" : "controllers::@0261cd8f181aa2ca38e1"
 		},
 		{
 			"backtrace" : 1,
 			"id" : "dataHandlers::@184710fed461df729bdb"
+		},
+		{
+			"backtrace" : 1,
+			"id" : "views::@f0b93e8365e7aa7d892e"
 		}
 	],
 	"id" : "e-sportsManager::@6890427a1f51a3e7e1df",

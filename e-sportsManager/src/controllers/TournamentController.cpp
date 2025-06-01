@@ -125,6 +125,10 @@ void TournamentController::simulateTournament() {
         auto club = club_repo->getClub(game_result[i]);
         club->changeFund(fund_bonus[i]);
         club->changePoints(points_bonus[i]);
+
+        // 生成日志
+        log_controller->setClub(club);
+        log_controller->generateLog(LogOperation::Tournament, fund_bonus[i], points_bonus[i]);
     }
 
 }   
