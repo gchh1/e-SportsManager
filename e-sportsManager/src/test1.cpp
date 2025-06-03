@@ -11,6 +11,7 @@
 #include "Tournament.h"
 
 #include "ClubInfoView.h"
+#include "ClubLogView.h"
 #include "MainMenuView.h"
 #include "MarketView.h"
 #include "RankView.h"
@@ -50,6 +51,7 @@ int main() {
         views[ViewState::WelcomeView] = std::make_unique<WelcomeView>(clubCtrl);
         views[ViewState::MainMenuView] = std::make_unique<MainMenuView>(clubCtrl, marketCtrl, tourCtrl);
         views[ViewState::ClubInfoView] = std::make_unique<ClubInfoView>(clubCtrl);
+        views[ViewState::ClubLogView] = std::make_unique<ClubLogView>(clubCtrl);
         views[ViewState::MarketView] = std::make_unique<MarketView>(marketCtrl);
         views[ViewState::TournamentView] = std::make_unique<TournamentView>(tourCtrl);
         views[ViewState::RankView] = std::make_unique<RankView>(clubCtrl);

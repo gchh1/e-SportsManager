@@ -139,14 +139,6 @@ src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/cerrno \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/charconv.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/basic_string.tcc \
- D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Club.h \
- C:/msys64/ucrt64/include/c++/14.1.0/algorithm \
- C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_algo.h \
- C:/msys64/ucrt64/include/c++/14.1.0/bits/algorithmfwd.h \
- C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_heap.h \
- C:/msys64/ucrt64/include/c++/14.1.0/bits/uniform_int_dist.h \
- C:/msys64/ucrt64/include/c++/14.1.0/pstl/glue_algorithm_defs.h \
- D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Staff.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IData.h \
  C:/msys64/ucrt64/include/c++/14.1.0/fstream \
  C:/msys64/ucrt64/include/c++/14.1.0/istream \
@@ -175,5 +167,4 @@ src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/ucrt64/include/c++/14.1.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/fstream.tcc \
- D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/heads/BinaryStaffDataRepo.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IDataRepo.h

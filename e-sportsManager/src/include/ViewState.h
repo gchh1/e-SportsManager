@@ -11,7 +11,7 @@ enum class ViewState {
     InitMainMenu,
     MainMenuView,
     ClubInfoView,
-    LogView,
+    ClubLogView,
     MarketView,
     TournamentView,
     RankView,

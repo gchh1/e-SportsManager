@@ -62,35 +62,54 @@ CMAKE_BINARY_DIR = D:\yhc\cpp\e-sportsManager\e-sportsManager\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/e-sportsManager.dir/all
-all: src/models/all
-all: src/controllers/all
-all: src/dataHandlers/all
-all: src/views/all
+all: src/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/e-sportsManager.dir/codegen
-codegen: src/models/codegen
-codegen: src/controllers/codegen
-codegen: src/dataHandlers/codegen
-codegen: src/views/codegen
+codegen: src/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: src/models/preinstall
-preinstall: src/controllers/preinstall
-preinstall: src/dataHandlers/preinstall
-preinstall: src/views/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/e-sportsManager.dir/clean
-clean: src/models/clean
-clean: src/controllers/clean
-clean: src/dataHandlers/clean
-clean: src/views/clean
+clean: src/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/e-sportsManager.dir/all
+src/all: src/models/all
+src/all: src/dataHandlers/all
+src/all: src/controllers/all
+src/all: src/views/all
+.PHONY : src/all
+
+# Recursive "codegen" directory target.
+src/codegen: src/CMakeFiles/e-sportsManager.dir/codegen
+src/codegen: src/models/codegen
+src/codegen: src/dataHandlers/codegen
+src/codegen: src/controllers/codegen
+src/codegen: src/views/codegen
+.PHONY : src/codegen
+
+# Recursive "preinstall" directory target.
+src/preinstall: src/models/preinstall
+src/preinstall: src/dataHandlers/preinstall
+src/preinstall: src/controllers/preinstall
+src/preinstall: src/views/preinstall
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/e-sportsManager.dir/clean
+src/clean: src/models/clean
+src/clean: src/dataHandlers/clean
+src/clean: src/controllers/clean
+src/clean: src/views/clean
+.PHONY : src/clean
 
 #=============================================================================
 # Directory level rules for directory src/controllers
@@ -169,39 +188,39 @@ src/views/clean: src/views/CMakeFiles/views.dir/clean
 .PHONY : src/views/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/e-sportsManager.dir
+# Target rules for target src/CMakeFiles/e-sportsManager.dir
 
 # All Build rule for target.
-CMakeFiles/e-sportsManager.dir/all: src/models/CMakeFiles/models.dir/all
-CMakeFiles/e-sportsManager.dir/all: src/controllers/CMakeFiles/controllers.dir/all
-CMakeFiles/e-sportsManager.dir/all: src/dataHandlers/CMakeFiles/dataHandlers.dir/all
-CMakeFiles/e-sportsManager.dir/all: src/views/CMakeFiles/views.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/build
+src/CMakeFiles/e-sportsManager.dir/all: src/models/CMakeFiles/models.dir/all
+src/CMakeFiles/e-sportsManager.dir/all: src/dataHandlers/CMakeFiles/dataHandlers.dir/all
+src/CMakeFiles/e-sportsManager.dir/all: src/controllers/CMakeFiles/controllers.dir/all
+src/CMakeFiles/e-sportsManager.dir/all: src/views/CMakeFiles/views.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=9,10 "Built target e-sportsManager"
-.PHONY : CMakeFiles/e-sportsManager.dir/all
+.PHONY : src/CMakeFiles/e-sportsManager.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/e-sportsManager.dir/rule: cmake_check_build_system
+src/CMakeFiles/e-sportsManager.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles 23
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/e-sportsManager.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/e-sportsManager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles 0
-.PHONY : CMakeFiles/e-sportsManager.dir/rule
+.PHONY : src/CMakeFiles/e-sportsManager.dir/rule
 
 # Convenience name for target.
-e-sportsManager: CMakeFiles/e-sportsManager.dir/rule
+e-sportsManager: src/CMakeFiles/e-sportsManager.dir/rule
 .PHONY : e-sportsManager
 
 # codegen rule for target.
-CMakeFiles/e-sportsManager.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/codegen
+src/CMakeFiles/e-sportsManager.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=9,10 "Finished codegen for target e-sportsManager"
-.PHONY : CMakeFiles/e-sportsManager.dir/codegen
+.PHONY : src/CMakeFiles/e-sportsManager.dir/codegen
 
 # clean rule for target.
-CMakeFiles/e-sportsManager.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/clean
-.PHONY : CMakeFiles/e-sportsManager.dir/clean
+src/CMakeFiles/e-sportsManager.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/clean
+.PHONY : src/CMakeFiles/e-sportsManager.dir/clean
 
 #=============================================================================
 # Target rules for target src/models/CMakeFiles/models.dir
@@ -234,6 +253,38 @@ src/models/CMakeFiles/models.dir/codegen:
 src/models/CMakeFiles/models.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/clean
 .PHONY : src/models/CMakeFiles/models.dir/clean
+
+#=============================================================================
+# Target rules for target src/dataHandlers/CMakeFiles/dataHandlers.dir
+
+# All Build rule for target.
+src/dataHandlers/CMakeFiles/dataHandlers.dir/all: src/models/CMakeFiles/models.dir/all
+	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=5,6,7,8 "Built target dataHandlers"
+.PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/all
+
+# Build rule for subdir invocation for target.
+src/dataHandlers/CMakeFiles/dataHandlers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/dataHandlers/CMakeFiles/dataHandlers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles 0
+.PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/rule
+
+# Convenience name for target.
+dataHandlers: src/dataHandlers/CMakeFiles/dataHandlers.dir/rule
+.PHONY : dataHandlers
+
+# codegen rule for target.
+src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=5,6,7,8 "Finished codegen for target dataHandlers"
+.PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen
+
+# clean rule for target.
+src/dataHandlers/CMakeFiles/dataHandlers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/clean
+.PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/clean
 
 #=============================================================================
 # Target rules for target src/controllers/CMakeFiles/controllers.dir
@@ -269,44 +320,12 @@ src/controllers/CMakeFiles/controllers.dir/clean:
 .PHONY : src/controllers/CMakeFiles/controllers.dir/clean
 
 #=============================================================================
-# Target rules for target src/dataHandlers/CMakeFiles/dataHandlers.dir
-
-# All Build rule for target.
-src/dataHandlers/CMakeFiles/dataHandlers.dir/all: src/models/CMakeFiles/models.dir/all
-	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/depend
-	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=5,6,7,8 "Built target dataHandlers"
-.PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/all
-
-# Build rule for subdir invocation for target.
-src/dataHandlers/CMakeFiles/dataHandlers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/dataHandlers/CMakeFiles/dataHandlers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles 0
-.PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/rule
-
-# Convenience name for target.
-dataHandlers: src/dataHandlers/CMakeFiles/dataHandlers.dir/rule
-.PHONY : dataHandlers
-
-# codegen rule for target.
-src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=5,6,7,8 "Finished codegen for target dataHandlers"
-.PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen
-
-# clean rule for target.
-src/dataHandlers/CMakeFiles/dataHandlers.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/clean
-.PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/clean
-
-#=============================================================================
 # Target rules for target src/views/CMakeFiles/views.dir
 
 # All Build rule for target.
 src/views/CMakeFiles/views.dir/all: src/models/CMakeFiles/models.dir/all
-src/views/CMakeFiles/views.dir/all: src/controllers/CMakeFiles/controllers.dir/all
 src/views/CMakeFiles/views.dir/all: src/dataHandlers/CMakeFiles/dataHandlers.dir/all
+src/views/CMakeFiles/views.dir/all: src/controllers/CMakeFiles/controllers.dir/all
 	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=16,17,18,19,20,21,22,23 "Built target views"

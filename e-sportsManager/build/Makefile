@@ -125,7 +125,7 @@ e-sportsManager: cmake_check_build_system
 
 # fast build rule for target.
 e-sportsManager/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/build
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/build
 .PHONY : e-sportsManager/fast
 
 #=============================================================================
@@ -142,19 +142,6 @@ models/fast:
 .PHONY : models/fast
 
 #=============================================================================
-# Target rules for targets named controllers
-
-# Build rule for target.
-controllers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 controllers
-.PHONY : controllers
-
-# fast build rule for target.
-controllers/fast:
-	$(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers.dir\build.make src/controllers/CMakeFiles/controllers.dir/build
-.PHONY : controllers/fast
-
-#=============================================================================
 # Target rules for targets named dataHandlers
 
 # Build rule for target.
@@ -166,6 +153,19 @@ dataHandlers: cmake_check_build_system
 dataHandlers/fast:
 	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/build
 .PHONY : dataHandlers/fast
+
+#=============================================================================
+# Target rules for targets named controllers
+
+# Build rule for target.
+controllers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 controllers
+.PHONY : controllers
+
+# fast build rule for target.
+controllers/fast:
+	$(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers.dir\build.make src/controllers/CMakeFiles/controllers.dir/build
+.PHONY : controllers/fast
 
 #=============================================================================
 # Target rules for targets named views
@@ -180,30 +180,6 @@ views/fast:
 	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/build
 .PHONY : views/fast
 
-src/test1.obj: src/test1.cpp.obj
-.PHONY : src/test1.obj
-
-# target to build an object file
-src/test1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/src/test1.cpp.obj
-.PHONY : src/test1.cpp.obj
-
-src/test1.i: src/test1.cpp.i
-.PHONY : src/test1.i
-
-# target to preprocess a source file
-src/test1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/src/test1.cpp.i
-.PHONY : src/test1.cpp.i
-
-src/test1.s: src/test1.cpp.s
-.PHONY : src/test1.s
-
-# target to generate assembly for a file
-src/test1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\e-sportsManager.dir\build.make CMakeFiles/e-sportsManager.dir/src/test1.cpp.s
-.PHONY : src/test1.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -217,9 +193,6 @@ help:
 	@echo ... e-sportsManager
 	@echo ... models
 	@echo ... views
-	@echo ... src/test1.obj
-	@echo ... src/test1.i
-	@echo ... src/test1.s
 .PHONY : help
 
 

@@ -115,6 +115,44 @@ depend:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/CMakeFiles/e-sportsManager.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/e-sportsManager.dir/rule
+.PHONY : src/CMakeFiles/e-sportsManager.dir/rule
+
+# Convenience name for target.
+e-sportsManager: src/CMakeFiles/e-sportsManager.dir/rule
+.PHONY : e-sportsManager
+
+# fast build rule for target.
+e-sportsManager/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/build
+.PHONY : e-sportsManager/fast
+
+test1.obj: test1.cpp.obj
+.PHONY : test1.obj
+
+# target to build an object file
+test1.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj
+.PHONY : test1.cpp.obj
+
+test1.i: test1.cpp.i
+.PHONY : test1.i
+
+# target to preprocess a source file
+test1.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/test1.cpp.i
+.PHONY : test1.cpp.i
+
+test1.s: test1.cpp.s
+.PHONY : test1.s
+
+# target to generate assembly for a file
+test1.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/test1.cpp.s
+.PHONY : test1.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -123,6 +161,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... e-sportsManager
+	@echo ... test1.obj
+	@echo ... test1.i
+	@echo ... test1.s
 .PHONY : help
 
 

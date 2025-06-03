@@ -107,7 +107,9 @@ void ClubController::printClubInfo() {
 
 // 打印动态信息
 void ClubController::printClubLog() {
-
+    for (const auto & item : current_club->getLogs()) {
+        std::cout << item << std::endl;
+    }
 }
 
 

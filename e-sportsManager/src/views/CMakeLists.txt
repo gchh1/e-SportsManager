@@ -1,11 +1,25 @@
-cmake_minimum_required(VERSION 3.22)
-project(views)
+add_library(views)
 
-# 搜索源文件
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR} SRC)
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/heads HEAD)
 
-# 链接库
-link_libraries(controllers)
+target_sources(views 
+PRIVATE 
+    ${SRC}
+PUBLIC 
+    ${HEAD}
+)
 
-# 添加库
-add_library(views ${SRC})
+target_include_directories(views 
+PUBLIC
+    ${CMAKE_SOURCE_DIR}/src/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/heads
+    ${CMAKE_SOURCE_DIR}/src/controllers/heads
+    ${CMAKE_SOURCE_DIR}/src/models/heads
+    ${CMAKE_SOURCE_DIR}/src/dataHandlers/heads)
+
+# Link the views library against controllers so that symbols are resolved
+target_link_libraries(views 
+PUBLIC
+    controllers
+)

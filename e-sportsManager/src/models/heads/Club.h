@@ -7,14 +7,13 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include <memory> // Added for std::shared_ptr
+#include <memory> 
 
 #include "Staff.h"
-//#include "Log.h"
-#include "IData.h"
 #include "Log.h"
 #include "BinaryStaffDataRepo.h"
 
+class Log;
 class Club : public IData {
     // 数据成员
     int club_ID;                    // 俱乐部ID
@@ -25,7 +24,7 @@ class Club : public IData {
     std::vector<int> coach_ID;       // 教练ID
     std::vector<int> player_ID;    // 选手ID
     int power = 0;                  // 俱乐部战力
-    std::vector<std::unique_ptr<Log>> logs;          // 日志
+    std::vector<std::string> logs;          // 日志
 
     // 操作方法
     public:
@@ -73,7 +72,8 @@ class Club : public IData {
         bool removePlayer(int player_ID);
 
         // 添加日志
-        bool addLog(std::unique_ptr<Log> log); 
+        bool addLog(std::string log);
+
 
         // get方法
         int getID() const {return club_ID;}
@@ -83,7 +83,7 @@ class Club : public IData {
         const std::vector<int> & getCoach() const {return coach_ID;}
         const std::vector<int> & getPlayers() const {return player_ID;}
         int getPower() const {return power;}
-        const std::vector<std::unique_ptr<Log>> & getLogs() const {return logs;}
+        const std::vector<std::string> & getLogs() const {return logs;}
 
         // 验证密钥
         bool verifySecret(std::string input) {return input == club_secret;}

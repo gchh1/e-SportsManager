@@ -9,7 +9,6 @@
 #include <string>
 #include <memory>
 
-#include "Club.h"
 #include "IData.h"
 
 class Tournament : public IData {

@@ -158,21 +158,6 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=e-sportsManager
 
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.0.0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_TWEAK:STATIC=
-
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/msys64/ucrt64/bin/ranlib.exe
 
@@ -256,18 +241,6 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//The directory containing a CMake configuration file for Qt5.
-Qt5_DIR:PATH=Qt5_DIR-NOTFOUND
-
-//Value Computed by CMake
-controllers_BINARY_DIR:STATIC=D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers
-
-//Value Computed by CMake
-controllers_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-controllers_SOURCE_DIR:STATIC=D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers
-
 //Value Computed by CMake
 dataHandlers_BINARY_DIR:STATIC=D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/dataHandlers
 
@@ -285,24 +258,6 @@ e-sportsManager_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 e-sportsManager_SOURCE_DIR:STATIC=D:/yhc/cpp/e-sportsManager/e-sportsManager
-
-//Value Computed by CMake
-models_BINARY_DIR:STATIC=D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models
-
-//Value Computed by CMake
-models_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-models_SOURCE_DIR:STATIC=D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models
-
-//Value Computed by CMake
-views_BINARY_DIR:STATIC=D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views
-
-//Value Computed by CMake
-views_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-views_SOURCE_DIR:STATIC=D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views
 
 
 ########################
@@ -413,7 +368,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

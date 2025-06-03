@@ -9,26 +9,28 @@
 
 #pragma once
 
+#include <iostream>
 #include <string>
 #include <ctime>
-#include <fstream>
 #include <sstream>
 #include <iomanip>
-#include "IData.h"
-#include "LogOperation.h"
-#include "Tournament.h"
-#include "Staff.h"
 
-class Log : public IData {        
+#include "LogOperation.h"
+class Log {   
     std::string log;
+    std::string staff_name;
+    std::string tournament_name;
     public:
-        // 构造函数
-        Log() {}
+        // 设置选手
+        void setStaff(std::string staff) {this->staff_name = staff;}
+
+        // 设置赛事
+        void setTournament(std::string tournament) {this->tournament_name = tournament;}
+
+        // 生成日志
+        void generateLog(LogOperation operation, int fund_change, int points_change, int fund, int points);
 
         // 获取日志
         std::string getLog() const {return log;}
 
-        bool load(std::ifstream & in) override;
-        
-        bool save(std::ofstream & out) override;
 };

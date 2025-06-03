@@ -1,109 +1,109 @@
 [
 {
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/e-sportsManager.dir/includes_CXX.rsp -g -o CMakeFiles\\e-sportsManager.dir\\src\\test1.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\test1.cpp",
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/e-sportsManager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\e-sportsManager.dir\\test1.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\test1.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/test1.cpp",
-  "output": "CMakeFiles/e-sportsManager.dir/src/test1.cpp.obj"
+  "output": "src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -o CMakeFiles\\models.dir\\Club.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Club.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\models.dir\\Club.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Club.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Club.cpp",
   "output": "src/models/CMakeFiles/models.dir/Club.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -o CMakeFiles\\models.dir\\Log.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Log.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\models.dir\\Log.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Log.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Log.cpp",
   "output": "src/models/CMakeFiles/models.dir/Log.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -o CMakeFiles\\models.dir\\Staff.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Staff.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\models.dir\\Staff.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Staff.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Staff.cpp",
   "output": "src/models/CMakeFiles/models.dir/Staff.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -o CMakeFiles\\models.dir\\Tournament.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Tournament.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\models.dir\\Tournament.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Tournament.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Tournament.cpp",
   "output": "src/models/CMakeFiles/models.dir/Tournament.cpp.obj"
 },
 {
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/controllers.dir/includes_CXX.rsp -g -o CMakeFiles\\controllers.dir\\ClubController.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\controllers\\ClubController.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/ClubController.cpp",
-  "output": "src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/controllers.dir/includes_CXX.rsp -g -o CMakeFiles\\controllers.dir\\MarketController.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\controllers\\MarketController.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/MarketController.cpp",
-  "output": "src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/controllers.dir/includes_CXX.rsp -g -o CMakeFiles\\controllers.dir\\TournamentController.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\controllers\\TournamentController.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/TournamentController.cpp",
-  "output": "src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj"
-},
-{
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/dataHandlers",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/dataHandlers.dir/includes_CXX.rsp -g -o CMakeFiles\\dataHandlers.dir\\BinaryClubDataRepo.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\dataHandlers\\BinaryClubDataRepo.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/dataHandlers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\dataHandlers.dir\\BinaryClubDataRepo.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\dataHandlers\\BinaryClubDataRepo.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryClubDataRepo.cpp",
   "output": "src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/dataHandlers",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/dataHandlers.dir/includes_CXX.rsp -g -o CMakeFiles\\dataHandlers.dir\\BinaryStaffDataRepo.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\dataHandlers\\BinaryStaffDataRepo.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/dataHandlers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\dataHandlers.dir\\BinaryStaffDataRepo.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\dataHandlers\\BinaryStaffDataRepo.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryStaffDataRepo.cpp",
   "output": "src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/dataHandlers",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/dataHandlers.dir/includes_CXX.rsp -g -o CMakeFiles\\dataHandlers.dir\\BinaryTournamentDataRepo.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\dataHandlers\\BinaryTournamentDataRepo.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/dataHandlers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\dataHandlers.dir\\BinaryTournamentDataRepo.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\dataHandlers\\BinaryTournamentDataRepo.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryTournamentDataRepo.cpp",
   "output": "src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj"
 },
 {
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/controllers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\controllers.dir\\ClubController.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\controllers\\ClubController.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/ClubController.cpp",
+  "output": "src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj"
+},
+{
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/controllers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\controllers.dir\\MarketController.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\controllers\\MarketController.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/MarketController.cpp",
+  "output": "src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj"
+},
+{
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/controllers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\controllers.dir\\TournamentController.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\controllers\\TournamentController.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/TournamentController.cpp",
+  "output": "src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj"
+},
+{
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -o CMakeFiles\\views.dir\\ClubInfoView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\ClubInfoView.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\ClubInfoView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\ClubInfoView.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/ClubInfoView.cpp",
   "output": "src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -o CMakeFiles\\views.dir\\ClubLogView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\ClubLogView.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\ClubLogView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\ClubLogView.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/ClubLogView.cpp",
   "output": "src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -o CMakeFiles\\views.dir\\MainMenuView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\MainMenuView.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\MainMenuView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\MainMenuView.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/MainMenuView.cpp",
   "output": "src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -o CMakeFiles\\views.dir\\MarketView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\MarketView.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\MarketView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\MarketView.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/MarketView.cpp",
   "output": "src/views/CMakeFiles/views.dir/MarketView.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -o CMakeFiles\\views.dir\\RankView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\RankView.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\RankView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\RankView.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/RankView.cpp",
   "output": "src/views/CMakeFiles/views.dir/RankView.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -o CMakeFiles\\views.dir\\TournamentView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\TournamentView.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\TournamentView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\TournamentView.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/TournamentView.cpp",
   "output": "src/views/CMakeFiles/views.dir/TournamentView.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -o CMakeFiles\\views.dir\\WelcomeView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\WelcomeView.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\WelcomeView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\WelcomeView.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/WelcomeView.cpp",
   "output": "src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj"
 }

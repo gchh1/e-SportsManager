@@ -38,7 +38,7 @@ bool Club::removePlayer(int player_ID) {
 }
 
 // 添加日志
-bool Club::addLog(const std::unique_ptr<Log> log) {
+bool Club::addLog(std::string log) {
     this->logs.push_back(log);
     return true;
 }
@@ -85,7 +85,9 @@ bool Club::save(std::ofstream & out) {
     count = logs.size();
     out.write(reinterpret_cast<const char *>(&count), sizeof(count));
     for (const auto & item : logs) {
-        out.write(reinterpret_cast<const char *>(&item), sizeof(item));
+        size_t len = item.size();
+        out.write(reinterpret_cast<const char *>(&len), sizeof(len));
+        out.write(item.c_str(), len);
     }
 
     return true; 
@@ -141,9 +143,12 @@ bool Club::load(std::ifstream & in) {
     if (!in.read(reinterpret_cast<char *>(&logCount), sizeof(logCount))) return false;
     logs.clear();
     for (size_t i = 0; i < logCount; i++) {
-        std::unique_ptr<Log> log = std::make_unique<Log>();
-        if (!log->load(in)) return false;
-        logs.push_back(std::move(log));
+        std::string log;
+        size_t len;
+        if (!in.read(reinterpret_cast<char *>(&len), sizeof(len))) return false;
+        log.resize(len);
+        if (!in.read(&log[0], len)) return false;
+        logs.push_back(log);
     }
     
     return true; 

@@ -27,7 +27,7 @@ ViewState ClubInfoView::run() {
 
     switch (choice) {
         case 1: 
-            return ViewState::LogView;
+            return ViewState::ClubLogView;
         case 0:
             return ViewState::MainMenuView;
         default:

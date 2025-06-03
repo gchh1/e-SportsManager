@@ -1,13 +1,26 @@
-cmake_minimum_required(VERSION 3.22)
-project(controllers)
+add_library(controllers)
 
-# 搜索源文件
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR} SRC)
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/heads HEAD)
 
-# 链接库
-link_libraries(models dataHandlers)
+target_sources(controllers 
+PRIVATE 
+    ${SRC}
+PUBLIC 
+    ${HEAD}
+)
 
+target_include_directories(controllers 
+PUBLIC
+    ${CMAKE_SOURCE_DIR}/src/include
+    ${CMAKE_SOURCE_DIR}/src/models/heads
+    ${CMAKE_CURRENT_SOURCE_DIR}/heads
+    ${CMAKE_SOURCE_DIR}/src/dataHandlers/heads
+)
 
-# 添加库
-add_library(controllers ${SRC})
-
+# Link controllers with its dependencies so the interface propagates to consumers
+target_link_libraries(controllers
+PUBLIC
+    models
+    dataHandlers
+)

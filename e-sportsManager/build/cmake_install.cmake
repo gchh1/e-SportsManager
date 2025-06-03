@@ -39,22 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/dataHandlers/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views/cmake_install.cmake")
+  include("D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

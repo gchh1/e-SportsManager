@@ -4,7 +4,6 @@
 
 #include "MarketController.h"
 
-
 // 打印市场选手
 void MarketController::printMarket() {
     int index = 1;
@@ -20,7 +19,8 @@ void MarketController::printMarket() {
 
 // 设置俱乐部出售选手
 void MarketController::setSellStaff() {
-
+    sell_staff.clear();
+    
     // 遍历仓库中的教练
     for (const auto& coach_ID : current_club->getCoach()) {
         auto coach = staff_repo->getStaff(coach_ID);
@@ -91,8 +91,10 @@ void MarketController::handleBuy() {
     market_staff.erase(it_target_staff);
 
     // 5. 生成日志
-    log_controller->setStaff(target_staff);
-    log_controller->generateLog(LogOperation::BuyStaff, -(target_staff->getPrice()), 0);
+    Log log;
+    log.setStaff(target_staff->getName());
+    log.generateLog(LogOperation::BuyStaff, -(target_staff->getPrice()), 0, current_club->getFund(), current_club->getPoints());
+    current_club->addLog(log.getLog());
 }
 
 
@@ -134,6 +136,9 @@ void MarketController::handleSell() {
     market_staff.push_back(target_staff->getID());
 
     // 5. 生成日志
-    log_controller->setStaff(target_staff);
-    log_controller->generateLog(LogOperation::SellStaff, target_staff->getPrice(), 0);
+    Log log;
+    log.setStaff(target_staff->getName());
+    log.generateLog(LogOperation::SellStaff, target_staff->getPrice(), 0, current_club->getFund(), current_club->getPoints());
+    current_club->addLog(log.getLog());
+
 }

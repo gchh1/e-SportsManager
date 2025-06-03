@@ -127,8 +127,10 @@ void TournamentController::simulateTournament() {
         club->changePoints(points_bonus[i]);
 
         // 生成日志
-        log_controller->setClub(club);
-        log_controller->generateLog(LogOperation::Tournament, fund_bonus[i], points_bonus[i]);
+        Log log;
+        log.setTournament(current_tour->getName());
+        log.generateLog(LogOperation::ParticipateTournament, fund_bonus[i], points_bonus[i], club->getFund(), club->getPoints());
+        club->addLog(log.getLog());
     }
 
 }   

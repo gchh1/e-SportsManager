@@ -176,6 +176,7 @@ src/models/CMakeFiles/models.dir/Club.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/fstream.tcc \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Log.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/iostream \
  C:/msys64/ucrt64/include/c++/14.1.0/ctime \
  C:/msys64/ucrt64/include/c++/14.1.0/sstream \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/sstream.tcc \
@@ -188,6 +189,5 @@ src/models/CMakeFiles/models.dir/Club.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/locale_conv.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/quoted_string.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/LogOperation.h \
- D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Tournament.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/heads/BinaryStaffDataRepo.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IDataRepo.h
