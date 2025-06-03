@@ -6,6 +6,12 @@
   "output": "src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj"
 },
 {
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/createStaff.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\createStaff.dir\\createStaff.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\createStaff.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/createStaff.cpp",
+  "output": "src/CMakeFiles/createStaff.dir/createStaff.cpp.obj"
+},
+{
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\models.dir\\Club.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Club.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Club.cpp",

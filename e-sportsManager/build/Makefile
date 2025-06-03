@@ -129,6 +129,19 @@ e-sportsManager/fast:
 .PHONY : e-sportsManager/fast
 
 #=============================================================================
+# Target rules for targets named createStaff
+
+# Build rule for target.
+createStaff: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 createStaff
+.PHONY : createStaff
+
+# fast build rule for target.
+createStaff/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/build
+.PHONY : createStaff/fast
+
+#=============================================================================
 # Target rules for targets named models
 
 # Build rule for target.
@@ -189,6 +202,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... controllers
+	@echo ... createStaff
 	@echo ... dataHandlers
 	@echo ... e-sportsManager
 	@echo ... models

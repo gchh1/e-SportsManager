@@ -129,6 +129,44 @@ e-sportsManager/fast:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/build
 .PHONY : e-sportsManager/fast
 
+# Convenience name for target.
+src/CMakeFiles/createStaff.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/createStaff.dir/rule
+.PHONY : src/CMakeFiles/createStaff.dir/rule
+
+# Convenience name for target.
+createStaff: src/CMakeFiles/createStaff.dir/rule
+.PHONY : createStaff
+
+# fast build rule for target.
+createStaff/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/build
+.PHONY : createStaff/fast
+
+createStaff.obj: createStaff.cpp.obj
+.PHONY : createStaff.obj
+
+# target to build an object file
+createStaff.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/createStaff.cpp.obj
+.PHONY : createStaff.cpp.obj
+
+createStaff.i: createStaff.cpp.i
+.PHONY : createStaff.i
+
+# target to preprocess a source file
+createStaff.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/createStaff.cpp.i
+.PHONY : createStaff.cpp.i
+
+createStaff.s: createStaff.cpp.s
+.PHONY : createStaff.s
+
+# target to generate assembly for a file
+createStaff.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/createStaff.cpp.s
+.PHONY : createStaff.cpp.s
+
 test1.obj: test1.cpp.obj
 .PHONY : test1.obj
 
@@ -161,7 +199,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... createStaff
 	@echo ... e-sportsManager
+	@echo ... createStaff.obj
+	@echo ... createStaff.i
+	@echo ... createStaff.s
 	@echo ... test1.obj
 	@echo ... test1.i
 	@echo ... test1.s

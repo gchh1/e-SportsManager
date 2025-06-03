@@ -54,3 +54,9 @@ std::vector<int> BinaryClubDataRepo::getRepoID() {
     }
     return ids;
 }
+
+
+void BinaryClubDataRepo::removeClub(int index) {
+    if (index < 0 || index >= repo.size()) return;
+    repo.erase(repo.begin() + index);
+}

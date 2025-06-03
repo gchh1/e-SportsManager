@@ -24,7 +24,7 @@ void MarketController::setSellStaff() {
     // 遍历仓库中的教练
     for (const auto& coach_ID : current_club->getCoach()) {
         auto coach = staff_repo->getStaff(coach_ID);
-        if (coach->getState()) {
+        if (!coach->getState()) {
             sell_staff.push_back(coach_ID);
         }
     }
@@ -32,7 +32,7 @@ void MarketController::setSellStaff() {
     // 遍历仓库中的选手
     for (const auto& player_ID : current_club->getPlayers()) {
         auto player = staff_repo->getStaff(player_ID);
-        if (player->getState()) {
+        if (!player->getState()) {
             sell_staff.push_back(player_ID);
         }
     }

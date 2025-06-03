@@ -70,6 +70,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/e-sportsManager.dir/DependInfo.cmake"
+  "src/CMakeFiles/createStaff.dir/DependInfo.cmake"
   "src/models/CMakeFiles/models.dir/DependInfo.cmake"
   "src/dataHandlers/CMakeFiles/dataHandlers.dir/DependInfo.cmake"
   "src/controllers/CMakeFiles/controllers.dir/DependInfo.cmake"

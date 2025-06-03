@@ -31,7 +31,7 @@ class MarketController {
             auto & repo = staff_repo->getRepo();
             if (!repo.empty()) {
                 for (const auto & item : repo) {
-                    if (item && !item->getState()) {
+                    if (item && item->getState()) {
                         market_staff.push_back(item->getID());
                     }
                 }

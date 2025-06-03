@@ -62,4 +62,7 @@ class BinaryClubDataRepo : public IDataRepo {
 
         // 获取俱乐部
         Club * getClub(int ID);
+        
+        // 删除俱乐部
+        void removeClub(int ID);
 };

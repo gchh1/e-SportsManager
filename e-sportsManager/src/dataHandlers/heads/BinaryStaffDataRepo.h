@@ -58,4 +58,7 @@ class BinaryStaffDataRepo : public IDataRepo {
 
         // 获取选手
         Staff * getStaff(int ID) const;
+
+        // 删除选手
+        void removeStaff(int index);
 };

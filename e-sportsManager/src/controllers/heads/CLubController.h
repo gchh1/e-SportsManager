@@ -53,4 +53,7 @@ class ClubController {
         bool isRepoEmpty() {return club_repo->getRepo().empty();}
 
         Club * getCurrentClub() {return current_club;}
+
+        // 删除俱乐部
+        void removeClub();
 };

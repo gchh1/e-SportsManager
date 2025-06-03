@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\createStaff.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\createStaff.dir/objects.a @CMakeFiles\createStaff.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\createStaff.dir/objects.a -Wl,--no-whole-archive -o D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\createStaff.exe -Wl,--out-implib,D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\libcreateStaff.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\createStaff.dir\linkLibs.rsp

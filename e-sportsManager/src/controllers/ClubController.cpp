@@ -130,3 +130,13 @@ void ClubController::printRank() {
         rank++;
     }
 }
+
+
+// 删除俱乐部
+void ClubController::removeClub() {
+    int choice;
+    std::cout << "选择：";
+    std::cin >> choice;
+    int ID = club_repo->getRepo()[choice - 1]->getID();
+    club_repo->removeClub(ID);
+}

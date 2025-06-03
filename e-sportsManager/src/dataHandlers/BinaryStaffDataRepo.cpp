@@ -71,3 +71,13 @@ Staff * BinaryStaffDataRepo::getStaff(int ID) const {
     }
     return nullptr;
 }
+
+
+void BinaryStaffDataRepo::removeStaff(int ID) {
+    for (auto it = repo.begin(); it != repo.end(); ++it) {
+        if ((*it)->getID() == ID) {
+            repo.erase(it);
+            return;
+        }
+    }
+}

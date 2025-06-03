@@ -17,6 +17,7 @@ ViewState WelcomeView::run() {
     std::cout << "===欢迎界面===\n"
               << "1. 创建俱乐部\n"
               << "2. 载入俱乐部\n"
+              << "3. 删除俱乐部\n"
               << "0. 退出\n"
               << "选择：";
     
@@ -32,6 +33,15 @@ ViewState WelcomeView::run() {
                 controller->printClubRepo();
                 controller->selectClub();
                 return ViewState::InitMainMenu;
+            } else {
+                std::cout << "空！\n";
+                return ViewState::WelcomeView;
+            }
+        case 3: 
+            if (!controller->isRepoEmpty()) {
+                controller->printClubRepo();
+                controller->removeClub();
+                return ViewState::WelcomeView;
             } else {
                 std::cout << "空！\n";
                 return ViewState::WelcomeView;

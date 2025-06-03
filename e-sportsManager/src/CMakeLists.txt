@@ -1,5 +1,6 @@
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 add_executable(e-sportsManager test1.cpp)
+add_executable(createStaff createStaff.cpp)
 
 add_subdirectory(models)
 add_subdirectory(dataHandlers)
@@ -12,4 +13,10 @@ PRIVATE
     dataHandlers
     controllers
     views
+)
+
+target_link_libraries(createStaff
+PRIVATE
+    models
+    dataHandlers
 )

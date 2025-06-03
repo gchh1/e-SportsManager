@@ -4,9 +4,8 @@
 
 #include <iostream>
 
-#include "models/heads/Staff.h"
-#include "models/imp/Staff.cpp"
-#include "dataHandlers/BinaryStaffDataRepo.h"
+#include "Staff.h"
+#include "BinaryStaffDataRepo.h"
 
 
 int main() { 
@@ -17,8 +16,10 @@ int main() {
    bool flag = true;
 
    // 输出已有staff
+   int index = 1;
    for (const auto & item : repo.getRepo()) {
-      std::cout << "姓名：" << item->getName() << "\t" << "战力：" << item->getPower() << "\t" << "价格：" << item->getPrice() << std::endl;
+      std::cout << index << ". " << "姓名：" << item->getName() << "\t" << "战力：" << item->getPower() << "\t" << "价格：" << item->getPrice() << std::endl;
+      index++;
    }
 
 
@@ -26,6 +27,7 @@ int main() {
       std::cout << "==创建Staff==\n"
                << "1. 新建教练\n"
                << "2. 新建选手\n"
+               << "3. 删除选手\n"
                << "0. 退出\n"
                << "选择：";
       
@@ -48,6 +50,11 @@ int main() {
 
          auto player = std::make_unique<Player>(name, a1, a2, a3, a4, a5, a6, a7, a8);
          repo.addNewStaff(std::move(player));
+      } else if (choice == 3) {
+         int index;
+         std::cout << "输入要删除的选手序号：";
+         std::cin >> index;
+         repo.removeStaff(index);
       } else if (choice == 0) {
          flag = false;
       }
