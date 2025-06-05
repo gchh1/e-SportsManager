@@ -1,0 +1,6 @@
+controllers_autogen/timestamp: \
+	D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/CMakeLists.txt \
+	D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/ClubController.cpp \
+	D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/MarketController.cpp \
+	D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/TournamentController.cpp \
+	C:/Program\ Files/CMake/bin/cmake.exe

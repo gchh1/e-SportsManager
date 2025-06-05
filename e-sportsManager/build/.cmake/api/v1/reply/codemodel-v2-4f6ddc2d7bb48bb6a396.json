@@ -1,0 +1,337 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						12,
+						13,
+						14
+					]
+				},
+				{
+					"build" : "src/models",
+					"jsonFile" : "directory-src.models-Debug-d31e52dcd5d87d8e296d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/models",
+					"targetIndexes" : 
+					[
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "src/dataHandlers",
+					"jsonFile" : "directory-src.dataHandlers-Debug-1f7fda98a8b511d03ca6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "src/dataHandlers",
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11
+					]
+				},
+				{
+					"build" : "src/controllers",
+					"jsonFile" : "directory-src.controllers-Debug-2de5702e06629efddaf6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/controllers",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "src/views",
+					"jsonFile" : "directory-src.views-Debug-761cef8c4c011bcda108.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/views",
+					"targetIndexes" : 
+					[
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						4,
+						5
+					],
+					"name" : "e-sportsManager",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "dataHandlers",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "controllers::@0261cd8f181aa2ca38e1",
+					"jsonFile" : "target-controllers-Debug-7bef2aad95c2357aba92.json",
+					"name" : "controllers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "controllers_autogen::@0261cd8f181aa2ca38e1",
+					"jsonFile" : "target-controllers_autogen-Debug-bdff1a9b6a8b452ae4be.json",
+					"name" : "controllers_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "controllers_autogen_timestamp_deps::@0261cd8f181aa2ca38e1",
+					"jsonFile" : "target-controllers_autogen_timestamp_deps-Debug-68c51eaa2337429ff8a9.json",
+					"name" : "controllers_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "createStaff::@145eef247bfb46b6828c",
+					"jsonFile" : "target-createStaff-Debug-4aec490c5fb575b80e9b.json",
+					"name" : "createStaff",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "createStaff_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-createStaff_autogen-Debug-a6ec47840d08bac0ff5f.json",
+					"name" : "createStaff_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "createStaff_autogen_timestamp_deps::@145eef247bfb46b6828c",
+					"jsonFile" : "target-createStaff_autogen_timestamp_deps-Debug-de492338689bd3e14cc7.json",
+					"name" : "createStaff_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "createTour::@145eef247bfb46b6828c",
+					"jsonFile" : "target-createTour-Debug-a608a436266e614329d0.json",
+					"name" : "createTour",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "createTour_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-createTour_autogen-Debug-513c8231e50aebe4805d.json",
+					"name" : "createTour_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "createTour_autogen_timestamp_deps::@145eef247bfb46b6828c",
+					"jsonFile" : "target-createTour_autogen_timestamp_deps-Debug-3381ccac70fe5f44a387.json",
+					"name" : "createTour_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "dataHandlers::@184710fed461df729bdb",
+					"jsonFile" : "target-dataHandlers-Debug-3a0a79912b63d4a9f04f.json",
+					"name" : "dataHandlers",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "dataHandlers_autogen::@184710fed461df729bdb",
+					"jsonFile" : "target-dataHandlers_autogen-Debug-6bb1b1c271e6a6e223a3.json",
+					"name" : "dataHandlers_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "dataHandlers_autogen_timestamp_deps::@184710fed461df729bdb",
+					"jsonFile" : "target-dataHandlers_autogen_timestamp_deps-Debug-c26e3e3cd0c8926bef85.json",
+					"name" : "dataHandlers_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "e-sportsManager::@145eef247bfb46b6828c",
+					"jsonFile" : "target-e-sportsManager-Debug-6010c0d14f21cb29cee1.json",
+					"name" : "e-sportsManager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "e-sportsManager_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-e-sportsManager_autogen-Debug-2eb4de6c070c0a036c8a.json",
+					"name" : "e-sportsManager_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "e-sportsManager_autogen_timestamp_deps::@145eef247bfb46b6828c",
+					"jsonFile" : "target-e-sportsManager_autogen_timestamp_deps-Debug-263bbe8581e353fc149b.json",
+					"name" : "e-sportsManager_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "models::@defad1a87623d8bf2693",
+					"jsonFile" : "target-models-Debug-0753de7d652648529bd1.json",
+					"name" : "models",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "models_autogen::@defad1a87623d8bf2693",
+					"jsonFile" : "target-models_autogen-Debug-03eeb5b1ed62086582d4.json",
+					"name" : "models_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "models_autogen_timestamp_deps::@defad1a87623d8bf2693",
+					"jsonFile" : "target-models_autogen_timestamp_deps-Debug-850064a1f90a52da689a.json",
+					"name" : "models_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "views::@f0b93e8365e7aa7d892e",
+					"jsonFile" : "target-views-Debug-bf33eace2ccb529fcc46.json",
+					"name" : "views",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "views_autogen::@f0b93e8365e7aa7d892e",
+					"jsonFile" : "target-views_autogen-Debug-8f4e0767ee9a31d26efc.json",
+					"name" : "views_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "views_autogen_timestamp_deps::@f0b93e8365e7aa7d892e",
+					"jsonFile" : "target-views_autogen_timestamp_deps-Debug-c0fb07b304cc6bba3c7b.json",
+					"name" : "views_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/yhc/cpp/e-sportsManager/e-sportsManager/build",
+		"source" : "D:/yhc/cpp/e-sportsManager/e-sportsManager"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

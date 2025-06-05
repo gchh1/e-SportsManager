@@ -1,0 +1,46 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "controllers::@0261cd8f181aa2ca38e1"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "dataHandlers::@184710fed461df729bdb"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "models::@defad1a87623d8bf2693"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "views::@f0b93e8365e7aa7d892e"
+		}
+	],
+	"id" : "e-sportsManager_autogen_timestamp_deps::@145eef247bfb46b6828c",
+	"isGeneratorProvided" : true,
+	"name" : "e-sportsManager_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "src",
+		"source" : "src"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

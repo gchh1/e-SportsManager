@@ -1,0 +1,155 @@
+\ProvidesPackage{template}
+
+\usepackage{ctex}  % 中文支持
+
+\usepackage[
+    top=2.5cm,
+    bottom=2.5cm,
+    left=2.5cm,
+    right=2.5cm
+]{geometry} % 页边距布局
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{setspace} % Required for the space setting
+\usepackage{zhnumber}
+\usepackage{titlesec} % Required for the Chapter & Section fonts adjustment
+\usepackage{titletoc} % Required for the Content fonts adjustment
+\usepackage[toc,page]{appendix} % Required for the appendix environment
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage{courier} % Required for the courier font
+\usepackage{float} % Required for the Here float
+\usepackage{graphicx} % Required to insert images
+\usepackage{wrapfig}
+\usepackage{booktabs} % Required for the hline of the three lines table
+\usepackage{multirow} % Required for the multirow of table
+\usepackage{listings} % Required for insertion of code
+\usepackage{indentfirst} % Required for the indent before each paragraph
+\usepackage[bookmarks=true,colorlinks=true,linkcolor=black,anchorcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage[font=footnotesize,tableposition=top]{caption} % Required for the footnote size captions of figures and tables
+%----------------------------------------------------------------------------------------
+%   数学宏包
+%----------------------------------------------------------------------------------------
+\usepackage{bm} % Required for the bold in math display
+\usepackage{amsmath} % Required for the math display
+\usepackage{amssymb} % Required for the math display
+\usepackage{amsbsy} % Required for the math display
+\usepackage{cancel} % Required for the cancel symbol in math display
+\usepackage{amsthm} % Required for the theorem edition
+\usepackage{array} % Required for the array in math display
+\usepackage{ifthen} % Required for the conditional commands
+
+%----------------------------------------------------------------------------------------
+%   Superscript citation
+%----------------------------------------------------------------------------------------
+% 参考文献相关，需要更新
+\usepackage{gbt7714}
+\bibliographystyle{gbt7714-numerical}
+
+
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
+
+\setmainfont{Times New Roman} % 常规英文字体
+\setsansfont{Arial} % 非衬线字体
+\setmonofont{Consolas} % 打字机字体，代码字体
+\setCJKmainfont[AutoFakeBold=true]{SimSun}%正文字体
+
+%----------------------------------------------------------------------------------------
+%   Upright d in integrate
+%----------------------------------------------------------------------------------------
+\newcommand{\ud}{\mathrm{d}} 
+
+%----------------------------------------------------------------------------------------
+%   Code Inclusion Configuration
+%----------------------------------------------------------------------------------------
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+\lstloadlanguages{Python} % Load Python syntax for listings, for a list of other languages supported see: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{language=Python, % Use Python in this example
+frame=single, % Single frame around code
+%basicstyle=\ttfamily, % Use small true type font
+keywordstyle=[1]\color{Blue}\bf, % Python functions bold and blue
+keywordstyle=[2]\color{Purple}\it, % Python function arguments purple
+keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+identifierstyle=, % Nothing special about identifiers                                         
+commentstyle=\color{Gray}, % Comments small dark green courier font
+stringstyle=\color{Green}, % Strings are purple
+showstringspaces=false, % Don't put marks in string spaces
+tabsize=4, % 4 spaces per tab
+% Put standard Python functions not included in the default language here
+morekeywords={rand},
+% Put Python function parameters here
+morekeywords=[2]{on, off, interp},
+% Put user defined functions here
+morekeywords=[3]{test},
+%
+morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+numbers=left, % Line numbers on left
+firstnumber=1, % Line numbers start with line 1
+numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+stepnumber=1 % Line numbers go in steps of 1
+}
+% Creates a new command to include a Python script, the first parameter is the filename of the script (without .py), the second parameter is the caption
+\newcommand{\pythonscript}[2]{
+    \begin{itemize}
+    \begin{spacing}{1.0}
+        \item[]\lstinputlisting[
+        caption=#2,
+        label=#1,
+        gobble=2,
+        numbers=left
+        ]{#1.py}
+        \end{spacing}
+    \end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%   Section related equations' number
+%----------------------------------------------------------------------------------------
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+
+%----------------------------------------------------------------------------------------
+%   章节标题格式调整
+%----------------------------------------------------------------------------------------
+% section
+\titleformat{\section}{\zihao{4}\bfseries}{\zhnumber{\thesection}}{1em}{}
+% subsection
+\titleformat{\subsection}{\zihao{-4}\bfseries}{\zhnumber{\thesubsection}}{1.5em}{}
+% subsubsection
+\titleformat{\subsubsection}{\zihao{-4}\bfseries}{\zhnumber{\thesubsubsection}}{2em}{}
+
+
+
+% 重新定义paragraph样式
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{0.75ex plus .2ex}
+\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{\raggedright}
+
+%----------------------------------------------------------------------------------------
+%   目录格式调整
+%----------------------------------------------------------------------------------------
+\renewcommand\contentsname{目\quad\quad 录} % Setup contents
+\titlecontents{section}[0em]{\zihao{4}\bfseries}
+{\contentspush{第\,\zhnumber{\thecontentslabel}\,章\hspace{1em}}}
+              {}{\titlerule*[5pt]{.}\contentspage}
+
+\titlecontents{subsection}[2.2em]{\zihao{-4}\songti}{\contentspush{\thecontentslabel\hspace{0.7em}}}
+              {}{\titlerule*[5pt]{.}\contentspage}
+\titlecontents{subsubsection}[3.9em]{\zihao{-4}\songti}{\contentspush{\thecontentslabel\hspace{0.7em}}}
+              {}{\titlerule*[5pt]{.}\contentspage}
+\titlespacing*{\subsection} {0pt}{1ex}{1ex} % Adjust the space between title and context
+\titlespacing*{\subsubsection} {0pt}{1ex}{1ex}
+
+%----------------------------------------------------------------------------------------
+%   Page header & Page footer setting
+%----------------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markboth{第\zhnumber{\thesection}章{\color{white}.} #1}{}}
+
+\fancyhead[C]{\songti{电竞经理}}
+\fancyhead[CO]{\songti\leftmark}
+\fancyfoot[C]{\thepage}

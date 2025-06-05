@@ -129,6 +129,34 @@ dataHandlers/fast:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/build
 .PHONY : dataHandlers/fast
 
+# Convenience name for target.
+src/dataHandlers/CMakeFiles/dataHandlers_autogen_timestamp_deps.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/dataHandlers/CMakeFiles/dataHandlers_autogen_timestamp_deps.dir/rule
+.PHONY : src/dataHandlers/CMakeFiles/dataHandlers_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+dataHandlers_autogen_timestamp_deps: src/dataHandlers/CMakeFiles/dataHandlers_autogen_timestamp_deps.dir/rule
+.PHONY : dataHandlers_autogen_timestamp_deps
+
+# fast build rule for target.
+dataHandlers_autogen_timestamp_deps/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers_autogen_timestamp_deps.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers_autogen_timestamp_deps.dir/build
+.PHONY : dataHandlers_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/dataHandlers/CMakeFiles/dataHandlers_autogen.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/dataHandlers/CMakeFiles/dataHandlers_autogen.dir/rule
+.PHONY : src/dataHandlers/CMakeFiles/dataHandlers_autogen.dir/rule
+
+# Convenience name for target.
+dataHandlers_autogen: src/dataHandlers/CMakeFiles/dataHandlers_autogen.dir/rule
+.PHONY : dataHandlers_autogen
+
+# fast build rule for target.
+dataHandlers_autogen/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers_autogen.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers_autogen.dir/build
+.PHONY : dataHandlers_autogen/fast
+
 BinaryClubDataRepo.obj: BinaryClubDataRepo.cpp.obj
 .PHONY : BinaryClubDataRepo.obj
 
@@ -201,6 +229,30 @@ BinaryTournamentDataRepo.cpp.s:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.s
 .PHONY : BinaryTournamentDataRepo.cpp.s
 
+dataHandlers_autogen/mocs_compilation.obj: dataHandlers_autogen/mocs_compilation.cpp.obj
+.PHONY : dataHandlers_autogen/mocs_compilation.obj
+
+# target to build an object file
+dataHandlers_autogen/mocs_compilation.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj
+.PHONY : dataHandlers_autogen/mocs_compilation.cpp.obj
+
+dataHandlers_autogen/mocs_compilation.i: dataHandlers_autogen/mocs_compilation.cpp.i
+.PHONY : dataHandlers_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+dataHandlers_autogen/mocs_compilation.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.i
+.PHONY : dataHandlers_autogen/mocs_compilation.cpp.i
+
+dataHandlers_autogen/mocs_compilation.s: dataHandlers_autogen/mocs_compilation.cpp.s
+.PHONY : dataHandlers_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+dataHandlers_autogen/mocs_compilation.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.s
+.PHONY : dataHandlers_autogen/mocs_compilation.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -209,6 +261,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... dataHandlers_autogen
+	@echo ... dataHandlers_autogen_timestamp_deps
 	@echo ... dataHandlers
 	@echo ... BinaryClubDataRepo.obj
 	@echo ... BinaryClubDataRepo.i
@@ -219,6 +273,9 @@ help:
 	@echo ... BinaryTournamentDataRepo.obj
 	@echo ... BinaryTournamentDataRepo.i
 	@echo ... BinaryTournamentDataRepo.s
+	@echo ... dataHandlers_autogen/mocs_compilation.obj
+	@echo ... dataHandlers_autogen/mocs_compilation.i
+	@echo ... dataHandlers_autogen/mocs_compilation.s
 .PHONY : help
 
 

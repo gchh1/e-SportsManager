@@ -9,6 +9,15 @@ project(e-sportsManager)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
+# 设置Qt
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+
+
 # 设置源文件目录
 set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 

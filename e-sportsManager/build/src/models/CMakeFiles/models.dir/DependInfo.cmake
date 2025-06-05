@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Log.cpp" "src/models/CMakeFiles/models.dir/Log.cpp.obj" "gcc" "src/models/CMakeFiles/models.dir/Log.cpp.obj.d"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Staff.cpp" "src/models/CMakeFiles/models.dir/Staff.cpp.obj" "gcc" "src/models/CMakeFiles/models.dir/Staff.cpp.obj.d"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Tournament.cpp" "src/models/CMakeFiles/models.dir/Tournament.cpp.obj" "gcc" "src/models/CMakeFiles/models.dir/Tournament.cpp.obj.d"
+  "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models/models_autogen/mocs_compilation.cpp" "src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj" "gcc" "src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

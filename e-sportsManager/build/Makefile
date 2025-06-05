@@ -155,6 +155,84 @@ createTour/fast:
 .PHONY : createTour/fast
 
 #=============================================================================
+# Target rules for targets named e-sportsManager_autogen_timestamp_deps
+
+# Build rule for target.
+e-sportsManager_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 e-sportsManager_autogen_timestamp_deps
+.PHONY : e-sportsManager_autogen_timestamp_deps
+
+# fast build rule for target.
+e-sportsManager_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager_autogen_timestamp_deps.dir\build.make src/CMakeFiles/e-sportsManager_autogen_timestamp_deps.dir/build
+.PHONY : e-sportsManager_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named e-sportsManager_autogen
+
+# Build rule for target.
+e-sportsManager_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 e-sportsManager_autogen
+.PHONY : e-sportsManager_autogen
+
+# fast build rule for target.
+e-sportsManager_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager_autogen.dir\build.make src/CMakeFiles/e-sportsManager_autogen.dir/build
+.PHONY : e-sportsManager_autogen/fast
+
+#=============================================================================
+# Target rules for targets named createStaff_autogen_timestamp_deps
+
+# Build rule for target.
+createStaff_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 createStaff_autogen_timestamp_deps
+.PHONY : createStaff_autogen_timestamp_deps
+
+# fast build rule for target.
+createStaff_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff_autogen_timestamp_deps.dir\build.make src/CMakeFiles/createStaff_autogen_timestamp_deps.dir/build
+.PHONY : createStaff_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named createStaff_autogen
+
+# Build rule for target.
+createStaff_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 createStaff_autogen
+.PHONY : createStaff_autogen
+
+# fast build rule for target.
+createStaff_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff_autogen.dir\build.make src/CMakeFiles/createStaff_autogen.dir/build
+.PHONY : createStaff_autogen/fast
+
+#=============================================================================
+# Target rules for targets named createTour_autogen_timestamp_deps
+
+# Build rule for target.
+createTour_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 createTour_autogen_timestamp_deps
+.PHONY : createTour_autogen_timestamp_deps
+
+# fast build rule for target.
+createTour_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour_autogen_timestamp_deps.dir\build.make src/CMakeFiles/createTour_autogen_timestamp_deps.dir/build
+.PHONY : createTour_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named createTour_autogen
+
+# Build rule for target.
+createTour_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 createTour_autogen
+.PHONY : createTour_autogen
+
+# fast build rule for target.
+createTour_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour_autogen.dir\build.make src/CMakeFiles/createTour_autogen.dir/build
+.PHONY : createTour_autogen/fast
+
+#=============================================================================
 # Target rules for targets named models
 
 # Build rule for target.
@@ -166,6 +244,32 @@ models: cmake_check_build_system
 models/fast:
 	$(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/build
 .PHONY : models/fast
+
+#=============================================================================
+# Target rules for targets named models_autogen_timestamp_deps
+
+# Build rule for target.
+models_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 models_autogen_timestamp_deps
+.PHONY : models_autogen_timestamp_deps
+
+# fast build rule for target.
+models_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models_autogen_timestamp_deps.dir\build.make src/models/CMakeFiles/models_autogen_timestamp_deps.dir/build
+.PHONY : models_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named models_autogen
+
+# Build rule for target.
+models_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 models_autogen
+.PHONY : models_autogen
+
+# fast build rule for target.
+models_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models_autogen.dir\build.make src/models/CMakeFiles/models_autogen.dir/build
+.PHONY : models_autogen/fast
 
 #=============================================================================
 # Target rules for targets named dataHandlers
@@ -181,6 +285,32 @@ dataHandlers/fast:
 .PHONY : dataHandlers/fast
 
 #=============================================================================
+# Target rules for targets named dataHandlers_autogen_timestamp_deps
+
+# Build rule for target.
+dataHandlers_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 dataHandlers_autogen_timestamp_deps
+.PHONY : dataHandlers_autogen_timestamp_deps
+
+# fast build rule for target.
+dataHandlers_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers_autogen_timestamp_deps.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers_autogen_timestamp_deps.dir/build
+.PHONY : dataHandlers_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named dataHandlers_autogen
+
+# Build rule for target.
+dataHandlers_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 dataHandlers_autogen
+.PHONY : dataHandlers_autogen
+
+# fast build rule for target.
+dataHandlers_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers_autogen.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers_autogen.dir/build
+.PHONY : dataHandlers_autogen/fast
+
+#=============================================================================
 # Target rules for targets named controllers
 
 # Build rule for target.
@@ -192,6 +322,32 @@ controllers: cmake_check_build_system
 controllers/fast:
 	$(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers.dir\build.make src/controllers/CMakeFiles/controllers.dir/build
 .PHONY : controllers/fast
+
+#=============================================================================
+# Target rules for targets named controllers_autogen_timestamp_deps
+
+# Build rule for target.
+controllers_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 controllers_autogen_timestamp_deps
+.PHONY : controllers_autogen_timestamp_deps
+
+# fast build rule for target.
+controllers_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers_autogen_timestamp_deps.dir\build.make src/controllers/CMakeFiles/controllers_autogen_timestamp_deps.dir/build
+.PHONY : controllers_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named controllers_autogen
+
+# Build rule for target.
+controllers_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 controllers_autogen
+.PHONY : controllers_autogen
+
+# fast build rule for target.
+controllers_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers_autogen.dir\build.make src/controllers/CMakeFiles/controllers_autogen.dir/build
+.PHONY : controllers_autogen/fast
 
 #=============================================================================
 # Target rules for targets named views
@@ -206,6 +362,32 @@ views/fast:
 	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/build
 .PHONY : views/fast
 
+#=============================================================================
+# Target rules for targets named views_autogen_timestamp_deps
+
+# Build rule for target.
+views_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 views_autogen_timestamp_deps
+.PHONY : views_autogen_timestamp_deps
+
+# fast build rule for target.
+views_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views_autogen_timestamp_deps.dir\build.make src/views/CMakeFiles/views_autogen_timestamp_deps.dir/build
+.PHONY : views_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named views_autogen
+
+# Build rule for target.
+views_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 views_autogen
+.PHONY : views_autogen
+
+# fast build rule for target.
+views_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views_autogen.dir\build.make src/views/CMakeFiles/views_autogen.dir/build
+.PHONY : views_autogen/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -214,6 +396,20 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... controllers_autogen
+	@echo ... controllers_autogen_timestamp_deps
+	@echo ... createStaff_autogen
+	@echo ... createStaff_autogen_timestamp_deps
+	@echo ... createTour_autogen
+	@echo ... createTour_autogen_timestamp_deps
+	@echo ... dataHandlers_autogen
+	@echo ... dataHandlers_autogen_timestamp_deps
+	@echo ... e-sportsManager_autogen
+	@echo ... e-sportsManager_autogen_timestamp_deps
+	@echo ... models_autogen
+	@echo ... models_autogen_timestamp_deps
+	@echo ... views_autogen
+	@echo ... views_autogen_timestamp_deps
 	@echo ... controllers
 	@echo ... createStaff
 	@echo ... createTour

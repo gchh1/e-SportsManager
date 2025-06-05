@@ -71,11 +71,26 @@ include src/CMakeFiles/createTour.dir/flags.make
 src/CMakeFiles/createTour.dir/codegen:
 .PHONY : src/CMakeFiles/createTour.dir/codegen
 
+src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/createTour.dir/flags.make
+src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/createTour.dir/includes_CXX.rsp
+src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj: src/createTour_autogen/mocs_compilation.cpp
+src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/createTour.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\createTour.dir\createTour_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\createTour.dir\createTour_autogen\mocs_compilation.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\createTour_autogen\mocs_compilation.cpp
+
+src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.i"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\createTour_autogen\mocs_compilation.cpp > CMakeFiles\createTour.dir\createTour_autogen\mocs_compilation.cpp.i
+
+src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.s"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\createTour_autogen\mocs_compilation.cpp -o CMakeFiles\createTour.dir\createTour_autogen\mocs_compilation.cpp.s
+
 src/CMakeFiles/createTour.dir/createTour.cpp.obj: src/CMakeFiles/createTour.dir/flags.make
 src/CMakeFiles/createTour.dir/createTour.cpp.obj: src/CMakeFiles/createTour.dir/includes_CXX.rsp
 src/CMakeFiles/createTour.dir/createTour.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/createTour.cpp
 src/CMakeFiles/createTour.dir/createTour.cpp.obj: src/CMakeFiles/createTour.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/createTour.dir/createTour.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/createTour.dir/createTour.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/createTour.dir/createTour.cpp.obj -MF CMakeFiles\createTour.dir\createTour.cpp.obj.d -o CMakeFiles\createTour.dir\createTour.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\createTour.cpp
 
 src/CMakeFiles/createTour.dir/createTour.cpp.i: cmake_force
@@ -88,11 +103,13 @@ src/CMakeFiles/createTour.dir/createTour.cpp.s: cmake_force
 
 # Object files for target createTour
 createTour_OBJECTS = \
+"CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/createTour.dir/createTour.cpp.obj"
 
 # External object files for target createTour
 createTour_EXTERNAL_OBJECTS =
 
+D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createTour.exe: src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createTour.exe: src/CMakeFiles/createTour.dir/createTour.cpp.obj
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createTour.exe: src/CMakeFiles/createTour.dir/build.make
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createTour.exe: src/models/libmodels.a
@@ -101,7 +118,7 @@ D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createTour.exe: src/models/libmod
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createTour.exe: src/CMakeFiles/createTour.dir/linkLibs.rsp
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createTour.exe: src/CMakeFiles/createTour.dir/objects1.rsp
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createTour.exe: src/CMakeFiles/createTour.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\createTour.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\createTour.exe"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\createTour.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

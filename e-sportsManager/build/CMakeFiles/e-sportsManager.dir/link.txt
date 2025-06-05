@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\e-sportsManager.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\e-sportsManager.dir/objects.a @CMakeFiles\e-sportsManager.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\e-sportsManager.dir/objects.a -Wl,--no-whole-archive -o e-sportsManager.exe -Wl,--out-implib,libe-sportsManager.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\e-sportsManager.dir\linkLibs.rsp

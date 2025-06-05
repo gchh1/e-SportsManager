@@ -71,11 +71,26 @@ include src/models/CMakeFiles/models.dir/flags.make
 src/models/CMakeFiles/models.dir/codegen:
 .PHONY : src/models/CMakeFiles/models.dir/codegen
 
+src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj: src/models/CMakeFiles/models.dir/flags.make
+src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj: src/models/CMakeFiles/models.dir/includes_CXX.rsp
+src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj: src/models/models_autogen/mocs_compilation.cpp
+src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj: src/models/CMakeFiles/models.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\models.dir\models_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\models.dir\models_autogen\mocs_compilation.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models\models_autogen\mocs_compilation.cpp
+
+src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.i"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models\models_autogen\mocs_compilation.cpp > CMakeFiles\models.dir\models_autogen\mocs_compilation.cpp.i
+
+src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.s"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models\models_autogen\mocs_compilation.cpp -o CMakeFiles\models.dir\models_autogen\mocs_compilation.cpp.s
+
 src/models/CMakeFiles/models.dir/Club.cpp.obj: src/models/CMakeFiles/models.dir/flags.make
 src/models/CMakeFiles/models.dir/Club.cpp.obj: src/models/CMakeFiles/models.dir/includes_CXX.rsp
 src/models/CMakeFiles/models.dir/Club.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Club.cpp
 src/models/CMakeFiles/models.dir/Club.cpp.obj: src/models/CMakeFiles/models.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/models/CMakeFiles/models.dir/Club.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/models/CMakeFiles/models.dir/Club.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/models/CMakeFiles/models.dir/Club.cpp.obj -MF CMakeFiles\models.dir\Club.cpp.obj.d -o CMakeFiles\models.dir\Club.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\models\Club.cpp
 
 src/models/CMakeFiles/models.dir/Club.cpp.i: cmake_force
@@ -90,7 +105,7 @@ src/models/CMakeFiles/models.dir/Log.cpp.obj: src/models/CMakeFiles/models.dir/f
 src/models/CMakeFiles/models.dir/Log.cpp.obj: src/models/CMakeFiles/models.dir/includes_CXX.rsp
 src/models/CMakeFiles/models.dir/Log.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Log.cpp
 src/models/CMakeFiles/models.dir/Log.cpp.obj: src/models/CMakeFiles/models.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/models/CMakeFiles/models.dir/Log.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/models/CMakeFiles/models.dir/Log.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/models/CMakeFiles/models.dir/Log.cpp.obj -MF CMakeFiles\models.dir\Log.cpp.obj.d -o CMakeFiles\models.dir\Log.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\models\Log.cpp
 
 src/models/CMakeFiles/models.dir/Log.cpp.i: cmake_force
@@ -105,7 +120,7 @@ src/models/CMakeFiles/models.dir/Staff.cpp.obj: src/models/CMakeFiles/models.dir
 src/models/CMakeFiles/models.dir/Staff.cpp.obj: src/models/CMakeFiles/models.dir/includes_CXX.rsp
 src/models/CMakeFiles/models.dir/Staff.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Staff.cpp
 src/models/CMakeFiles/models.dir/Staff.cpp.obj: src/models/CMakeFiles/models.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/models/CMakeFiles/models.dir/Staff.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/models/CMakeFiles/models.dir/Staff.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/models/CMakeFiles/models.dir/Staff.cpp.obj -MF CMakeFiles\models.dir\Staff.cpp.obj.d -o CMakeFiles\models.dir\Staff.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\models\Staff.cpp
 
 src/models/CMakeFiles/models.dir/Staff.cpp.i: cmake_force
@@ -120,7 +135,7 @@ src/models/CMakeFiles/models.dir/Tournament.cpp.obj: src/models/CMakeFiles/model
 src/models/CMakeFiles/models.dir/Tournament.cpp.obj: src/models/CMakeFiles/models.dir/includes_CXX.rsp
 src/models/CMakeFiles/models.dir/Tournament.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Tournament.cpp
 src/models/CMakeFiles/models.dir/Tournament.cpp.obj: src/models/CMakeFiles/models.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/models/CMakeFiles/models.dir/Tournament.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/models/CMakeFiles/models.dir/Tournament.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/models/CMakeFiles/models.dir/Tournament.cpp.obj -MF CMakeFiles\models.dir\Tournament.cpp.obj.d -o CMakeFiles\models.dir\Tournament.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\models\Tournament.cpp
 
 src/models/CMakeFiles/models.dir/Tournament.cpp.i: cmake_force
@@ -133,6 +148,7 @@ src/models/CMakeFiles/models.dir/Tournament.cpp.s: cmake_force
 
 # Object files for target models
 models_OBJECTS = \
+"CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/models.dir/Club.cpp.obj" \
 "CMakeFiles/models.dir/Log.cpp.obj" \
 "CMakeFiles/models.dir/Staff.cpp.obj" \
@@ -141,13 +157,14 @@ models_OBJECTS = \
 # External object files for target models
 models_EXTERNAL_OBJECTS =
 
+src/models/libmodels.a: src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj
 src/models/libmodels.a: src/models/CMakeFiles/models.dir/Club.cpp.obj
 src/models/libmodels.a: src/models/CMakeFiles/models.dir/Log.cpp.obj
 src/models/libmodels.a: src/models/CMakeFiles/models.dir/Staff.cpp.obj
 src/models/libmodels.a: src/models/CMakeFiles/models.dir/Tournament.cpp.obj
 src/models/libmodels.a: src/models/CMakeFiles/models.dir/build.make
 src/models/libmodels.a: src/models/CMakeFiles/models.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libmodels.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libmodels.a"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models && $(CMAKE_COMMAND) -P CMakeFiles\models.dir\cmake_clean_target.cmake
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\models && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\models.dir\link.txt --verbose=$(VERBOSE)
 

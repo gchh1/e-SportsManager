@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/createStaff.cpp" "src/CMakeFiles/createStaff.dir/createStaff.cpp.obj" "gcc" "src/CMakeFiles/createStaff.dir/createStaff.cpp.obj.d"
+  "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/createStaff_autogen/mocs_compilation.cpp" "src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj" "gcc" "src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

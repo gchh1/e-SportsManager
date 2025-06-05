@@ -157,6 +157,90 @@ createTour/fast:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/build
 .PHONY : createTour/fast
 
+# Convenience name for target.
+src/CMakeFiles/e-sportsManager_autogen_timestamp_deps.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/e-sportsManager_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/e-sportsManager_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+e-sportsManager_autogen_timestamp_deps: src/CMakeFiles/e-sportsManager_autogen_timestamp_deps.dir/rule
+.PHONY : e-sportsManager_autogen_timestamp_deps
+
+# fast build rule for target.
+e-sportsManager_autogen_timestamp_deps/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager_autogen_timestamp_deps.dir\build.make src/CMakeFiles/e-sportsManager_autogen_timestamp_deps.dir/build
+.PHONY : e-sportsManager_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/e-sportsManager_autogen.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/e-sportsManager_autogen.dir/rule
+.PHONY : src/CMakeFiles/e-sportsManager_autogen.dir/rule
+
+# Convenience name for target.
+e-sportsManager_autogen: src/CMakeFiles/e-sportsManager_autogen.dir/rule
+.PHONY : e-sportsManager_autogen
+
+# fast build rule for target.
+e-sportsManager_autogen/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager_autogen.dir\build.make src/CMakeFiles/e-sportsManager_autogen.dir/build
+.PHONY : e-sportsManager_autogen/fast
+
+# Convenience name for target.
+src/CMakeFiles/createStaff_autogen_timestamp_deps.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/createStaff_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/createStaff_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+createStaff_autogen_timestamp_deps: src/CMakeFiles/createStaff_autogen_timestamp_deps.dir/rule
+.PHONY : createStaff_autogen_timestamp_deps
+
+# fast build rule for target.
+createStaff_autogen_timestamp_deps/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff_autogen_timestamp_deps.dir\build.make src/CMakeFiles/createStaff_autogen_timestamp_deps.dir/build
+.PHONY : createStaff_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/createStaff_autogen.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/createStaff_autogen.dir/rule
+.PHONY : src/CMakeFiles/createStaff_autogen.dir/rule
+
+# Convenience name for target.
+createStaff_autogen: src/CMakeFiles/createStaff_autogen.dir/rule
+.PHONY : createStaff_autogen
+
+# fast build rule for target.
+createStaff_autogen/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff_autogen.dir\build.make src/CMakeFiles/createStaff_autogen.dir/build
+.PHONY : createStaff_autogen/fast
+
+# Convenience name for target.
+src/CMakeFiles/createTour_autogen_timestamp_deps.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/createTour_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/createTour_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+createTour_autogen_timestamp_deps: src/CMakeFiles/createTour_autogen_timestamp_deps.dir/rule
+.PHONY : createTour_autogen_timestamp_deps
+
+# fast build rule for target.
+createTour_autogen_timestamp_deps/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour_autogen_timestamp_deps.dir\build.make src/CMakeFiles/createTour_autogen_timestamp_deps.dir/build
+.PHONY : createTour_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/createTour_autogen.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/createTour_autogen.dir/rule
+.PHONY : src/CMakeFiles/createTour_autogen.dir/rule
+
+# Convenience name for target.
+createTour_autogen: src/CMakeFiles/createTour_autogen.dir/rule
+.PHONY : createTour_autogen
+
+# fast build rule for target.
+createTour_autogen/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour_autogen.dir\build.make src/CMakeFiles/createTour_autogen.dir/build
+.PHONY : createTour_autogen/fast
+
 createStaff.obj: createStaff.cpp.obj
 .PHONY : createStaff.obj
 
@@ -181,6 +265,30 @@ createStaff.cpp.s:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/createStaff.cpp.s
 .PHONY : createStaff.cpp.s
 
+createStaff_autogen/mocs_compilation.obj: createStaff_autogen/mocs_compilation.cpp.obj
+.PHONY : createStaff_autogen/mocs_compilation.obj
+
+# target to build an object file
+createStaff_autogen/mocs_compilation.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj
+.PHONY : createStaff_autogen/mocs_compilation.cpp.obj
+
+createStaff_autogen/mocs_compilation.i: createStaff_autogen/mocs_compilation.cpp.i
+.PHONY : createStaff_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+createStaff_autogen/mocs_compilation.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.i
+.PHONY : createStaff_autogen/mocs_compilation.cpp.i
+
+createStaff_autogen/mocs_compilation.s: createStaff_autogen/mocs_compilation.cpp.s
+.PHONY : createStaff_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+createStaff_autogen/mocs_compilation.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.s
+.PHONY : createStaff_autogen/mocs_compilation.cpp.s
+
 createTour.obj: createTour.cpp.obj
 .PHONY : createTour.obj
 
@@ -204,6 +312,54 @@ createTour.s: createTour.cpp.s
 createTour.cpp.s:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/createTour.cpp.s
 .PHONY : createTour.cpp.s
+
+createTour_autogen/mocs_compilation.obj: createTour_autogen/mocs_compilation.cpp.obj
+.PHONY : createTour_autogen/mocs_compilation.obj
+
+# target to build an object file
+createTour_autogen/mocs_compilation.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj
+.PHONY : createTour_autogen/mocs_compilation.cpp.obj
+
+createTour_autogen/mocs_compilation.i: createTour_autogen/mocs_compilation.cpp.i
+.PHONY : createTour_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+createTour_autogen/mocs_compilation.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.i
+.PHONY : createTour_autogen/mocs_compilation.cpp.i
+
+createTour_autogen/mocs_compilation.s: createTour_autogen/mocs_compilation.cpp.s
+.PHONY : createTour_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+createTour_autogen/mocs_compilation.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.s
+.PHONY : createTour_autogen/mocs_compilation.cpp.s
+
+e-sportsManager_autogen/mocs_compilation.obj: e-sportsManager_autogen/mocs_compilation.cpp.obj
+.PHONY : e-sportsManager_autogen/mocs_compilation.obj
+
+# target to build an object file
+e-sportsManager_autogen/mocs_compilation.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj
+.PHONY : e-sportsManager_autogen/mocs_compilation.cpp.obj
+
+e-sportsManager_autogen/mocs_compilation.i: e-sportsManager_autogen/mocs_compilation.cpp.i
+.PHONY : e-sportsManager_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+e-sportsManager_autogen/mocs_compilation.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.i
+.PHONY : e-sportsManager_autogen/mocs_compilation.cpp.i
+
+e-sportsManager_autogen/mocs_compilation.s: e-sportsManager_autogen/mocs_compilation.cpp.s
+.PHONY : e-sportsManager_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+e-sportsManager_autogen/mocs_compilation.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.s
+.PHONY : e-sportsManager_autogen/mocs_compilation.cpp.s
 
 test1.obj: test1.cpp.obj
 .PHONY : test1.obj
@@ -237,15 +393,30 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... createStaff_autogen
+	@echo ... createStaff_autogen_timestamp_deps
+	@echo ... createTour_autogen
+	@echo ... createTour_autogen_timestamp_deps
+	@echo ... e-sportsManager_autogen
+	@echo ... e-sportsManager_autogen_timestamp_deps
 	@echo ... createStaff
 	@echo ... createTour
 	@echo ... e-sportsManager
 	@echo ... createStaff.obj
 	@echo ... createStaff.i
 	@echo ... createStaff.s
+	@echo ... createStaff_autogen/mocs_compilation.obj
+	@echo ... createStaff_autogen/mocs_compilation.i
+	@echo ... createStaff_autogen/mocs_compilation.s
 	@echo ... createTour.obj
 	@echo ... createTour.i
 	@echo ... createTour.s
+	@echo ... createTour_autogen/mocs_compilation.obj
+	@echo ... createTour_autogen/mocs_compilation.i
+	@echo ... createTour_autogen/mocs_compilation.s
+	@echo ... e-sportsManager_autogen/mocs_compilation.obj
+	@echo ... e-sportsManager_autogen/mocs_compilation.i
+	@echo ... e-sportsManager_autogen/mocs_compilation.s
 	@echo ... test1.obj
 	@echo ... test1.i
 	@echo ... test1.s

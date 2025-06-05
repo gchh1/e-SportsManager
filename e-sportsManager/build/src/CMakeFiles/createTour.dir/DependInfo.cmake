@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/createTour.cpp" "src/CMakeFiles/createTour.dir/createTour.cpp.obj" "gcc" "src/CMakeFiles/createTour.dir/createTour.cpp.obj.d"
+  "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/createTour_autogen/mocs_compilation.cpp" "src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj" "gcc" "src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -71,11 +71,26 @@ include src/dataHandlers/CMakeFiles/dataHandlers.dir/flags.make
 src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen:
 .PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen
 
+src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/flags.make
+src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/includes_CXX.rsp
+src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj: src/dataHandlers/dataHandlers_autogen/mocs_compilation.cpp
+src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\dataHandlers.dir\dataHandlers_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\dataHandlers.dir\dataHandlers_autogen\mocs_compilation.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers\dataHandlers_autogen\mocs_compilation.cpp
+
+src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.i"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers\dataHandlers_autogen\mocs_compilation.cpp > CMakeFiles\dataHandlers.dir\dataHandlers_autogen\mocs_compilation.cpp.i
+
+src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.s"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers\dataHandlers_autogen\mocs_compilation.cpp -o CMakeFiles\dataHandlers.dir\dataHandlers_autogen\mocs_compilation.cpp.s
+
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/flags.make
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/includes_CXX.rsp
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryClubDataRepo.cpp
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj -MF CMakeFiles\dataHandlers.dir\BinaryClubDataRepo.cpp.obj.d -o CMakeFiles\dataHandlers.dir\BinaryClubDataRepo.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\dataHandlers\BinaryClubDataRepo.cpp
 
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.i: cmake_force
@@ -90,7 +105,7 @@ src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj: src/da
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/includes_CXX.rsp
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryStaffDataRepo.cpp
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj -MF CMakeFiles\dataHandlers.dir\BinaryStaffDataRepo.cpp.obj.d -o CMakeFiles\dataHandlers.dir\BinaryStaffDataRepo.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\dataHandlers\BinaryStaffDataRepo.cpp
 
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.i: cmake_force
@@ -105,7 +120,7 @@ src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj: s
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/includes_CXX.rsp
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryTournamentDataRepo.cpp
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj: src/dataHandlers/CMakeFiles/dataHandlers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj -MF CMakeFiles\dataHandlers.dir\BinaryTournamentDataRepo.cpp.obj.d -o CMakeFiles\dataHandlers.dir\BinaryTournamentDataRepo.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\dataHandlers\BinaryTournamentDataRepo.cpp
 
 src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.i: cmake_force
@@ -118,6 +133,7 @@ src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.s: cma
 
 # Object files for target dataHandlers
 dataHandlers_OBJECTS = \
+"CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj" \
 "CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj" \
 "CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj"
@@ -125,12 +141,13 @@ dataHandlers_OBJECTS = \
 # External object files for target dataHandlers
 dataHandlers_EXTERNAL_OBJECTS =
 
+src/dataHandlers/libdataHandlers.a: src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj
 src/dataHandlers/libdataHandlers.a: src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj
 src/dataHandlers/libdataHandlers.a: src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryStaffDataRepo.cpp.obj
 src/dataHandlers/libdataHandlers.a: src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryTournamentDataRepo.cpp.obj
 src/dataHandlers/libdataHandlers.a: src/dataHandlers/CMakeFiles/dataHandlers.dir/build.make
 src/dataHandlers/libdataHandlers.a: src/dataHandlers/CMakeFiles/dataHandlers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libdataHandlers.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libdataHandlers.a"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers && $(CMAKE_COMMAND) -P CMakeFiles\dataHandlers.dir\cmake_clean_target.cmake
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\dataHandlers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\dataHandlers.dir\link.txt --verbose=$(VERBOSE)
 

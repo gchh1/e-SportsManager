@@ -1,0 +1,6 @@
+dataHandlers_autogen/timestamp: \
+	D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryClubDataRepo.cpp \
+	D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryStaffDataRepo.cpp \
+	D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryTournamentDataRepo.cpp \
+	D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/CMakeLists.txt \
+	C:/Program\ Files/CMake/bin/cmake.exe
