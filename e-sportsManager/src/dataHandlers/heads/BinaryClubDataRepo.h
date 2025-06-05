@@ -22,21 +22,6 @@ class BinaryClubDataRepo : public IDataRepo {
         // 构造函数
         BinaryClubDataRepo() = default;
         
-        // 防止拷贝
-        BinaryClubDataRepo(const BinaryClubDataRepo&) = delete;
-        BinaryClubDataRepo& operator=(const BinaryClubDataRepo&) = delete;
-        
-        // 移动语义
-        BinaryClubDataRepo(BinaryClubDataRepo&& other) noexcept 
-            : repo(std::move(other.repo)), filename(std::move(other.filename)) {}
-        
-        BinaryClubDataRepo& operator=(BinaryClubDataRepo&& other) noexcept {
-            if (this != &other) {
-                repo = std::move(other.repo);
-                filename = std::move(other.filename);
-            }
-            return *this;
-        }
 
         void load() override;
 

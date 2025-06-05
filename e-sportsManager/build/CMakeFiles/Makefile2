@@ -83,6 +83,7 @@ clean: src/clean
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/e-sportsManager.dir/all
 src/all: src/CMakeFiles/createStaff.dir/all
+src/all: src/CMakeFiles/createTour.dir/all
 src/all: src/models/all
 src/all: src/dataHandlers/all
 src/all: src/controllers/all
@@ -92,6 +93,7 @@ src/all: src/views/all
 # Recursive "codegen" directory target.
 src/codegen: src/CMakeFiles/e-sportsManager.dir/codegen
 src/codegen: src/CMakeFiles/createStaff.dir/codegen
+src/codegen: src/CMakeFiles/createTour.dir/codegen
 src/codegen: src/models/codegen
 src/codegen: src/dataHandlers/codegen
 src/codegen: src/controllers/codegen
@@ -108,6 +110,7 @@ src/preinstall: src/views/preinstall
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/e-sportsManager.dir/clean
 src/clean: src/CMakeFiles/createStaff.dir/clean
+src/clean: src/CMakeFiles/createTour.dir/clean
 src/clean: src/models/clean
 src/clean: src/dataHandlers/clean
 src/clean: src/controllers/clean
@@ -200,7 +203,7 @@ src/CMakeFiles/e-sportsManager.dir/all: src/controllers/CMakeFiles/controllers.d
 src/CMakeFiles/e-sportsManager.dir/all: src/views/CMakeFiles/views.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=11,12 "Built target e-sportsManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=13,14 "Built target e-sportsManager"
 .PHONY : src/CMakeFiles/e-sportsManager.dir/all
 
 # Build rule for subdir invocation for target.
@@ -217,7 +220,7 @@ e-sportsManager: src/CMakeFiles/e-sportsManager.dir/rule
 # codegen rule for target.
 src/CMakeFiles/e-sportsManager.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\e-sportsManager.dir\build.make src/CMakeFiles/e-sportsManager.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=11,12 "Finished codegen for target e-sportsManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=13,14 "Finished codegen for target e-sportsManager"
 .PHONY : src/CMakeFiles/e-sportsManager.dir/codegen
 
 # clean rule for target.
@@ -259,13 +262,46 @@ src/CMakeFiles/createStaff.dir/clean:
 .PHONY : src/CMakeFiles/createStaff.dir/clean
 
 #=============================================================================
+# Target rules for target src/CMakeFiles/createTour.dir
+
+# All Build rule for target.
+src/CMakeFiles/createTour.dir/all: src/models/CMakeFiles/models.dir/all
+src/CMakeFiles/createTour.dir/all: src/dataHandlers/CMakeFiles/dataHandlers.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=7,8 "Built target createTour"
+.PHONY : src/CMakeFiles/createTour.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/createTour.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/createTour.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/createTour.dir/rule
+
+# Convenience name for target.
+createTour: src/CMakeFiles/createTour.dir/rule
+.PHONY : createTour
+
+# codegen rule for target.
+src/CMakeFiles/createTour.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=7,8 "Finished codegen for target createTour"
+.PHONY : src/CMakeFiles/createTour.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/createTour.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/clean
+.PHONY : src/CMakeFiles/createTour.dir/clean
+
+#=============================================================================
 # Target rules for target src/models/CMakeFiles/models.dir
 
 # All Build rule for target.
 src/models/CMakeFiles/models.dir/all:
 	$(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=13,14,15,16,17 "Built target models"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=15,16,17,18,19 "Built target models"
 .PHONY : src/models/CMakeFiles/models.dir/all
 
 # Build rule for subdir invocation for target.
@@ -282,7 +318,7 @@ models: src/models/CMakeFiles/models.dir/rule
 # codegen rule for target.
 src/models/CMakeFiles/models.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=13,14,15,16,17 "Finished codegen for target models"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=15,16,17,18,19 "Finished codegen for target models"
 .PHONY : src/models/CMakeFiles/models.dir/codegen
 
 # clean rule for target.
@@ -297,7 +333,7 @@ src/models/CMakeFiles/models.dir/clean:
 src/dataHandlers/CMakeFiles/dataHandlers.dir/all: src/models/CMakeFiles/models.dir/all
 	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=7,8,9,10 "Built target dataHandlers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=9,10,11,12 "Built target dataHandlers"
 .PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -314,7 +350,7 @@ dataHandlers: src/dataHandlers/CMakeFiles/dataHandlers.dir/rule
 # codegen rule for target.
 src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src\dataHandlers\CMakeFiles\dataHandlers.dir\build.make src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=7,8,9,10 "Finished codegen for target dataHandlers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=9,10,11,12 "Finished codegen for target dataHandlers"
 .PHONY : src/dataHandlers/CMakeFiles/dataHandlers.dir/codegen
 
 # clean rule for target.
@@ -364,7 +400,7 @@ src/views/CMakeFiles/views.dir/all: src/dataHandlers/CMakeFiles/dataHandlers.dir
 src/views/CMakeFiles/views.dir/all: src/controllers/CMakeFiles/controllers.dir/all
 	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=18,19,20,21,22,23,24,25 "Built target views"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=20,21,22,23,24,25,26,27 "Built target views"
 .PHONY : src/views/CMakeFiles/views.dir/all
 
 # Build rule for subdir invocation for target.
@@ -381,7 +417,7 @@ views: src/views/CMakeFiles/views.dir/rule
 # codegen rule for target.
 src/views/CMakeFiles/views.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=18,19,20,21,22,23,24,25 "Finished codegen for target views"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=20,21,22,23,24,25,26,27 "Finished codegen for target views"
 .PHONY : src/views/CMakeFiles/views.dir/codegen
 
 # clean rule for target.

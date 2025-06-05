@@ -12,6 +12,12 @@
   "output": "src/CMakeFiles/createStaff.dir/createStaff.cpp.obj"
 },
 {
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/createTour.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\createTour.dir\\createTour.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\createTour.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/createTour.cpp",
+  "output": "src/CMakeFiles/createTour.dir/createTour.cpp.obj"
+},
+{
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\models.dir\\Club.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Club.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Club.cpp",

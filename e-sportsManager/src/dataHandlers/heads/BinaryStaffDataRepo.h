@@ -20,21 +20,6 @@ class BinaryStaffDataRepo : public IDataRepo {
         // 构造函数
         BinaryStaffDataRepo() = default;
         
-        // 防止拷贝
-        BinaryStaffDataRepo(const BinaryStaffDataRepo&) = delete;
-        BinaryStaffDataRepo& operator=(const BinaryStaffDataRepo&) = delete;
-        
-        // 移动语义
-        BinaryStaffDataRepo(BinaryStaffDataRepo&& other) noexcept 
-            : repo(std::move(other.repo)), filename(std::move(other.filename)) {}
-        
-        BinaryStaffDataRepo& operator=(BinaryStaffDataRepo&& other) noexcept {
-            if (this != &other) {
-                repo = std::move(other.repo);
-                filename = std::move(other.filename);
-            }
-            return *this;
-        }
 
         void load() override; 
         
@@ -60,5 +45,5 @@ class BinaryStaffDataRepo : public IDataRepo {
         Staff * getStaff(int ID) const;
 
         // 删除选手
-        void removeStaff(int index);
+        bool removeStaff(int index);
 };

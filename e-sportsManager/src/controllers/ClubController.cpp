@@ -88,7 +88,7 @@ void ClubController::printClubInfo() {
     auto club = getCurrentClub();
     std::cout << club->getFund() << "\t" 
               << club->getPoints() << "\t\n"
-              << club->getName();
+              << club->getName() << "\n";
 
     std::cout << "--成员列表--\n"
               << "职务\t" << "名字\t" << "\t属性\n";

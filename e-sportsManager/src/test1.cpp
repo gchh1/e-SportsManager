@@ -45,7 +45,6 @@ int main() {
 
 
     // 视图
-    std::cout << "Initializing views..." << std::endl;
     std::unordered_map<ViewState, std::unique_ptr<IView>> views;
 
         views[ViewState::WelcomeView] = std::make_unique<WelcomeView>(clubCtrl);

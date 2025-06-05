@@ -38,3 +38,12 @@ void BinaryTournamentDataRepo::save() {
         }
     }
 }
+
+
+bool BinaryTournamentDataRepo::removeTournament(int index) {
+    if (index < 0 || index >= repo.size()) {
+        return false;
+    }
+    repo.erase(repo.begin() + index);
+    return true;
+}

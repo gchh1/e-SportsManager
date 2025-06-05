@@ -143,6 +143,20 @@ createStaff/fast:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/build
 .PHONY : createStaff/fast
 
+# Convenience name for target.
+src/CMakeFiles/createTour.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/createTour.dir/rule
+.PHONY : src/CMakeFiles/createTour.dir/rule
+
+# Convenience name for target.
+createTour: src/CMakeFiles/createTour.dir/rule
+.PHONY : createTour
+
+# fast build rule for target.
+createTour/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/build
+.PHONY : createTour/fast
+
 createStaff.obj: createStaff.cpp.obj
 .PHONY : createStaff.obj
 
@@ -166,6 +180,30 @@ createStaff.s: createStaff.cpp.s
 createStaff.cpp.s:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/createStaff.cpp.s
 .PHONY : createStaff.cpp.s
+
+createTour.obj: createTour.cpp.obj
+.PHONY : createTour.obj
+
+# target to build an object file
+createTour.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/createTour.cpp.obj
+.PHONY : createTour.cpp.obj
+
+createTour.i: createTour.cpp.i
+.PHONY : createTour.i
+
+# target to preprocess a source file
+createTour.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/createTour.cpp.i
+.PHONY : createTour.cpp.i
+
+createTour.s: createTour.cpp.s
+.PHONY : createTour.s
+
+# target to generate assembly for a file
+createTour.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/createTour.cpp.s
+.PHONY : createTour.cpp.s
 
 test1.obj: test1.cpp.obj
 .PHONY : test1.obj
@@ -200,10 +238,14 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... createStaff
+	@echo ... createTour
 	@echo ... e-sportsManager
 	@echo ... createStaff.obj
 	@echo ... createStaff.i
 	@echo ... createStaff.s
+	@echo ... createTour.obj
+	@echo ... createTour.i
+	@echo ... createTour.s
 	@echo ... test1.obj
 	@echo ... test1.i
 	@echo ... test1.s

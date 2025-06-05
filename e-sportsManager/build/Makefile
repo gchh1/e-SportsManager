@@ -142,6 +142,19 @@ createStaff/fast:
 .PHONY : createStaff/fast
 
 #=============================================================================
+# Target rules for targets named createTour
+
+# Build rule for target.
+createTour: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 createTour
+.PHONY : createTour
+
+# fast build rule for target.
+createTour/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/build
+.PHONY : createTour/fast
+
+#=============================================================================
 # Target rules for targets named models
 
 # Build rule for target.
@@ -203,6 +216,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... controllers
 	@echo ... createStaff
+	@echo ... createTour
 	@echo ... dataHandlers
 	@echo ... e-sportsManager
 	@echo ... models
