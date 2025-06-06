@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/controllers/libcontrollers.a"
+			"path" : "src/views/libviews.a"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,7 @@
 		],
 		"files" : 
 		[
-			"src/controllers/CMakeLists.txt"
+			"src/views/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -63,20 +63,20 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 0,
-					"path" : "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers/controllers_autogen/include"
-				},
-				{
 					"backtrace" : 3,
 					"path" : "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads"
+					"path" : "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/heads"
 				},
 				{
 					"backtrace" : 3,
 					"path" : "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/heads"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads"
 				},
 				{
 					"backtrace" : 3,
@@ -97,7 +97,10 @@
 				0,
 				1,
 				2,
-				3
+				3,
+				4,
+				5,
+				6
 			]
 		}
 	],
@@ -105,27 +108,24 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "models::@defad1a87623d8bf2693"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "dataHandlers::@184710fed461df729bdb"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "models::@defad1a87623d8bf2693"
-		},
-		{
-			"backtrace" : 0,
-			"id" : "controllers_autogen::@0261cd8f181aa2ca38e1"
-		},
-		{
-			"id" : "controllers_autogen_timestamp_deps::@0261cd8f181aa2ca38e1"
+			"id" : "controllers::@0261cd8f181aa2ca38e1"
 		}
 	],
-	"id" : "controllers::@0261cd8f181aa2ca38e1",
-	"name" : "controllers",
-	"nameOnDisk" : "libcontrollers.a",
+	"id" : "views::@f0b93e8365e7aa7d892e",
+	"name" : "views",
+	"nameOnDisk" : "libviews.a",
 	"paths" : 
 	{
-		"build" : "src/controllers",
-		"source" : "src/controllers"
+		"build" : "src/views",
+		"source" : "src/views"
 	},
 	"sourceGroups" : 
 	[
@@ -136,62 +136,56 @@
 				0,
 				1,
 				2,
-				3
-			]
-		},
-		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
-				4
-			]
-		},
-		{
-			"name" : "CMake Rules",
-			"sourceIndexes" : 
-			[
-				5
+				3,
+				4,
+				5,
+				6
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 0,
+			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"isGenerated" : true,
-			"path" : "build/src/controllers/controllers_autogen/mocs_compilation.cpp",
+			"path" : "src/views/ClubInfoView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/controllers/ClubController.cpp",
+			"path" : "src/views/ClubLogView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/controllers/MarketController.cpp",
+			"path" : "src/views/MainMenuView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/controllers/TournamentController.cpp",
+			"path" : "src/views/MarketView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/src/controllers/controllers_autogen/timestamp",
-			"sourceGroupIndex" : 1
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/views/RankView.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/src/controllers/controllers_autogen/timestamp.rule",
-			"sourceGroupIndex" : 2
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/views/TournamentView.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/views/WelcomeView.cpp",
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "STATIC_LIBRARY"

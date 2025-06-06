@@ -17,7 +17,7 @@ void MainMenuView::initCtrl() {
 ViewState MainMenuView::run() {
     //system("cls");
 
-    std::cout << "==主菜单==\n"
+    std::cout << "\n========主菜单========\n"
               << "1. 俱乐部信息\n"
               << "2. 市场\n"
               << "3. 赛事\n"

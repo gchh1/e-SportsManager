@@ -14,7 +14,7 @@ void WelcomeView::initCtrl() {
 ViewState WelcomeView::run() {
     //system("cls");
 
-    std::cout << "===欢迎界面===\n"
+    std::cout << "========欢迎界面========\n"
               << "1. 创建俱乐部\n"
               << "2. 载入俱乐部\n"
               << "3. 删除俱乐部\n"

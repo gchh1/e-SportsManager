@@ -10,12 +10,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
-# 设置Qt
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
+# # 设置Qt
+# find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-set(CMAKE_AUTOUIC ON)
+# set(CMAKE_AUTOMOC ON)
+# set(CMAKE_AUTORCC ON)
+# set(CMAKE_AUTOUIC ON)
 
 
 # 设置源文件目录

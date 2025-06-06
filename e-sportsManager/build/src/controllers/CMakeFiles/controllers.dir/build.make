@@ -71,26 +71,11 @@ include src/controllers/CMakeFiles/controllers.dir/flags.make
 src/controllers/CMakeFiles/controllers.dir/codegen:
 .PHONY : src/controllers/CMakeFiles/controllers.dir/codegen
 
-src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj: src/controllers/CMakeFiles/controllers.dir/flags.make
-src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj: src/controllers/CMakeFiles/controllers.dir/includes_CXX.rsp
-src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj: src/controllers/controllers_autogen/mocs_compilation.cpp
-src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj: src/controllers/CMakeFiles/controllers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj"
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\controllers.dir\controllers_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\controllers.dir\controllers_autogen\mocs_compilation.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers\controllers_autogen\mocs_compilation.cpp
-
-src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.i"
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers\controllers_autogen\mocs_compilation.cpp > CMakeFiles\controllers.dir\controllers_autogen\mocs_compilation.cpp.i
-
-src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.s"
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers\controllers_autogen\mocs_compilation.cpp -o CMakeFiles\controllers.dir\controllers_autogen\mocs_compilation.cpp.s
-
 src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj: src/controllers/CMakeFiles/controllers.dir/flags.make
 src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj: src/controllers/CMakeFiles/controllers.dir/includes_CXX.rsp
 src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/ClubController.cpp
 src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj: src/controllers/CMakeFiles/controllers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj -MF CMakeFiles\controllers.dir\ClubController.cpp.obj.d -o CMakeFiles\controllers.dir\ClubController.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\controllers\ClubController.cpp
 
 src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.i: cmake_force
@@ -105,7 +90,7 @@ src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj: src/control
 src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj: src/controllers/CMakeFiles/controllers.dir/includes_CXX.rsp
 src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/MarketController.cpp
 src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj: src/controllers/CMakeFiles/controllers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj -MF CMakeFiles\controllers.dir\MarketController.cpp.obj.d -o CMakeFiles\controllers.dir\MarketController.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\controllers\MarketController.cpp
 
 src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.i: cmake_force
@@ -120,7 +105,7 @@ src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj: src/con
 src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj: src/controllers/CMakeFiles/controllers.dir/includes_CXX.rsp
 src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/TournamentController.cpp
 src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj: src/controllers/CMakeFiles/controllers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj -MF CMakeFiles\controllers.dir\TournamentController.cpp.obj.d -o CMakeFiles\controllers.dir\TournamentController.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\controllers\TournamentController.cpp
 
 src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.i: cmake_force
@@ -133,7 +118,6 @@ src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.s: cmake_for
 
 # Object files for target controllers
 controllers_OBJECTS = \
-"CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/controllers.dir/ClubController.cpp.obj" \
 "CMakeFiles/controllers.dir/MarketController.cpp.obj" \
 "CMakeFiles/controllers.dir/TournamentController.cpp.obj"
@@ -141,13 +125,12 @@ controllers_OBJECTS = \
 # External object files for target controllers
 controllers_EXTERNAL_OBJECTS =
 
-src/controllers/libcontrollers.a: src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj
 src/controllers/libcontrollers.a: src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj
 src/controllers/libcontrollers.a: src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj
 src/controllers/libcontrollers.a: src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj
 src/controllers/libcontrollers.a: src/controllers/CMakeFiles/controllers.dir/build.make
 src/controllers/libcontrollers.a: src/controllers/CMakeFiles/controllers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libcontrollers.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcontrollers.a"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers && $(CMAKE_COMMAND) -P CMakeFiles\controllers.dir\cmake_clean_target.cmake
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\controllers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\controllers.dir\link.txt --verbose=$(VERBOSE)
 

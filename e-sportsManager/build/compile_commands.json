@@ -1,21 +1,9 @@
 [
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/e-sportsManager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\e-sportsManager.dir\\e-sportsManager_autogen\\mocs_compilation.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\build\\src\\e-sportsManager_autogen\\mocs_compilation.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/e-sportsManager_autogen/mocs_compilation.cpp",
-  "output": "src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/e-sportsManager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\e-sportsManager.dir\\test1.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\test1.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/test1.cpp",
   "output": "src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/createStaff.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\createStaff.dir\\createStaff_autogen\\mocs_compilation.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\build\\src\\createStaff_autogen\\mocs_compilation.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/createStaff_autogen/mocs_compilation.cpp",
-  "output": "src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
@@ -25,21 +13,9 @@
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/createTour.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\createTour.dir\\createTour_autogen\\mocs_compilation.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\build\\src\\createTour_autogen\\mocs_compilation.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/createTour_autogen/mocs_compilation.cpp",
-  "output": "src/CMakeFiles/createTour.dir/createTour_autogen/mocs_compilation.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/createTour.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\createTour.dir\\createTour.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\createTour.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/createTour.cpp",
   "output": "src/CMakeFiles/createTour.dir/createTour.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\models.dir\\models_autogen\\mocs_compilation.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\build\\src\\models\\models_autogen\\mocs_compilation.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models/models_autogen/mocs_compilation.cpp",
-  "output": "src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
@@ -67,12 +43,6 @@
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/dataHandlers",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/dataHandlers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\dataHandlers.dir\\dataHandlers_autogen\\mocs_compilation.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\build\\src\\dataHandlers\\dataHandlers_autogen\\mocs_compilation.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/dataHandlers/dataHandlers_autogen/mocs_compilation.cpp",
-  "output": "src/dataHandlers/CMakeFiles/dataHandlers.dir/dataHandlers_autogen/mocs_compilation.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/dataHandlers",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/dataHandlers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\dataHandlers.dir\\BinaryClubDataRepo.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\dataHandlers\\BinaryClubDataRepo.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/BinaryClubDataRepo.cpp",
   "output": "src/dataHandlers/CMakeFiles/dataHandlers.dir/BinaryClubDataRepo.cpp.obj"
@@ -91,12 +61,6 @@
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/controllers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\controllers.dir\\controllers_autogen\\mocs_compilation.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\build\\src\\controllers\\controllers_autogen\\mocs_compilation.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers/controllers_autogen/mocs_compilation.cpp",
-  "output": "src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/controllers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\controllers.dir\\ClubController.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\controllers\\ClubController.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/ClubController.cpp",
   "output": "src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj"
@@ -112,12 +76,6 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/controllers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\controllers.dir\\TournamentController.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\controllers\\TournamentController.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/TournamentController.cpp",
   "output": "src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\views_autogen\\mocs_compilation.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\build\\src\\views\\views_autogen\\mocs_compilation.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views/views_autogen/mocs_compilation.cpp",
-  "output": "src/views/CMakeFiles/views.dir/views_autogen/mocs_compilation.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",

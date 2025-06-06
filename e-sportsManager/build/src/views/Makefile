@@ -129,34 +129,6 @@ views/fast:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/build
 .PHONY : views/fast
 
-# Convenience name for target.
-src/views/CMakeFiles/views_autogen_timestamp_deps.dir/rule:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/views/CMakeFiles/views_autogen_timestamp_deps.dir/rule
-.PHONY : src/views/CMakeFiles/views_autogen_timestamp_deps.dir/rule
-
-# Convenience name for target.
-views_autogen_timestamp_deps: src/views/CMakeFiles/views_autogen_timestamp_deps.dir/rule
-.PHONY : views_autogen_timestamp_deps
-
-# fast build rule for target.
-views_autogen_timestamp_deps/fast:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views_autogen_timestamp_deps.dir\build.make src/views/CMakeFiles/views_autogen_timestamp_deps.dir/build
-.PHONY : views_autogen_timestamp_deps/fast
-
-# Convenience name for target.
-src/views/CMakeFiles/views_autogen.dir/rule:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/views/CMakeFiles/views_autogen.dir/rule
-.PHONY : src/views/CMakeFiles/views_autogen.dir/rule
-
-# Convenience name for target.
-views_autogen: src/views/CMakeFiles/views_autogen.dir/rule
-.PHONY : views_autogen
-
-# fast build rule for target.
-views_autogen/fast:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views_autogen.dir\build.make src/views/CMakeFiles/views_autogen.dir/build
-.PHONY : views_autogen/fast
-
 ClubInfoView.obj: ClubInfoView.cpp.obj
 .PHONY : ClubInfoView.obj
 
@@ -325,30 +297,6 @@ WelcomeView.cpp.s:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/WelcomeView.cpp.s
 .PHONY : WelcomeView.cpp.s
 
-views_autogen/mocs_compilation.obj: views_autogen/mocs_compilation.cpp.obj
-.PHONY : views_autogen/mocs_compilation.obj
-
-# target to build an object file
-views_autogen/mocs_compilation.cpp.obj:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/views_autogen/mocs_compilation.cpp.obj
-.PHONY : views_autogen/mocs_compilation.cpp.obj
-
-views_autogen/mocs_compilation.i: views_autogen/mocs_compilation.cpp.i
-.PHONY : views_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-views_autogen/mocs_compilation.cpp.i:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/views_autogen/mocs_compilation.cpp.i
-.PHONY : views_autogen/mocs_compilation.cpp.i
-
-views_autogen/mocs_compilation.s: views_autogen/mocs_compilation.cpp.s
-.PHONY : views_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-views_autogen/mocs_compilation.cpp.s:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/views_autogen/mocs_compilation.cpp.s
-.PHONY : views_autogen/mocs_compilation.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -357,8 +305,6 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... views_autogen
-	@echo ... views_autogen_timestamp_deps
 	@echo ... views
 	@echo ... ClubInfoView.obj
 	@echo ... ClubInfoView.i
@@ -381,9 +327,6 @@ help:
 	@echo ... WelcomeView.obj
 	@echo ... WelcomeView.i
 	@echo ... WelcomeView.s
-	@echo ... views_autogen/mocs_compilation.obj
-	@echo ... views_autogen/mocs_compilation.i
-	@echo ... views_autogen/mocs_compilation.s
 .PHONY : help
 
 

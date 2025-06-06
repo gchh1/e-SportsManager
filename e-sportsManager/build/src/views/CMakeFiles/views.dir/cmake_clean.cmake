@@ -13,11 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/views.dir/TournamentView.cpp.obj.d"
   "CMakeFiles/views.dir/WelcomeView.cpp.obj"
   "CMakeFiles/views.dir/WelcomeView.cpp.obj.d"
-  "CMakeFiles/views.dir/views_autogen/mocs_compilation.cpp.obj"
-  "CMakeFiles/views.dir/views_autogen/mocs_compilation.cpp.obj.d"
-  "CMakeFiles/views_autogen.dir/AutogenUsed.txt"
-  "CMakeFiles/views_autogen.dir/ParseCache.txt"
-  "views_autogen"
   "libviews.a"
   "libviews.pdb"
 )

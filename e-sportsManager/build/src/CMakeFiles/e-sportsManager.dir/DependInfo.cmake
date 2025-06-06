@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/e-sportsManager_autogen/mocs_compilation.cpp" "src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj" "gcc" "src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj.d"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/test1.cpp" "src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj" "gcc" "src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj.d"
   )
 

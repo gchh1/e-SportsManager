@@ -6,7 +6,7 @@
 
 // 打印赛事列表
 void TournamentController::printTournament() {
-    std::cout << "==赛事列表==\n";
+    std::cout << "========赛事列表========\n";
 
     int index = 1;
     
@@ -22,7 +22,7 @@ void TournamentController::selectTournament() {
 
     const auto& tours = tournament_repo->getRepo();
 
-    std::cout << "==选择赛事==\n";
+    std::cout << "========选择赛事========\n";
 
     // 获取有效输入
     std::cin >> choice;
@@ -138,7 +138,7 @@ void TournamentController::simulateTournament() {
 
 // 打印赛事结果
 void TournamentController::printTournamentResult() {
-    std::cout << "==赛事结果==\n";
+    std::cout << "========赛事结果========\n";
 
     int rank = 1;
     for (const auto & item : game_result) {

@@ -14,7 +14,7 @@ void ClubLogView::initCtrl() {
 ViewState ClubLogView::run() {
     //system("cls");
 
-    std::cout << "==俱乐部动态==\n";
+    std::cout << "\n========俱乐部动态========\n";
 
     controller->printClubLog();
 

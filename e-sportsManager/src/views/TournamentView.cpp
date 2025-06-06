@@ -14,7 +14,7 @@ void TournamentView::initCtrl() {
 ViewState TournamentView::run() {
     //system("cls");
 
-    std::cout << "==赛事==\n";
+    std::cout << "\n========赛事========\n";
 
     if (!controller->isRepoEmpty()) {
         controller->printTournament();

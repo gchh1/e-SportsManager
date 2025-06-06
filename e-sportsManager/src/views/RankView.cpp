@@ -14,7 +14,7 @@ void RankView::initCtrl() {
 ViewState RankView::run() {
     //system("cls");
 
-    std::cout << "==排名==\n";
+    std::cout << "\n========排名========\n";
 
     controller->printRank();
 

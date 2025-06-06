@@ -14,7 +14,7 @@ void MarketView::initCtrl() {
 ViewState MarketView::run() {
     //system("cls");
 
-    std::cout << "==市场==\n";
+    std::cout << "\n========市场========\n";
 
     if (!controller->isRepoEmpty()) {
         controller->printMarket();

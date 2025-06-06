@@ -71,26 +71,11 @@ include src/CMakeFiles/e-sportsManager.dir/flags.make
 src/CMakeFiles/e-sportsManager.dir/codegen:
 .PHONY : src/CMakeFiles/e-sportsManager.dir/codegen
 
-src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/e-sportsManager.dir/flags.make
-src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/e-sportsManager.dir/includes_CXX.rsp
-src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj: src/e-sportsManager_autogen/mocs_compilation.cpp
-src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/e-sportsManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj"
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\e-sportsManager.dir\e-sportsManager_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\e-sportsManager.dir\e-sportsManager_autogen\mocs_compilation.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\e-sportsManager_autogen\mocs_compilation.cpp
-
-src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.i"
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\e-sportsManager_autogen\mocs_compilation.cpp > CMakeFiles\e-sportsManager.dir\e-sportsManager_autogen\mocs_compilation.cpp.i
-
-src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.s"
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\e-sportsManager_autogen\mocs_compilation.cpp -o CMakeFiles\e-sportsManager.dir\e-sportsManager_autogen\mocs_compilation.cpp.s
-
 src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj: src/CMakeFiles/e-sportsManager.dir/flags.make
 src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj: src/CMakeFiles/e-sportsManager.dir/includes_CXX.rsp
 src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/test1.cpp
 src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj: src/CMakeFiles/e-sportsManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj -MF CMakeFiles\e-sportsManager.dir\test1.cpp.obj.d -o CMakeFiles\e-sportsManager.dir\test1.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\test1.cpp
 
 src/CMakeFiles/e-sportsManager.dir/test1.cpp.i: cmake_force
@@ -103,13 +88,11 @@ src/CMakeFiles/e-sportsManager.dir/test1.cpp.s: cmake_force
 
 # Object files for target e-sportsManager
 e__sportsManager_OBJECTS = \
-"CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/e-sportsManager.dir/test1.cpp.obj"
 
 # External object files for target e-sportsManager
 e__sportsManager_EXTERNAL_OBJECTS =
 
-D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/CMakeFiles/e-sportsManager.dir/e-sportsManager_autogen/mocs_compilation.cpp.obj
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/CMakeFiles/e-sportsManager.dir/build.make
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/models/libmodels.a
@@ -122,7 +105,7 @@ D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/models/l
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/CMakeFiles/e-sportsManager.dir/linkLibs.rsp
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/CMakeFiles/e-sportsManager.dir/objects1.rsp
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/CMakeFiles/e-sportsManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\e-sportsManager.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\e-sportsManager.exe"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\e-sportsManager.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

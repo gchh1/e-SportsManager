@@ -2,18 +2,28 @@
  * 市场控制器方法实现 *
  ********************/
 
+#include <iomanip>
 #include "MarketController.h"
 
 // 打印市场选手
 void MarketController::printMarket() {
+    std::cout << std::left << std::setw(5) << "编号"
+              << std::string(5, ' ') << "名字"
+              << std::string(10, ' ') << "能力"
+              << std::string(10, ' ') << "价格" << std::endl;
+    std::cout << std::string(38, '-') << std::endl; 
     int index = 1;
-    
-    for (const auto & item : market_staff) {
+    for (const auto& item : market_staff) {
         auto staff = staff_repo->getStaff(item);
-        std::cout << index << ". " << staff->getName() << "\t" << staff->getPower() << "\t" << staff->getPrice() << std::endl;
+        if (staff) { // Null check
+            std::cout << std::left << std::setw(5) << (std::to_string(index) + ".")
+                      << std::string(5, ' ') << staff->getName()
+                      << std::string(15 - staff->getName().length(), ' ') << staff->getPower()
+                      << std::string(10, ' ') << staff->getPrice() << std::endl;
+        }
         index++;
     }
-
+    std::cout << std::endl;
 }
 
 
@@ -41,14 +51,25 @@ void MarketController::setSellStaff() {
 
 // 打印俱乐部出售选手
 void MarketController::printSellStaff() {
-    std::cout << "==俱乐部选手==\n";
+    std::cout << "\n========俱乐部选手========\n";
+    std::cout << std::left << std::setw(5) << "编号"
+              << std::string(5, ' ') << "名字"
+              << std::string(10, ' ') << "能力"
+              << std::string(10, ' ') << "价格" << std::endl;
+    std::cout << std::string(38, '-') << std::endl;
 
     int index = 1;
-    for (const auto & item : sell_staff) {
+    for (const auto& item : sell_staff) {
         auto staff = staff_repo->getStaff(item);
-        std::cout << index << ". " << staff->getName() << "\t" << staff->getPower() << "\t" << staff->getPrice() << std::endl;
+        if (staff) { // Null check
+            std::cout << std::left << std::setw(5) << (std::to_string(index) + ".")
+                      << std::string(5, ' ') << staff->getName()
+                      << std::string(15 - staff->getName().length(), ' ') << staff->getPower()
+                      << std::string(10, ' ') << staff->getPrice() << std::endl;
+        }
         index++;
     }
+    std::cout << std::endl;
 }
 
 

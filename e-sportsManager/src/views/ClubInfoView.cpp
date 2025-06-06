@@ -14,7 +14,7 @@ void ClubInfoView::initCtrl() {
 ViewState ClubInfoView::run() {
     //system("cls");
     
-    std::cout << "==俱乐部信息==\n";
+    std::cout << "\n========俱乐部信息========\n";
 
     controller->printClubInfo();
 

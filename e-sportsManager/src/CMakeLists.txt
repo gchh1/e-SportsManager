@@ -14,6 +14,9 @@ PRIVATE
     dataHandlers
     controllers
     views
+#     Qt6::Core
+#     Qt6::Gui
+#     Qt6::Widgets
 )
 
 target_link_libraries(createTour

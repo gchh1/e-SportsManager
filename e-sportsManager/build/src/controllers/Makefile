@@ -129,34 +129,6 @@ controllers/fast:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers.dir\build.make src/controllers/CMakeFiles/controllers.dir/build
 .PHONY : controllers/fast
 
-# Convenience name for target.
-src/controllers/CMakeFiles/controllers_autogen_timestamp_deps.dir/rule:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/controllers/CMakeFiles/controllers_autogen_timestamp_deps.dir/rule
-.PHONY : src/controllers/CMakeFiles/controllers_autogen_timestamp_deps.dir/rule
-
-# Convenience name for target.
-controllers_autogen_timestamp_deps: src/controllers/CMakeFiles/controllers_autogen_timestamp_deps.dir/rule
-.PHONY : controllers_autogen_timestamp_deps
-
-# fast build rule for target.
-controllers_autogen_timestamp_deps/fast:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers_autogen_timestamp_deps.dir\build.make src/controllers/CMakeFiles/controllers_autogen_timestamp_deps.dir/build
-.PHONY : controllers_autogen_timestamp_deps/fast
-
-# Convenience name for target.
-src/controllers/CMakeFiles/controllers_autogen.dir/rule:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/controllers/CMakeFiles/controllers_autogen.dir/rule
-.PHONY : src/controllers/CMakeFiles/controllers_autogen.dir/rule
-
-# Convenience name for target.
-controllers_autogen: src/controllers/CMakeFiles/controllers_autogen.dir/rule
-.PHONY : controllers_autogen
-
-# fast build rule for target.
-controllers_autogen/fast:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers_autogen.dir\build.make src/controllers/CMakeFiles/controllers_autogen.dir/build
-.PHONY : controllers_autogen/fast
-
 ClubController.obj: ClubController.cpp.obj
 .PHONY : ClubController.obj
 
@@ -229,30 +201,6 @@ TournamentController.cpp.s:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers.dir\build.make src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.s
 .PHONY : TournamentController.cpp.s
 
-controllers_autogen/mocs_compilation.obj: controllers_autogen/mocs_compilation.cpp.obj
-.PHONY : controllers_autogen/mocs_compilation.obj
-
-# target to build an object file
-controllers_autogen/mocs_compilation.cpp.obj:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers.dir\build.make src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj
-.PHONY : controllers_autogen/mocs_compilation.cpp.obj
-
-controllers_autogen/mocs_compilation.i: controllers_autogen/mocs_compilation.cpp.i
-.PHONY : controllers_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-controllers_autogen/mocs_compilation.cpp.i:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers.dir\build.make src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.i
-.PHONY : controllers_autogen/mocs_compilation.cpp.i
-
-controllers_autogen/mocs_compilation.s: controllers_autogen/mocs_compilation.cpp.s
-.PHONY : controllers_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-controllers_autogen/mocs_compilation.cpp.s:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\controllers\CMakeFiles\controllers.dir\build.make src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.s
-.PHONY : controllers_autogen/mocs_compilation.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -261,8 +209,6 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... controllers_autogen
-	@echo ... controllers_autogen_timestamp_deps
 	@echo ... controllers
 	@echo ... ClubController.obj
 	@echo ... ClubController.i
@@ -273,9 +219,6 @@ help:
 	@echo ... TournamentController.obj
 	@echo ... TournamentController.i
 	@echo ... TournamentController.s
-	@echo ... controllers_autogen/mocs_compilation.obj
-	@echo ... controllers_autogen/mocs_compilation.i
-	@echo ... controllers_autogen/mocs_compilation.s
 .PHONY : help
 
 

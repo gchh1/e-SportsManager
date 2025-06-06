@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/ClubController.cpp" "src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj" "gcc" "src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj.d"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/MarketController.cpp" "src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj" "gcc" "src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj.d"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/TournamentController.cpp" "src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj" "gcc" "src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj.d"
-  "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/controllers/controllers_autogen/mocs_compilation.cpp" "src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj" "gcc" "src/controllers/CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

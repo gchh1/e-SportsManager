@@ -129,34 +129,6 @@ models/fast:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/build
 .PHONY : models/fast
 
-# Convenience name for target.
-src/models/CMakeFiles/models_autogen_timestamp_deps.dir/rule:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/models/CMakeFiles/models_autogen_timestamp_deps.dir/rule
-.PHONY : src/models/CMakeFiles/models_autogen_timestamp_deps.dir/rule
-
-# Convenience name for target.
-models_autogen_timestamp_deps: src/models/CMakeFiles/models_autogen_timestamp_deps.dir/rule
-.PHONY : models_autogen_timestamp_deps
-
-# fast build rule for target.
-models_autogen_timestamp_deps/fast:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models_autogen_timestamp_deps.dir\build.make src/models/CMakeFiles/models_autogen_timestamp_deps.dir/build
-.PHONY : models_autogen_timestamp_deps/fast
-
-# Convenience name for target.
-src/models/CMakeFiles/models_autogen.dir/rule:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/models/CMakeFiles/models_autogen.dir/rule
-.PHONY : src/models/CMakeFiles/models_autogen.dir/rule
-
-# Convenience name for target.
-models_autogen: src/models/CMakeFiles/models_autogen.dir/rule
-.PHONY : models_autogen
-
-# fast build rule for target.
-models_autogen/fast:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models_autogen.dir\build.make src/models/CMakeFiles/models_autogen.dir/build
-.PHONY : models_autogen/fast
-
 Club.obj: Club.cpp.obj
 .PHONY : Club.obj
 
@@ -253,30 +225,6 @@ Tournament.cpp.s:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/Tournament.cpp.s
 .PHONY : Tournament.cpp.s
 
-models_autogen/mocs_compilation.obj: models_autogen/mocs_compilation.cpp.obj
-.PHONY : models_autogen/mocs_compilation.obj
-
-# target to build an object file
-models_autogen/mocs_compilation.cpp.obj:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj
-.PHONY : models_autogen/mocs_compilation.cpp.obj
-
-models_autogen/mocs_compilation.i: models_autogen/mocs_compilation.cpp.i
-.PHONY : models_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-models_autogen/mocs_compilation.cpp.i:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.i
-.PHONY : models_autogen/mocs_compilation.cpp.i
-
-models_autogen/mocs_compilation.s: models_autogen/mocs_compilation.cpp.s
-.PHONY : models_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-models_autogen/mocs_compilation.cpp.s:
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.s
-.PHONY : models_autogen/mocs_compilation.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -285,8 +233,6 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... models_autogen
-	@echo ... models_autogen_timestamp_deps
 	@echo ... models
 	@echo ... Club.obj
 	@echo ... Club.i
@@ -300,9 +246,6 @@ help:
 	@echo ... Tournament.obj
 	@echo ... Tournament.i
 	@echo ... Tournament.s
-	@echo ... models_autogen/mocs_compilation.obj
-	@echo ... models_autogen/mocs_compilation.i
-	@echo ... models_autogen/mocs_compilation.s
 .PHONY : help
 
 

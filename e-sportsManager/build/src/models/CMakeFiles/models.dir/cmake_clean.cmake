@@ -7,11 +7,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/models.dir/Staff.cpp.obj.d"
   "CMakeFiles/models.dir/Tournament.cpp.obj"
   "CMakeFiles/models.dir/Tournament.cpp.obj.d"
-  "CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj"
-  "CMakeFiles/models.dir/models_autogen/mocs_compilation.cpp.obj.d"
-  "CMakeFiles/models_autogen.dir/AutogenUsed.txt"
-  "CMakeFiles/models_autogen.dir/ParseCache.txt"
-  "models_autogen"
   "libmodels.a"
   "libmodels.pdb"
 )

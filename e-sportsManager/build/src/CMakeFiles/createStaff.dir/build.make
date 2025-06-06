@@ -71,26 +71,11 @@ include src/CMakeFiles/createStaff.dir/flags.make
 src/CMakeFiles/createStaff.dir/codegen:
 .PHONY : src/CMakeFiles/createStaff.dir/codegen
 
-src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/createStaff.dir/flags.make
-src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/createStaff.dir/includes_CXX.rsp
-src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj: src/createStaff_autogen/mocs_compilation.cpp
-src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj: src/CMakeFiles/createStaff.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj"
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\createStaff.dir\createStaff_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\createStaff.dir\createStaff_autogen\mocs_compilation.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\createStaff_autogen\mocs_compilation.cpp
-
-src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.i"
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\createStaff_autogen\mocs_compilation.cpp > CMakeFiles\createStaff.dir\createStaff_autogen\mocs_compilation.cpp.i
-
-src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.s"
-	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\createStaff_autogen\mocs_compilation.cpp -o CMakeFiles\createStaff.dir\createStaff_autogen\mocs_compilation.cpp.s
-
 src/CMakeFiles/createStaff.dir/createStaff.cpp.obj: src/CMakeFiles/createStaff.dir/flags.make
 src/CMakeFiles/createStaff.dir/createStaff.cpp.obj: src/CMakeFiles/createStaff.dir/includes_CXX.rsp
 src/CMakeFiles/createStaff.dir/createStaff.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/createStaff.cpp
 src/CMakeFiles/createStaff.dir/createStaff.cpp.obj: src/CMakeFiles/createStaff.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/createStaff.dir/createStaff.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/createStaff.dir/createStaff.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/createStaff.dir/createStaff.cpp.obj -MF CMakeFiles\createStaff.dir\createStaff.cpp.obj.d -o CMakeFiles\createStaff.dir\createStaff.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\createStaff.cpp
 
 src/CMakeFiles/createStaff.dir/createStaff.cpp.i: cmake_force
@@ -103,13 +88,11 @@ src/CMakeFiles/createStaff.dir/createStaff.cpp.s: cmake_force
 
 # Object files for target createStaff
 createStaff_OBJECTS = \
-"CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/createStaff.dir/createStaff.cpp.obj"
 
 # External object files for target createStaff
 createStaff_EXTERNAL_OBJECTS =
 
-D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createStaff.exe: src/CMakeFiles/createStaff.dir/createStaff_autogen/mocs_compilation.cpp.obj
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createStaff.exe: src/CMakeFiles/createStaff.dir/createStaff.cpp.obj
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createStaff.exe: src/CMakeFiles/createStaff.dir/build.make
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createStaff.exe: src/models/libmodels.a
@@ -118,7 +101,7 @@ D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createStaff.exe: src/models/libmo
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createStaff.exe: src/CMakeFiles/createStaff.dir/linkLibs.rsp
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createStaff.exe: src/CMakeFiles/createStaff.dir/objects1.rsp
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/createStaff.exe: src/CMakeFiles/createStaff.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\createStaff.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\createStaff.exe"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\createStaff.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

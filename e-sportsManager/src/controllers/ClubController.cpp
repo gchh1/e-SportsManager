@@ -2,6 +2,7 @@
  * ClubController方法实现  *
  **************************/
 
+#include <iomanip>
 #include "ClubController.h"
 
 // 新建俱乐部
@@ -12,7 +13,7 @@ void ClubController::createNewClub() {
     int fund;
 
     // 指引新建俱乐部
-    std::cout << "==新建俱乐部==\n"
+    std::cout << "========新建俱乐部========\n"
               << "请输入俱乐部名称：";
     std::cin >> name;
     std::cout << "请输入俱乐部密钥：";
@@ -28,7 +29,7 @@ void ClubController::createNewClub() {
 
 // 打印俱乐部列表
 void ClubController::printClubRepo() {
-    std::cout << "==俱乐部列表==\n";
+    std::cout << "========俱乐部列表========\n";
 
     int index = 1;
     // 避免复制整个列表，直接引用
@@ -86,20 +87,35 @@ void ClubController::selectClub() {
 // 打印当前俱乐部基本信息
 void ClubController::printClubInfo() {
     auto club = getCurrentClub();
-    std::cout << club->getFund() << "\t" 
-              << club->getPoints() << "\t\n"
-              << club->getName() << "\n";
 
-    std::cout << "--成员列表--\n"
-              << "职务\t" << "名字\t" << "\t属性\n";
-    for (const auto & coach_ID : club->getCoach()) {
+    std::cout << "俱乐部名称" << std::string(10, ' ') << club->getName() << std::endl;
+    std::cout << "资金" << std::string(16, ' ') << club->getFund() << std::endl;
+    std::cout << "积分" << std::string(16, ' ') << club->getPoints() << std::endl;
+    std::cout << "俱乐部战力" << std::string(10, ' ') << club->getPower() << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "--------成员列表--------" << std::endl;
+    std::cout << "职务"
+              << std::string(5, ' ') << "名字"
+              << std::string(11, ' ') << "属性" << std::endl;
+    std::cout << std::string(35, '-') << std::endl;
+
+    for (const auto& coach_ID : club->getCoach()) {
         auto coach = staff_repo->getStaff(coach_ID);
-        std::cout << "教练\t" << coach->getName() << "\t" << coach->getPower() << std::endl;
+        if (coach) { // 检查指针是否有效
+            std::cout << "教练"
+                      << std::string(5, ' ') << coach->getName()
+                      << std::string(15 - coach->getName().length(), ' ') << coach->getPower() << std::endl;
+        }
     }
 
-    for (const auto & player_ID : club->getPlayers()) {
+    for (const auto& player_ID : club->getPlayers()) {
         auto player = staff_repo->getStaff(player_ID);
-        std::cout << "选手\t" << player->getName() << "\t" << player->getPower() << std::endl;
+        if (player) { // 检查指针是否有效
+            std::cout << "选手"
+                      << std::string(5, ' ') << player->getName()
+                      << std::string(15 - player->getName().length(), ' ') << player->getPower() << std::endl;
+        }
     }
     std::cout << std::endl;
 }
@@ -126,7 +142,7 @@ void ClubController::printRank() {
     // 打印排名
     int rank = 1;
     for (const auto & club : rank_clubs) {
-        std::cout << rank << "-" << club->getName() << "\t" << club->getPoints() << std::endl;
+        std::cout << rank << "-" << club->getName() << std::string(15 - club->getName().length(), ' ') << club->getPoints() << std::endl;
         rank++;
     }
 }

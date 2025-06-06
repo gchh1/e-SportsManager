@@ -5,11 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/controllers.dir/MarketController.cpp.obj.d"
   "CMakeFiles/controllers.dir/TournamentController.cpp.obj"
   "CMakeFiles/controllers.dir/TournamentController.cpp.obj.d"
-  "CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj"
-  "CMakeFiles/controllers.dir/controllers_autogen/mocs_compilation.cpp.obj.d"
-  "CMakeFiles/controllers_autogen.dir/AutogenUsed.txt"
-  "CMakeFiles/controllers_autogen.dir/ParseCache.txt"
-  "controllers_autogen"
   "libcontrollers.a"
   "libcontrollers.pdb"
 )
