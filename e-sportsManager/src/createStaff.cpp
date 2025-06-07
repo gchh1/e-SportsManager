@@ -15,6 +15,7 @@ int main() {
    int choice;
    bool flag = true;
 
+   do {
    // 输出已有staff
    int index = 1;
    for (const auto & item : repo.getRepo()) {
@@ -23,8 +24,7 @@ int main() {
    }
 
 
-   while (flag) {
-      std::cout << "==创建Staff==\n"
+      std::cout << "\n========创建Staff========\n"
                << "1. 新建教练\n"
                << "2. 新建选手\n"
                << "3. 删除选手\n"
@@ -58,6 +58,7 @@ int main() {
       } else if (choice == 0) {
          flag = false;
       }
-   }
+   } while (flag);
+
    repo.save();
 }

@@ -1,8 +1,0 @@
-# Hashes of file build rules.
-22d03d92a52f408e6bc44c754065af2f src/controllers/controllers_autogen/timestamp
-724b6a26e5a099d2021452fdfa4014fb src/createStaff_autogen/timestamp
-e85ac275504d3a1ab9ae663a9170c962 src/createTour_autogen/timestamp
-fb081a3bb24c4031298e11bc21e35778 src/dataHandlers/dataHandlers_autogen/timestamp
-52f2cb6009e35ad2748e1cf5166f7fd8 src/e-sportsManager_autogen/timestamp
-63eecc1ea04c44d808e42fb03499b8f3 src/models/models_autogen/timestamp
-1f63b5c3aad0dec8334e5710b7795f34 src/views/views_autogen/timestamp

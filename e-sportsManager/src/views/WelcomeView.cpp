@@ -4,6 +4,7 @@
 
 #include "WelcomeView.h"
 #include <iostream>
+#include <string>
 
 WelcomeView::WelcomeView(ClubController* ctrl) : controller(ctrl) {}
 
@@ -25,9 +26,22 @@ ViewState WelcomeView::run() {
     std::cin >> choice;
    
     switch (choice) {
-        case 1: 
-            controller->createNewClub();
+        case 1: {
+            std::string name;
+            std::string secret;
+            int fund;
+            
+            std::cout << "\n========创建俱乐部========\n";
+            std::cout << "请输入俱乐部名称：";
+            std::cin >> name;
+            std::cout << "请输入俱乐部密钥：";
+            std::cin >> secret;
+            std::cout << "请输入俱乐部初始资金：";
+            std::cin >> fund;
+
+            controller->createNewClub(name, secret, fund);
             return ViewState::WelcomeView;
+        }
         case 2: 
             if (!controller->isRepoEmpty()) {
                 controller->printClubRepo();

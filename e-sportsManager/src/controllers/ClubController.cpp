@@ -6,25 +6,12 @@
 #include "ClubController.h"
 
 // 新建俱乐部
-void ClubController::createNewClub() {
-    // 俱乐部属性
-    std::string name;
-    std::string secret;
-    int fund;
-
-    // 指引新建俱乐部
-    std::cout << "========新建俱乐部========\n"
-              << "请输入俱乐部名称：";
-    std::cin >> name;
-    std::cout << "请输入俱乐部密钥：";
-    std::cin >> secret;
-    std::cout << "请输入俱乐部初始资金：";
-    std::cin >> fund;
-
+void ClubController::createNewClub(std::string name, std::string secret, int fund) {
     // 添加俱乐部至仓库
     auto new_club = std::make_unique<Club>(name, secret, fund);
     club_repo->addNewClub(std::move(new_club));
-} 
+
+}
 
 
 // 打印俱乐部列表
@@ -32,14 +19,12 @@ void ClubController::printClubRepo() {
     std::cout << "========俱乐部列表========\n";
 
     int index = 1;
-    // 避免复制整个列表，直接引用
     const auto& clubs = club_repo->getRepo();
     for (const auto & club : clubs) {
         std::cout << index << ". " << club->getName() << std::endl;
         index++;
     }
 
-    // 防止内存泄漏
     if (index == 1) {
         std::cout << "暂无俱乐部\n";
     }
@@ -51,7 +36,7 @@ void ClubController::selectClub() {
     int choice;
     std::string input;
 
-    // 获取俱乐部列表的引用，避免复制unique_ptr
+    // 获取俱乐部列表的引用
     const auto& clubs = club_repo->getRepo();
 
     do {
@@ -130,12 +115,13 @@ void ClubController::printClubLog() {
 
 
 // 打印排名
-void ClubController::printRank() {
+// 按积分排序
+void ClubController::printRankByPoints() {
     auto & rank_clubs = club_repo->getRepo();
 
     // 按积分进行排序
     std::sort(rank_clubs.begin(), rank_clubs.end(),
-    [](const std::unique_ptr<Club>& club1, const std::unique_ptr<Club>& club2) {
+    [](const std::unique_ptr<Club> & club1, const std::unique_ptr<Club> & club2) {
         return club1->getPoints() >= club2->getPoints();
     });
 
@@ -147,12 +133,51 @@ void ClubController::printRank() {
     }
 }
 
+// 按战力排序
+void ClubController::printRankByPower() {
+    auto & rank_clubs = club_repo->getRepo();
+
+    // 按战力进行排序
+    std::sort(rank_clubs.begin(), rank_clubs.end(),
+    [](const std::unique_ptr<Club> & club1, const std::unique_ptr<Club> & club2) {
+        return club1->getPower() >= club2->getPower();
+    });
+
+    // 打印排名
+    int rank = 1;
+    for (const auto & club : rank_clubs) {
+        std::cout << rank << "-" << club->getName() << std::string(15 - club->getName().length(), ' ') << club->getPower() << std::endl;
+        rank++;
+    }
+}
+
+// 按资金排序
+void ClubController::printRankByFund() {
+    auto & rank_clubs = club_repo->getRepo();
+
+    // 按资金进行排序
+    std::sort(rank_clubs.begin(), rank_clubs.end(),
+    [](const std::unique_ptr<Club> & club1, const std::unique_ptr<Club> & club2) {
+        return club1->getFund() >= club2->getFund();
+    });
+
+    // 打印排名
+    int rank = 1;
+    for (const auto & club : rank_clubs) {
+        std::cout << rank << "-" << club->getName() << std::string(15 - club->getName().length(), ' ') << club->getFund() << std::endl;
+        rank++;
+    }
+}
+
 
 // 删除俱乐部
 void ClubController::removeClub() {
     int choice;
     std::cout << "选择：";
     std::cin >> choice;
-    int ID = club_repo->getRepo()[choice - 1]->getID();
-    club_repo->removeClub(ID);
+    if (club_repo->removeClub(choice - 1)) {
+        std::cout << "删除成功！\n";
+    } else {
+        std::cout << "无效选择！\n";
+    }
 }

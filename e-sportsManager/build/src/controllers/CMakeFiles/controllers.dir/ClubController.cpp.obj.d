@@ -175,11 +175,22 @@ src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_heap.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/uniform_int_dist.h \
  C:/msys64/ucrt64/include/c++/14.1.0/pstl/glue_algorithm_defs.h \
- D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Club.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/functional \
+ C:/msys64/ucrt64/include/c++/14.1.0/bits/std_function.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/unordered_map \
+ C:/msys64/ucrt64/include/c++/14.1.0/bits/unordered_map.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/bits/hashtable.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/bits/hashtable_policy.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/bits/enable_special_members.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/bits/node_handle.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/bits/erase_if.h \
  C:/msys64/ucrt64/include/c++/14.1.0/vector \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/vector.tcc \
+ C:/msys64/ucrt64/include/c++/14.1.0/array \
+ C:/msys64/ucrt64/include/c++/14.1.0/compare \
+ D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Club.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Staff.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IData.h \
  C:/msys64/ucrt64/include/c++/14.1.0/fstream \

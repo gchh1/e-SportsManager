@@ -10,6 +10,7 @@
 #include <iostream>
 #include <memory>
 #include <algorithm>
+#include <functional>
 
 #include "Club.h"
 #include "BinaryClubDataRepo.h"
@@ -32,9 +33,9 @@ class ClubController {
         void setCurrentClub(Club * club) {current_club = club;}
 
         // 新建俱乐部
-        void createNewClub();
+        void createNewClub(std::string name, std::string secret, int fund);
 
-        // 打印repo中俱乐部信息
+        // 打印仓库中俱乐部信息
         void printClubRepo();
 
         // 选择俱乐部并验证密钥
@@ -47,7 +48,9 @@ class ClubController {
         void printClubLog();
 
         // 打印排名
-        void printRank();
+        void printRankByPoints();
+        void printRankByPower();
+        void printRankByFund();
 
         // 判断仓库是否为空
         bool isRepoEmpty() {return club_repo->getRepo().empty();}

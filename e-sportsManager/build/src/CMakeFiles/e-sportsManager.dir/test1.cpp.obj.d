@@ -203,6 +203,10 @@ src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj: \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IView.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/ViewState.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/heads/ClubController.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/functional \
+ C:/msys64/ucrt64/include/c++/14.1.0/bits/std_function.h \
+ C:/msys64/ucrt64/include/c++/14.1.0/array \
+ C:/msys64/ucrt64/include/c++/14.1.0/compare \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/heads/BinaryClubDataRepo.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/heads/ClubLogView.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/heads/MainMenuView.h \

@@ -49,5 +49,5 @@ class BinaryClubDataRepo : public IDataRepo {
         Club * getClub(int ID);
         
         // 删除俱乐部
-        void removeClub(int ID);
+        bool removeClub(int index);
 };
