@@ -49,10 +49,10 @@ class TournamentController {
         int simulateGame(int a, int b);
 
         // 模拟赛事（淘汰赛）
-        void simulateTournament();
+        bool simulateTournament();
 
         // 选择赛事
-        void selectTournament();
+        bool selectTournament();
 
         // 打印比赛结果
         void printTournamentResult();

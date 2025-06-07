@@ -24,9 +24,15 @@ int main() {
          std::cout << "暂无Staff\n";
       } else {
          for (const auto & item : repo.getRepo()) {
-            std::cout << index << ". " << "姓名：" << item->getName() << std::string(10 - item->getName().length(), ' ') 
-            << "\t" << "战力：" << item->getPower() << std::string(10 - std::to_string(item->getPower()).length(), ' ') 
-            << "\t" << "价格：" << item->getPrice() << std::string(10 - std::to_string(item->getPrice()).length(), ' ') << std::endl;
+            std::cout << index << "." << std::string(5 - std::to_string(index).length(), ' ') << "姓名：" << item->getName() << std::string(10 - item->getName().length(), ' ') 
+            << "职务：";
+            if (auto coach_ptr = dynamic_cast<Coach*>(item.get())) {
+                std::cout << "教练";
+            } else if (auto player_ptr = dynamic_cast<Player*>(item.get())) {
+                std::cout << "选手";
+            }
+            std::cout << std::string(7, ' ') << "战力：" << item->getPower() << std::string(10 - std::to_string(item->getPower()).length(), ' ') 
+            << std::string(7, ' ') << "价格：" << item->getPrice() << std::string(10 - std::to_string(item->getPrice()).length(), ' ') << std::endl;
             index++;
          }
       }

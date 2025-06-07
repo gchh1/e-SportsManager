@@ -9,6 +9,7 @@
 void MarketController::printMarket() {
     std::cout << std::left << std::setw(5) << "编号"
               << std::string(5, ' ') << "名字"
+              << std::string(7, ' ') << "职位"
               << std::string(10, ' ') << "能力"
               << std::string(10, ' ') << "价格" << std::endl;
     std::cout << std::string(50, '-') << std::endl; 
@@ -17,9 +18,16 @@ void MarketController::printMarket() {
         auto staff = staff_repo->getStaff(item);
         if (staff) { // Null check
             std::cout << std::left << std::setw(5) << (std::to_string(index) + ".")
-                      << std::string(5, ' ') << staff->getName()
-                      << std::string(15 - staff->getName().length(), ' ') << staff->getPower()
-                      << std::string(15 - std::to_string(staff->getPrice()).length(), ' ') << staff->getPrice() << std::endl;
+                      << std::string(5, ' ') << staff->getName() << std::string(10 - staff->getName().length(), ' ') ;   
+
+            if (auto coach_ptr = dynamic_cast<Coach*>(staff)) {
+                std::cout << "教练";
+            } else if (auto player_ptr = dynamic_cast<Player*>(staff)) {
+                std::cout << "选手";
+            }
+
+            std::cout << std::string(10, ' ') << staff->getPower()
+                      << std::string(20 - std::to_string(staff->getPower()).length(), ' ') << staff->getPrice() << std::endl;
         }
         index++;
     }

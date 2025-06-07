@@ -10,7 +10,6 @@
 #include <iostream>
 #include <memory>
 #include <algorithm>
-#include <functional>
 
 #include "Club.h"
 #include "BinaryClubDataRepo.h"

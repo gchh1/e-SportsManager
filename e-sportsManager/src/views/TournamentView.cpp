@@ -23,8 +23,14 @@ ViewState TournamentView::run() {
         return ViewState::MainMenuView;
     }
 
-    controller->selectTournament();
-    controller->simulateTournament();
+    if (!controller->selectTournament()) {
+        return ViewState::MainMenuView;
+    }
+
+    if (!controller->simulateTournament()) {
+        return ViewState::MainMenuView;
+    }
+    
     controller->printTournamentResult();
 
     std::cout << "0. 返回\n"

@@ -6,35 +6,58 @@
 
 // 打印赛事列表
 void TournamentController::printTournament() {
-    std::cout << "========赛事列表========\n";
-
     int index = 1;
     
+    std::cout << "序号"
+              << std::string(5, ' ') << "赛事名称"
+              << std::string(10, ' ') << "参赛队伍数"
+              << std::string(10, ' ') << "参赛费用"
+              << std::string(10, ' ') << "总奖金" << std::endl;
+    std::cout << std::string(70, '-') << std::endl;
+
     for (const auto & tour : tournament_repo->getRepo()) {
-        std::cout << index << ". " << tour->getName() << "\t" << tour->getBonus() << std::endl;
+        std::cout << index << std::string(10 - std::to_string(index).length(), ' ')
+        << tour->getName() << std::string(20 - tour->getName().length(), ' ') << tour->getTeamNum()
+        << std::string(20 - std::to_string(tour->getTeamNum()).length(), ' ') << tour->getEntryFee()
+        << std::string(16 - std::to_string(tour->getEntryFee()).length(), ' ') << tour->getBonus() << std::endl;
         index++;
     }
 }
 
 // 选择赛事
-void TournamentController::selectTournament() {
+bool TournamentController::selectTournament() {
     int choice;
 
     const auto& tours = tournament_repo->getRepo();
 
-    std::cout << "========选择赛事========\n";
+    std::cout << "\n0. 返回\n";
+    std::cout << "选择：";
 
     // 获取有效输入
     std::cin >> choice;
+
+    if (choice == 0) {
+        return false;
+    }
+
     while (choice < 1 || static_cast<size_t>(choice) > tours.size()) {
         std::cout << "无效输入，请重试！\n";
         std::cin >> choice;
     }
 
+
     auto it = tours.begin();
     std::advance(it, choice - 1);
 
     current_tour = it->get();
+
+    // 若俱乐部数量小于参赛队伍数，返回false
+    if (club_repo->getRepoID().size() < current_tour->getTeamNum()) {
+        std::cout << "\n俱乐部数量不足！\n";
+        return false;
+    }
+
+    return true;
 }
 
 // 设置比赛队伍
@@ -85,13 +108,20 @@ int TournamentController::simulateGame(int a, int b) {
 
 
 // 模拟赛事
-void TournamentController::simulateTournament() {
+bool TournamentController::simulateTournament() {
     // 设置比赛队伍
     setGameClubs();
     
     // 扣除参赛费用
     for (const auto & item : game_clubs) {
         auto club = club_repo->getClub(item);
+
+        // 若该队伍资金不足，返回false
+        if (club->getFund() < current_tour->getEntryFee()) {
+            std::cout << "\n俱乐部资金不足！\n";
+            return false;
+        }
+
         club->changeFund(-(current_tour->getEntryFee()));
     }
 
@@ -133,6 +163,7 @@ void TournamentController::simulateTournament() {
         club->addLog(log.getLog());
     }
 
+    return true;
 }   
 
 
