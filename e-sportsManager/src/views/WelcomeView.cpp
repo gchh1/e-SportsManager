@@ -5,6 +5,7 @@
 #include "WelcomeView.h"
 #include <iostream>
 #include <string>
+#include <conio.h>
 
 WelcomeView::WelcomeView(ClubController* ctrl) : controller(ctrl) {}
 
@@ -26,24 +27,9 @@ ViewState WelcomeView::run() {
     std::cin >> choice;
    
     switch (choice) {
-        case 1: {
-            std::string name;
-            std::string secret;
-            int fund;
-            
-            std::cout << "\n========创建俱乐部========\n";
-            std::cout << "请输入俱乐部名称：";
-            std::cin >> name;
-            std::cout << "请输入俱乐部密钥：";
-            std::cin >> secret;
-            std::cout << "请输入俱乐部初始资金：";
-            std::cin >> fund;
-
-            controller->createNewClub(name, secret, fund);
-
-            std::cout << "\n创建成功！\n";
+        case 1:
+            createNewClub();
             return ViewState::WelcomeView;
-        }
         case 2: 
             if (!controller->isRepoEmpty()) {
                 controller->printClubRepo();
@@ -74,4 +60,76 @@ ViewState WelcomeView::run() {
             std::cout << std::endl;
             return ViewState::WelcomeView;
     }
+}
+
+
+bool WelcomeView::createNewClub() {
+    std::string name;
+    std::string secret1, secret2;
+    int fund;
+            
+    std::cout << "\n========创建俱乐部========\n";
+    std::cout << "请输入俱乐部名称：";
+    std::cin >> name;
+    std::cout << "请输入俱乐部密钥：";
+            
+    // 模拟密钥输入
+    secret1.clear();
+    char ch;
+    while (true) {
+        ch = _getch();
+        if (ch == '\r' || ch == '\n') {
+            break;
+        } else if (ch == '\b') {
+            if (!secret1.empty()) {
+                secret1.pop_back();
+                std::cout << "\b \b";
+            }
+        } else {
+            secret1 += ch;
+            std::cout << '*';
+        }
+    }
+
+    int attempt = 4;
+    std::cout << "\n请再次输入俱乐部密钥：";
+    do {
+        // 模拟密钥输入
+        secret2.clear();
+        while (true) {
+            ch = _getch();
+            if (ch == '\r' || ch == '\n') {
+                break;
+            } else if (ch == '\b') {
+                if (!secret2.empty()) {
+                    secret2.pop_back();
+                    std::cout << "\b \b";
+                }
+            } else {
+                secret2 += ch;
+                std::cout << '*';
+            }
+        }
+
+        if (secret1 == secret2) break;
+
+        attempt--;
+        if (attempt == 0) break;
+        std::cout << "\n两次输入不一致，请重新输入！(剩余" << attempt << "次机会)：";
+    } while (true);
+
+    if (attempt == 0) {
+        std::cout << "\n创建失败！\n";
+        std::cout << std::endl;
+        return false;
+    }
+
+    std::cout << "\n请输入俱乐部初始资金：";
+    std::cin >> fund;
+
+    controller->createNewClub(name, secret1, fund);
+
+    std::cout << "\n创建成功！\n";
+    std::cout << std::endl;
+    return true;
 }

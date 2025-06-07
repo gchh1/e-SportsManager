@@ -25,7 +25,7 @@ int main() {
         } else {
             int n = 1;
             for (const auto & item : repo->getRepo()) {
-                std::cout << n << ". " << "赛事名称：" << item->getName() << std::string(10 - item->getName().length(), ' ') 
+                std::cout << n << ". " << "赛事名称：" << item->getName() << std::string(15 - item->getName().length(), ' ') 
                 << "\t" << "参赛队伍数量：" << item->getTeamNum() << std::string(10 - std::to_string(item->getTeamNum()).length(), ' ') 
                 << "\t" << "参赛费用：" << item->getEntryFee() << std::string(10 - std::to_string(item->getEntryFee()).length(), ' ') 
                 << "\t" << "总奖金：" << item->getBonus() << std::string(10 - std::to_string(item->getBonus()).length(), ' ') << std::endl;

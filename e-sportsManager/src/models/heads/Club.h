@@ -59,6 +59,9 @@ class Club : public IData {
             return true;
         }
 
+        // 修改密钥
+        void setSecret(std::string secret) {club_secret = secret;}
+
         // 添加教练
         bool addCoach(int coach_ID);
 

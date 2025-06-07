@@ -19,4 +19,5 @@ public:
     
     void initCtrl() override;
     ViewState run() override;
+    bool createNewClub();
 };

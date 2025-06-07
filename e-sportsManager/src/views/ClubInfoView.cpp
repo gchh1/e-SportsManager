@@ -19,6 +19,7 @@ ViewState ClubInfoView::run() {
     controller->printClubInfo();
 
     std::cout << "1. 动态\n"
+              << "2. 修改密钥\n"
               << "0. 返回\n"
               << "选择：";
         
@@ -28,6 +29,9 @@ ViewState ClubInfoView::run() {
     switch (choice) {
         case 1: 
             return ViewState::ClubLogView;
+        case 2:
+            controller->changeSecret();
+            return ViewState::ClubInfoView;
         case 0:
             return ViewState::MainMenuView;
         default:

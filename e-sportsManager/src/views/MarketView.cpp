@@ -32,13 +32,20 @@ ViewState MarketView::run() {
 
     switch (choice) {
         case 1:
-            controller->handleBuy();
-            std::cout << "\n交易成功！\n";
+            if (controller->handleBuy()) {
+                std::cout << "\n交易成功！\n";
+            } else {
+                std::cout << "\n交易失败！\n";
+            }
             return ViewState::MarketView;
         case 2:
             controller->setSellStaff();
             controller->printSellStaff();
-            controller->handleSell();
+            if (controller->handleSell()) {
+                std::cout << "\n交易成功！\n";
+            } else {
+                std::cout << "\n交易失败！\n";
+            }
             return ViewState::MarketView;
         case 0:
             return ViewState::MainMenuView;

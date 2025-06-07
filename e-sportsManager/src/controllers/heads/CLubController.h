@@ -58,4 +58,7 @@ class ClubController {
 
         // 删除俱乐部
         void removeClub();
+
+        // 修改密钥
+        void changeSecret();
 };

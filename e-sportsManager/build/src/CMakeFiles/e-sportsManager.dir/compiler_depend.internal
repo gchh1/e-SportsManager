@@ -10,7 +10,6 @@ src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj
  C:/msys64/ucrt64/include/_mingw_stat64.h
  C:/msys64/ucrt64/include/_timeval.h
  C:/msys64/ucrt64/include/c++/14.1.0/algorithm
- C:/msys64/ucrt64/include/c++/14.1.0/array
  C:/msys64/ucrt64/include/c++/14.1.0/backward/auto_ptr.h
  C:/msys64/ucrt64/include/c++/14.1.0/backward/binders.h
  C:/msys64/ucrt64/include/c++/14.1.0/bit
@@ -77,7 +76,6 @@ src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj
  C:/msys64/ucrt64/include/c++/14.1.0/bits/specfun.h
  C:/msys64/ucrt64/include/c++/14.1.0/bits/sstream.tcc
  C:/msys64/ucrt64/include/c++/14.1.0/bits/std_abs.h
- C:/msys64/ucrt64/include/c++/14.1.0/bits/std_function.h
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_algo.h
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_algobase.h
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_bvector.h
@@ -109,7 +107,6 @@ src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj
  C:/msys64/ucrt64/include/c++/14.1.0/cerrno
  C:/msys64/ucrt64/include/c++/14.1.0/clocale
  C:/msys64/ucrt64/include/c++/14.1.0/cmath
- C:/msys64/ucrt64/include/c++/14.1.0/compare
  C:/msys64/ucrt64/include/c++/14.1.0/concepts
  C:/msys64/ucrt64/include/c++/14.1.0/cstddef
  C:/msys64/ucrt64/include/c++/14.1.0/cstdint
@@ -129,7 +126,6 @@ src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj
  C:/msys64/ucrt64/include/c++/14.1.0/ext/string_conversions.h
  C:/msys64/ucrt64/include/c++/14.1.0/ext/type_traits.h
  C:/msys64/ucrt64/include/c++/14.1.0/fstream
- C:/msys64/ucrt64/include/c++/14.1.0/functional
  C:/msys64/ucrt64/include/c++/14.1.0/initializer_list
  C:/msys64/ucrt64/include/c++/14.1.0/iomanip
  C:/msys64/ucrt64/include/c++/14.1.0/ios

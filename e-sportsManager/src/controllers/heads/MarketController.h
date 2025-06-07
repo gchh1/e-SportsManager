@@ -52,10 +52,10 @@ class MarketController {
         void printSellStaff();
 
         // 处理买入请求
-        void handleBuy();
+        bool handleBuy();
 
         // 处理出售请求
-        void handleSell();
+        bool handleSell();
 
         // 判断仓库是否为空
         bool isRepoEmpty() {return staff_repo->getRepo().empty();}

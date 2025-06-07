@@ -95,7 +95,7 @@ void MarketController::printSellStaff() {
 
 
 // 处理买入请求
-void MarketController::handleBuy() {
+bool MarketController::handleBuy() {
     // 获取选手编号
     std::cout << "输入要买入选手编号：";
 
@@ -114,6 +114,10 @@ void MarketController::handleBuy() {
 
     // 处理买入操作
     // 1. 扣除俱乐部资金
+    if (current_club->getFund() < target_staff->getPrice()) {
+        std::cout << "俱乐部资金不足！\n";
+        return false;
+    }
     current_club->changeFund(-target_staff->getPrice());
 
     // 2. 添加选手
@@ -137,11 +141,13 @@ void MarketController::handleBuy() {
     log.setStaff(target_staff->getName());
     log.generateLog(LogOperation::BuyStaff, -(target_staff->getPrice()), 0, current_club->getFund(), current_club->getPoints());
     current_club->addLog(log.getLog());
+
+    return true;
 }
 
 
 // 处理出售请求
-void MarketController::handleSell() {
+bool MarketController::handleSell() {
 
     // 获取选手编号
     std::cout << "输入要卖出选手编号：";
@@ -184,4 +190,5 @@ void MarketController::handleSell() {
     log.generateLog(LogOperation::SellStaff, target_staff->getPrice(), 0, current_club->getFund(), current_club->getPoints());
     current_club->addLog(log.getLog());
 
+    return true;
 }
