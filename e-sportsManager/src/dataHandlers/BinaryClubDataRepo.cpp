@@ -59,9 +59,9 @@ std::vector<int> BinaryClubDataRepo::getRepoID() {
 // 删除俱乐部
 bool BinaryClubDataRepo::removeClub(int index) {
     // 验证输入
-    if (index < 0 || index >= repo.size()) return false;
+    if (index < 1 || index > repo.size()) return false;
     
     // 删除俱乐部
-    repo.erase(repo.begin() + index);
+    repo.erase(repo.begin() + index - 1);
     return true;
 }

@@ -3,6 +3,7 @@
  ***************/
 
 #include <iostream>
+#include <string>
 
 #include "Staff.h"
 #include "BinaryStaffDataRepo.h"
@@ -17,11 +18,18 @@ int main() {
 
    do {
    // 输出已有staff
-   int index = 1;
-   for (const auto & item : repo.getRepo()) {
-      std::cout << index << ". " << "姓名：" << item->getName() << "\t" << "战力：" << item->getPower() << "\t" << "价格：" << item->getPrice() << std::endl;
-      index++;
-   }
+      std::cout << "\n========当前已有Staff========\n";
+      int index = 1;
+      if (repo.getRepo().empty()) {
+         std::cout << "暂无Staff\n";
+      } else {
+         for (const auto & item : repo.getRepo()) {
+            std::cout << index << ". " << "姓名：" << item->getName() << std::string(10 - item->getName().length(), ' ') 
+            << "\t" << "战力：" << item->getPower() << std::string(10 - std::to_string(item->getPower()).length(), ' ') 
+            << "\t" << "价格：" << item->getPrice() << std::string(10 - std::to_string(item->getPrice()).length(), ' ') << std::endl;
+            index++;
+         }
+      }
 
 
       std::cout << "\n========创建Staff========\n"

@@ -4,6 +4,7 @@
 
 #include <iomanip>
 #include "ClubController.h"
+#include <string>
 
 // 新建俱乐部
 void ClubController::createNewClub(std::string name, std::string secret, int fund) {
@@ -16,17 +17,14 @@ void ClubController::createNewClub(std::string name, std::string secret, int fun
 
 // 打印俱乐部列表
 void ClubController::printClubRepo() {
-    std::cout << "========俱乐部列表========\n";
+    std::cout << "\n========俱乐部列表========\n";
 
     int index = 1;
     const auto& clubs = club_repo->getRepo();
+
     for (const auto & club : clubs) {
         std::cout << index << ". " << club->getName() << std::endl;
         index++;
-    }
-
-    if (index == 1) {
-        std::cout << "暂无俱乐部\n";
     }
 }
 
@@ -80,9 +78,16 @@ void ClubController::printClubInfo() {
     std::cout << std::endl;
 
     std::cout << "--------成员列表--------" << std::endl;
+    if (club->getCoach().empty() && club->getPlayers().empty()) {
+        std::cout << "暂无成员！\n";
+        std::cout << std::endl;
+        return;
+    }
     std::cout << "职务"
               << std::string(5, ' ') << "名字"
-              << std::string(11, ' ') << "属性" << std::endl;
+              << std::string(11, ' ') << "战力"
+              << std::string(11, ' ') << "价格"
+              << std::endl;
     std::cout << std::string(35, '-') << std::endl;
 
     for (const auto& coach_ID : club->getCoach()) {
@@ -90,7 +95,8 @@ void ClubController::printClubInfo() {
         if (coach) { // 检查指针是否有效
             std::cout << "教练"
                       << std::string(5, ' ') << coach->getName()
-                      << std::string(15 - coach->getName().length(), ' ') << coach->getPower() << std::endl;
+                      << std::string(15 - coach->getName().length(), ' ') << coach->getPower() 
+                      << std::string(15 - std::to_string(coach->getPower()).length(), ' ') << coach->getPrice() << std::endl;
         }
     }
 
@@ -99,7 +105,8 @@ void ClubController::printClubInfo() {
         if (player) { // 检查指针是否有效
             std::cout << "选手"
                       << std::string(5, ' ') << player->getName()
-                      << std::string(15 - player->getName().length(), ' ') << player->getPower() << std::endl;
+                      << std::string(15 - player->getName().length(), ' ') << player->getPower() 
+                      << std::string(15 - std::to_string(player->getPower()).length(), ' ') << player->getPrice() << std::endl;
         }
     }
     std::cout << std::endl;
@@ -108,9 +115,15 @@ void ClubController::printClubInfo() {
 
 // 打印动态信息
 void ClubController::printClubLog() {
+    if (current_club->getLogs().empty()) {
+        std::cout << "暂无动态！\n";
+        std::cout << std::endl;
+        return;
+    }
     for (const auto & item : current_club->getLogs()) {
         std::cout << item << std::endl;
     }
+    std::cout << std::endl;
 }
 
 
@@ -175,7 +188,7 @@ void ClubController::removeClub() {
     int choice;
     std::cout << "选择：";
     std::cin >> choice;
-    if (club_repo->removeClub(choice - 1)) {
+    if (club_repo->removeClub(choice)) {
         std::cout << "删除成功！\n";
     } else {
         std::cout << "无效选择！\n";

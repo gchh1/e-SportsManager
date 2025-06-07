@@ -11,7 +11,7 @@ void MarketController::printMarket() {
               << std::string(5, ' ') << "名字"
               << std::string(10, ' ') << "能力"
               << std::string(10, ' ') << "价格" << std::endl;
-    std::cout << std::string(38, '-') << std::endl; 
+    std::cout << std::string(50, '-') << std::endl; 
     int index = 1;
     for (const auto& item : market_staff) {
         auto staff = staff_repo->getStaff(item);
@@ -19,7 +19,7 @@ void MarketController::printMarket() {
             std::cout << std::left << std::setw(5) << (std::to_string(index) + ".")
                       << std::string(5, ' ') << staff->getName()
                       << std::string(15 - staff->getName().length(), ' ') << staff->getPower()
-                      << std::string(10, ' ') << staff->getPrice() << std::endl;
+                      << std::string(15 - std::to_string(staff->getPrice()).length(), ' ') << staff->getPrice() << std::endl;
         }
         index++;
     }
@@ -34,7 +34,7 @@ void MarketController::setSellStaff() {
     // 遍历仓库中的教练
     for (const auto& coach_ID : current_club->getCoach()) {
         auto coach = staff_repo->getStaff(coach_ID);
-        if (!coach->getState()) {
+        if (coach->getState()) {
             sell_staff.push_back(coach_ID);
         }
     }
@@ -42,7 +42,7 @@ void MarketController::setSellStaff() {
     // 遍历仓库中的选手
     for (const auto& player_ID : current_club->getPlayers()) {
         auto player = staff_repo->getStaff(player_ID);
-        if (!player->getState()) {
+        if (player->getState()) {
             sell_staff.push_back(player_ID);
         }
     }
@@ -51,21 +51,34 @@ void MarketController::setSellStaff() {
 
 // 打印俱乐部出售选手
 void MarketController::printSellStaff() {
+    if (sell_staff.empty()) {
+        std::cout << "暂无出售选手！\n";
+        return;
+    }
+
     std::cout << "\n========俱乐部选手========\n";
     std::cout << std::left << std::setw(5) << "编号"
+              << std::string(5, ' ') << "职位"
               << std::string(5, ' ') << "名字"
               << std::string(10, ' ') << "能力"
               << std::string(10, ' ') << "价格" << std::endl;
-    std::cout << std::string(38, '-') << std::endl;
+    std::cout << std::string(50, '-') << std::endl;
 
     int index = 1;
     for (const auto& item : sell_staff) {
         auto staff = staff_repo->getStaff(item);
         if (staff) { // Null check
-            std::cout << std::left << std::setw(5) << (std::to_string(index) + ".")
-                      << std::string(5, ' ') << staff->getName()
+            std::cout << std::left << std::setw(5) << (std::to_string(index) + ".");
+
+            if (auto coach_ptr = dynamic_cast<Coach*>(staff)) {
+                std::cout << std::string(5, ' ') << "教练";
+            } else if (auto player_ptr = dynamic_cast<Player*>(staff)) {
+                std::cout << std::string(5, ' ') << "选手";
+            }
+
+            std::cout << std::string(5, ' ') << staff->getName()
                       << std::string(15 - staff->getName().length(), ' ') << staff->getPower()
-                      << std::string(10, ' ') << staff->getPrice() << std::endl;
+                      << std::string(15 - std::to_string(staff->getPrice()).length(), ' ') << staff->getPrice() << std::endl;
         }
         index++;
     }
@@ -121,6 +134,7 @@ void MarketController::handleBuy() {
 
 // 处理出售请求
 void MarketController::handleSell() {
+
     // 获取选手编号
     std::cout << "输入要卖出选手编号：";
 

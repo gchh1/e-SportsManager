@@ -72,6 +72,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/e-sportsManager.dir/DependInfo.cmake"
   "src/CMakeFiles/createStaff.dir/DependInfo.cmake"
   "src/CMakeFiles/createTour.dir/DependInfo.cmake"
+  "src/CMakeFiles/generateTestData.dir/DependInfo.cmake"
   "src/models/CMakeFiles/models.dir/DependInfo.cmake"
   "src/dataHandlers/CMakeFiles/dataHandlers.dir/DependInfo.cmake"
   "src/controllers/CMakeFiles/controllers.dir/DependInfo.cmake"

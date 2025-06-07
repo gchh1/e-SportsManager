@@ -157,6 +157,20 @@ createTour/fast:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/build
 .PHONY : createTour/fast
 
+# Convenience name for target.
+src/CMakeFiles/generateTestData.dir/rule:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/generateTestData.dir/rule
+.PHONY : src/CMakeFiles/generateTestData.dir/rule
+
+# Convenience name for target.
+generateTestData: src/CMakeFiles/generateTestData.dir/rule
+.PHONY : generateTestData
+
+# fast build rule for target.
+generateTestData/fast:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\generateTestData.dir\build.make src/CMakeFiles/generateTestData.dir/build
+.PHONY : generateTestData/fast
+
 createStaff.obj: createStaff.cpp.obj
 .PHONY : createStaff.obj
 
@@ -205,6 +219,30 @@ createTour.cpp.s:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/createTour.cpp.s
 .PHONY : createTour.cpp.s
 
+generateTestData.obj: generateTestData.cpp.obj
+.PHONY : generateTestData.obj
+
+# target to build an object file
+generateTestData.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\generateTestData.dir\build.make src/CMakeFiles/generateTestData.dir/generateTestData.cpp.obj
+.PHONY : generateTestData.cpp.obj
+
+generateTestData.i: generateTestData.cpp.i
+.PHONY : generateTestData.i
+
+# target to preprocess a source file
+generateTestData.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\generateTestData.dir\build.make src/CMakeFiles/generateTestData.dir/generateTestData.cpp.i
+.PHONY : generateTestData.cpp.i
+
+generateTestData.s: generateTestData.cpp.s
+.PHONY : generateTestData.s
+
+# target to generate assembly for a file
+generateTestData.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\generateTestData.dir\build.make src/CMakeFiles/generateTestData.dir/generateTestData.cpp.s
+.PHONY : generateTestData.cpp.s
+
 test1.obj: test1.cpp.obj
 .PHONY : test1.obj
 
@@ -240,12 +278,16 @@ help:
 	@echo ... createStaff
 	@echo ... createTour
 	@echo ... e-sportsManager
+	@echo ... generateTestData
 	@echo ... createStaff.obj
 	@echo ... createStaff.i
 	@echo ... createStaff.s
 	@echo ... createTour.obj
 	@echo ... createTour.i
 	@echo ... createTour.s
+	@echo ... generateTestData.obj
+	@echo ... generateTestData.i
+	@echo ... generateTestData.s
 	@echo ... test1.obj
 	@echo ... test1.i
 	@echo ... test1.s

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\generateTestData.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\generateTestData.dir/objects.a @CMakeFiles\generateTestData.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\generateTestData.dir/objects.a -Wl,--no-whole-archive -o D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\generateTestData.exe -Wl,--out-implib,D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\libgenerateTestData.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\generateTestData.dir\linkLibs.rsp

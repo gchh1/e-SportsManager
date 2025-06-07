@@ -19,8 +19,7 @@ ViewState MarketView::run() {
     if (!controller->isRepoEmpty()) {
         controller->printMarket();
     } else {
-        std::cout << "空！\n";
-        return ViewState::MainMenuView;
+        std::cout << "\n市场暂时空！\n";
     }
 
     std::cout << "1. 买入\n"
@@ -34,6 +33,7 @@ ViewState MarketView::run() {
     switch (choice) {
         case 1:
             controller->handleBuy();
+            std::cout << "\n交易成功！\n";
             return ViewState::MarketView;
         case 2:
             controller->setSellStaff();
@@ -43,6 +43,9 @@ ViewState MarketView::run() {
         case 0:
             return ViewState::MainMenuView;
         default:
+            std::cout << "\n无效选择！\n";
+
+            std::cout << std::endl;
             return ViewState::MarketView;
     }
 }

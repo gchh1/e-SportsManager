@@ -3,6 +3,7 @@
  ***********/
 
 #include <iostream>
+#include <string>
 
 #include "Tournament.h"
 #include "BinaryTournamentDataRepo.h"
@@ -18,8 +19,18 @@ int main() {
     do {
         std::cout << "\n========当前已有赛事========\n";
         // 输出已有赛事
-        for (const auto & item : repo->getRepo()) {
-            std::cout << "赛事名称：" << item->getName() << "\t" << "参赛队伍数量：" << item->getTeamNum() << "\t" << "参赛费用：" << item->getEntryFee() << "\t" << "总奖金：" << item->getBonus() << std::endl;
+        
+        if (repo->getRepo().empty()) {
+            std::cout << "暂无赛事\n";
+        } else {
+            int n = 1;
+            for (const auto & item : repo->getRepo()) {
+                std::cout << n << ". " << "赛事名称：" << item->getName() << std::string(10 - item->getName().length(), ' ') 
+                << "\t" << "参赛队伍数量：" << item->getTeamNum() << std::string(10 - std::to_string(item->getTeamNum()).length(), ' ') 
+                << "\t" << "参赛费用：" << item->getEntryFee() << std::string(10 - std::to_string(item->getEntryFee()).length(), ' ') 
+                << "\t" << "总奖金：" << item->getBonus() << std::string(10 - std::to_string(item->getBonus()).length(), ' ') << std::endl;
+            n++;
+            }
         }
 
         std::string tour_name;

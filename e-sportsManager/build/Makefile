@@ -155,6 +155,19 @@ createTour/fast:
 .PHONY : createTour/fast
 
 #=============================================================================
+# Target rules for targets named generateTestData
+
+# Build rule for target.
+generateTestData: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 generateTestData
+.PHONY : generateTestData
+
+# fast build rule for target.
+generateTestData/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\generateTestData.dir\build.make src/CMakeFiles/generateTestData.dir/build
+.PHONY : generateTestData/fast
+
+#=============================================================================
 # Target rules for targets named models
 
 # Build rule for target.
@@ -219,6 +232,7 @@ help:
 	@echo ... createTour
 	@echo ... dataHandlers
 	@echo ... e-sportsManager
+	@echo ... generateTestData
 	@echo ... models
 	@echo ... views
 .PHONY : help

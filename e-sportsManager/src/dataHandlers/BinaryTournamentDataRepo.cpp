@@ -41,9 +41,9 @@ void BinaryTournamentDataRepo::save() {
 
 
 bool BinaryTournamentDataRepo::removeTournament(int index) {
-    if (index < 0 || index >= repo.size()) {
+    if (index < 1 || index > repo.size()) {
         return false;
     }
-    repo.erase(repo.begin() + index);
+    repo.erase(repo.begin() + index - 1);
     return true;
 }

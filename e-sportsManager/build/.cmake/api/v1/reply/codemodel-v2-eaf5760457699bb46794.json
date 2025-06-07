@@ -39,7 +39,8 @@
 					[
 						1,
 						2,
-						4
+						4,
+						5
 					]
 				},
 				{
@@ -54,7 +55,7 @@
 					"source" : "src/models",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				},
 				{
@@ -99,7 +100,7 @@
 					"source" : "src/views",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				}
 			],
@@ -127,7 +128,8 @@
 						2,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				},
 				{
@@ -155,14 +157,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "createStaff::@145eef247bfb46b6828c",
-					"jsonFile" : "target-createStaff-Debug-887e1620b87b856eb660.json",
+					"jsonFile" : "target-createStaff-Debug-5db6735167796c698f8a.json",
 					"name" : "createStaff",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "createTour::@145eef247bfb46b6828c",
-					"jsonFile" : "target-createTour-Debug-fc1051efd67225c9580f.json",
+					"jsonFile" : "target-createTour-Debug-23f556637b9e8f2963a4.json",
 					"name" : "createTour",
 					"projectIndex" : 0
 				},
@@ -176,8 +178,15 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "e-sportsManager::@145eef247bfb46b6828c",
-					"jsonFile" : "target-e-sportsManager-Debug-f31c513d18c0011965c6.json",
+					"jsonFile" : "target-e-sportsManager-Debug-421231f11526ed040c79.json",
 					"name" : "e-sportsManager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "generateTestData::@145eef247bfb46b6828c",
+					"jsonFile" : "target-generateTestData-Debug-72f7693057f5585473ec.json",
+					"name" : "generateTestData",
 					"projectIndex" : 0
 				},
 				{

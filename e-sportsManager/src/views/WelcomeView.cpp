@@ -40,6 +40,8 @@ ViewState WelcomeView::run() {
             std::cin >> fund;
 
             controller->createNewClub(name, secret, fund);
+
+            std::cout << "\n创建成功！\n";
             return ViewState::WelcomeView;
         }
         case 2: 
@@ -48,7 +50,9 @@ ViewState WelcomeView::run() {
                 controller->selectClub();
                 return ViewState::InitMainMenu;
             } else {
-                std::cout << "空！\n";
+                std::cout << "\n暂无俱乐部！\n";
+
+                std::cout << std::endl;
                 return ViewState::WelcomeView;
             }
         case 3: 
@@ -57,12 +61,17 @@ ViewState WelcomeView::run() {
                 controller->removeClub();
                 return ViewState::WelcomeView;
             } else {
-                std::cout << "空！\n";
+                std::cout << "\n暂无俱乐部！\n";
+
+                std::cout << std::endl;
                 return ViewState::WelcomeView;
             }
         case 0: 
             return ViewState::Exit;
         default: 
+            std::cout << "\n无效选择！\n";
+
+            std::cout << std::endl;
             return ViewState::WelcomeView;
     }
 }

@@ -66,7 +66,7 @@ class Coach : public Staff {
         Staff(name), pause_ability(a1), strategy_rating(a2), train_ability(a3), leadership(a4) {
             // 计算战力以及价格(极简版本)
             power = pause_ability + strategy_rating + train_ability + leadership;
-            price = power;
+            price = 5 * power;
         } 
 
         // 序列化及反序列化方法
@@ -96,7 +96,7 @@ class Player : public Staff {
         Staff(name), firepower(a1), entrying(a2), trading(a3), opening(a4), clutching(a5), sniping(a6), utility(a7), call(a8) {
             // 计算战力及价格
             power = firepower + entrying + trading + opening + clutching + sniping + utility + call;
-            price = power;
+            price = 5 * power;
         }
 
 
