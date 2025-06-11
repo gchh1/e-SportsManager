@@ -8,6 +8,8 @@
 \begin{document}
 \input{cover.tex}
 
+
+
 \setboolean{@twoside}{true}
 \begin{spacing}{1.5}
 \zihao{-4}
@@ -15,7 +17,7 @@
 \pagenumbering{arabic}
 
 \begin{center}
-{\zihao{3} \bfseries 电竞经理}
+{\zihao{3} \bfseries 电竞俱乐部管理系统}
 \end{center}
 
     \section{选题背景}
@@ -42,7 +44,8 @@
     \subsection{人员分工}
         \begin{itemize}
             \item 李睿：后台开发
-            \item 杨华城：客户端开发
+            \item 杨华城：客户端开发、项目结构构建
+            \item DAVUDOV SERDAR：界面美化
         \end{itemize}
 
 
@@ -140,7 +143,10 @@ enum class ViewState {
     MarketView,
     TournamentView,
     RankView,
-    Exit
+    Exit,
+    BackStageMenuView,
+    BackStageStaffView,
+    BackStageTourView
 };
             \end{lstlisting}
 
@@ -164,90 +170,11 @@ enum LogOperation {
             因此，我们使用cmake进行项目管理，让不同路径的源文件或头文件能够被正确地编译和链接。
 
 
-            \begin{lstlisting}[caption=项目文件结构]
- \texttt{e-sportsManager}
-├─ CMakeLists.txt
-├─ src
-│  ├─ CMakeLists.txt
-│  ├─ backstage.cpp
-│  ├─ test1.cpp
-│  ├─ views
-│  │  ├─ BackStageMenuView.cpp
-│  │  ├─ BackStageStaffView.cpp
-│  │  ├─ BackStageTourView.cpp 
-│  │  ├─ ClubInfoView.cpp
-│  │  ├─ ClubLogView.cpp
-│  │  ├─ CMakeLists.txt
-│  │  ├─ MainMenuView.cpp
-│  │  ├─ MarketView.cpp
-│  │  ├─ RankView.cpp
-│  │  ├─ TournamentView.cpp
-│  │  ├─ WelcomeView.cpp
-│  │  └─ heads
-│  │     ├─ BackStageMenuView.h
-│  │     ├─ BackStageStaffView.h 
-│  │     ├─ BackStageTourView.h
-│  │     ├─ ClubInfoView.h
-│  │     ├─ ClubLogView.h
-│  │     ├─ MainMenuView.h
-│  │     ├─ MarketView.h
-│  │     ├─ RankView.h
-│  │     ├─ TournamentView.h
-│  │     └─ WelcomeView.h
-│  ├─ models
-│  │  ├─ Club.cpp
-│  │  ├─ CMakeLists.txt
-│  │  ├─ Log.cpp
-│  │  ├─ Staff.cpp
-│  │  ├─ Tournament.cpp
-│  │  ├─ Manager.cpp 
-│  │  └─ heads
-│  │     ├─ Club.h
-│  │     ├─ Log.h
-│  │     ├─ Staff.h
-│  │     ├─ Manager.h
-│  │     └─ Tournament.h
-│  ├─ utils
-│  │  ├─ secret.h
-│  │  ├─ secret.cpp
-│  │  └─ CMakeLists.txt
-│  ├─ include
-│  │  ├─ IData.h
-│  │  ├─ IDataRepo.h
-│  │  ├─ ISecret.h
-│  │  ├─ IView.h
-│  │  ├─ LogOperation.h
-│  │  └─ ViewState.h
-│  ├─ dataHandlers
-│  │  ├─ BinaryClubDataRepo.cpp
-│  │  ├─ BinaryStaffDataRepo.cpp
-│  │  ├─ BinaryTournamentDataRepo.cpp
-│  │  ├─ CMakeLists.txt
-│  │  └─ heads
-│  │     ├─ BinaryClubDataRepo.h
-│  │     ├─ BinaryStaffDataRepo.h
-│  │     └─ BinaryTournamentDataRepo.h
-│  ├─ controllers
-│  │  ├─ ClubController.cpp
-│  │  ├─ CMakeLists.txt
-│  │  ├─ MarketController.cpp
-│  │  ├─ TournamentController.cpp
-│  │  └─ heads
-│  │     ├─ ClubController.h
-│  │     ├─ MarketController.h
-│  │     └─ TournamentController.h
-├─ data
-│  ├─ club_repo.dat
-│  ├─ staff_data.dat
-│  ├─ manager.dat
-│  └─ Tournament_repo.dat
-├─ build
-├─ bin
-   ├─ e-sportsManager.exe
-   └─ backstage.exe
-
-           
-            \end{lstlisting}
+            \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\textwidth]{img/file.png}
+            \caption{项目文件结构}
+            \end{figure}
             
             另外，cmake的使用为后续的项目管理提供了便利，通过cmake，我们能够方便地链接第三方库，如链接
             qt库进行GUI的开发。同时，cmake的使用也提高了项目的可移植性，经过测试，我们的系统在linux系统上
@@ -882,9 +809,13 @@ void ClubController::printRankByPower() {
     \end{figure}
 
     \subsection{华为云资源的使用}
-    通过华为云的资源，成功部署了服务器，并在服务器上成功运行了系统，为系统的运行提供了便利。
-    
-
+    通过华为云的资源，成功部署了服务器，并在服务器上成功运行了系统，体现了跨平台性。
+    在部署中，遇到了\verb|conio.h|头文件的问题，最后通过在github上寻找替代库，成功解决了问题。
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/server.png}
+        \caption{服务器上部署}
+    \end{figure}
 
     \subsection{课程设计过程中的收获和体会}
     整个实现过程是一次宝贵的学习经历。从最初只有一个模糊的想法，到逐步设计数据结构、模块接口，
