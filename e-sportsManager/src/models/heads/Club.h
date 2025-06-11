@@ -9,12 +9,13 @@
 #include <algorithm>
 #include <memory> 
 
+#include "ISecret.h"
 #include "Staff.h"
 #include "Log.h"
 #include "BinaryStaffDataRepo.h"
 
 class Log;
-class Club : public IData {
+class Club : public IData, public ISecret {
     // 数据成员
     int club_ID;                    // 俱乐部ID
     std::string club_name;          // 俱乐部名字
@@ -59,9 +60,6 @@ class Club : public IData {
             return true;
         }
 
-        // 修改密钥
-        void setSecret(std::string secret) {club_secret = secret;}
-
         // 添加教练
         bool addCoach(int coach_ID);
 
@@ -88,8 +86,10 @@ class Club : public IData {
         int getPower() const {return power;}
         const std::vector<std::string> & getLogs() const {return logs;}
 
-        // 验证密钥
-        bool verifySecret(std::string input) {return input == club_secret;}
+
+        // ISecret接口
+        std::string getSecret() override {return club_secret;}
+        void setSecret(std::string secret) override {club_secret = secret;}
 
 
         // 序列化和反序列化

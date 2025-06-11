@@ -71,11 +71,56 @@ include src/views/CMakeFiles/views.dir/flags.make
 src/views/CMakeFiles/views.dir/codegen:
 .PHONY : src/views/CMakeFiles/views.dir/codegen
 
+src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj: src/views/CMakeFiles/views.dir/flags.make
+src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
+src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/BackStageMenuView.cpp
+src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj -MF CMakeFiles\views.dir\BackStageMenuView.cpp.obj.d -o CMakeFiles\views.dir\BackStageMenuView.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\BackStageMenuView.cpp
+
+src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/views.dir/BackStageMenuView.cpp.i"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\BackStageMenuView.cpp > CMakeFiles\views.dir\BackStageMenuView.cpp.i
+
+src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/views.dir/BackStageMenuView.cpp.s"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\BackStageMenuView.cpp -o CMakeFiles\views.dir\BackStageMenuView.cpp.s
+
+src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj: src/views/CMakeFiles/views.dir/flags.make
+src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
+src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/BackStageStaffView.cpp
+src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj -MF CMakeFiles\views.dir\BackStageStaffView.cpp.obj.d -o CMakeFiles\views.dir\BackStageStaffView.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\BackStageStaffView.cpp
+
+src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/views.dir/BackStageStaffView.cpp.i"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\BackStageStaffView.cpp > CMakeFiles\views.dir\BackStageStaffView.cpp.i
+
+src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/views.dir/BackStageStaffView.cpp.s"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\BackStageStaffView.cpp -o CMakeFiles\views.dir\BackStageStaffView.cpp.s
+
+src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj: src/views/CMakeFiles/views.dir/flags.make
+src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
+src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/BackStageTourVIew.cpp
+src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj -MF CMakeFiles\views.dir\BackStageTourVIew.cpp.obj.d -o CMakeFiles\views.dir\BackStageTourVIew.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\BackStageTourVIew.cpp
+
+src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/views.dir/BackStageTourVIew.cpp.i"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\BackStageTourVIew.cpp > CMakeFiles\views.dir\BackStageTourVIew.cpp.i
+
+src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/views.dir/BackStageTourVIew.cpp.s"
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\BackStageTourVIew.cpp -o CMakeFiles\views.dir\BackStageTourVIew.cpp.s
+
 src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj: src/views/CMakeFiles/views.dir/flags.make
 src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
 src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/ClubInfoView.cpp
 src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj -MF CMakeFiles\views.dir\ClubInfoView.cpp.obj.d -o CMakeFiles\views.dir\ClubInfoView.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\ClubInfoView.cpp
 
 src/views/CMakeFiles/views.dir/ClubInfoView.cpp.i: cmake_force
@@ -90,7 +135,7 @@ src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj: src/views/CMakeFiles/views.d
 src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
 src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/ClubLogView.cpp
 src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj -MF CMakeFiles\views.dir\ClubLogView.cpp.obj.d -o CMakeFiles\views.dir\ClubLogView.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\ClubLogView.cpp
 
 src/views/CMakeFiles/views.dir/ClubLogView.cpp.i: cmake_force
@@ -105,7 +150,7 @@ src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj: src/views/CMakeFiles/views.
 src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
 src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/MainMenuView.cpp
 src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj -MF CMakeFiles\views.dir\MainMenuView.cpp.obj.d -o CMakeFiles\views.dir\MainMenuView.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\MainMenuView.cpp
 
 src/views/CMakeFiles/views.dir/MainMenuView.cpp.i: cmake_force
@@ -120,7 +165,7 @@ src/views/CMakeFiles/views.dir/MarketView.cpp.obj: src/views/CMakeFiles/views.di
 src/views/CMakeFiles/views.dir/MarketView.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
 src/views/CMakeFiles/views.dir/MarketView.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/MarketView.cpp
 src/views/CMakeFiles/views.dir/MarketView.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/views/CMakeFiles/views.dir/MarketView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/views/CMakeFiles/views.dir/MarketView.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/MarketView.cpp.obj -MF CMakeFiles\views.dir\MarketView.cpp.obj.d -o CMakeFiles\views.dir\MarketView.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\MarketView.cpp
 
 src/views/CMakeFiles/views.dir/MarketView.cpp.i: cmake_force
@@ -135,7 +180,7 @@ src/views/CMakeFiles/views.dir/RankView.cpp.obj: src/views/CMakeFiles/views.dir/
 src/views/CMakeFiles/views.dir/RankView.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
 src/views/CMakeFiles/views.dir/RankView.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/RankView.cpp
 src/views/CMakeFiles/views.dir/RankView.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/views/CMakeFiles/views.dir/RankView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/views/CMakeFiles/views.dir/RankView.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/RankView.cpp.obj -MF CMakeFiles\views.dir\RankView.cpp.obj.d -o CMakeFiles\views.dir\RankView.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\RankView.cpp
 
 src/views/CMakeFiles/views.dir/RankView.cpp.i: cmake_force
@@ -150,7 +195,7 @@ src/views/CMakeFiles/views.dir/TournamentView.cpp.obj: src/views/CMakeFiles/view
 src/views/CMakeFiles/views.dir/TournamentView.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
 src/views/CMakeFiles/views.dir/TournamentView.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/TournamentView.cpp
 src/views/CMakeFiles/views.dir/TournamentView.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/views/CMakeFiles/views.dir/TournamentView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/views/CMakeFiles/views.dir/TournamentView.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/TournamentView.cpp.obj -MF CMakeFiles\views.dir\TournamentView.cpp.obj.d -o CMakeFiles\views.dir\TournamentView.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\TournamentView.cpp
 
 src/views/CMakeFiles/views.dir/TournamentView.cpp.i: cmake_force
@@ -165,7 +210,7 @@ src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj: src/views/CMakeFiles/views.d
 src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj: src/views/CMakeFiles/views.dir/includes_CXX.rsp
 src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj: D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/WelcomeView.cpp
 src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj: src/views/CMakeFiles/views.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj -MF CMakeFiles\views.dir\WelcomeView.cpp.obj.d -o CMakeFiles\views.dir\WelcomeView.cpp.obj -c D:\yhc\cpp\e-sportsManager\e-sportsManager\src\views\WelcomeView.cpp
 
 src/views/CMakeFiles/views.dir/WelcomeView.cpp.i: cmake_force
@@ -178,6 +223,9 @@ src/views/CMakeFiles/views.dir/WelcomeView.cpp.s: cmake_force
 
 # Object files for target views
 views_OBJECTS = \
+"CMakeFiles/views.dir/BackStageMenuView.cpp.obj" \
+"CMakeFiles/views.dir/BackStageStaffView.cpp.obj" \
+"CMakeFiles/views.dir/BackStageTourVIew.cpp.obj" \
 "CMakeFiles/views.dir/ClubInfoView.cpp.obj" \
 "CMakeFiles/views.dir/ClubLogView.cpp.obj" \
 "CMakeFiles/views.dir/MainMenuView.cpp.obj" \
@@ -189,6 +237,9 @@ views_OBJECTS = \
 # External object files for target views
 views_EXTERNAL_OBJECTS =
 
+src/views/libviews.a: src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj
+src/views/libviews.a: src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj
+src/views/libviews.a: src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj
 src/views/libviews.a: src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj
 src/views/libviews.a: src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj
 src/views/libviews.a: src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj
@@ -198,7 +249,7 @@ src/views/libviews.a: src/views/CMakeFiles/views.dir/TournamentView.cpp.obj
 src/views/libviews.a: src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj
 src/views/libviews.a: src/views/CMakeFiles/views.dir/build.make
 src/views/libviews.a: src/views/CMakeFiles/views.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libviews.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\yhc\cpp\e-sportsManager\e-sportsManager\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libviews.a"
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && $(CMAKE_COMMAND) -P CMakeFiles\views.dir\cmake_clean_target.cmake
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build\src\views && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\views.dir\link.txt --verbose=$(VERBOSE)
 

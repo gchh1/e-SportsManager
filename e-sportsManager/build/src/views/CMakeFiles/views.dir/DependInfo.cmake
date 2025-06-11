@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/BackStageMenuView.cpp" "src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj" "gcc" "src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj.d"
+  "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/BackStageStaffView.cpp" "src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj" "gcc" "src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj.d"
+  "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/BackStageTourVIew.cpp" "src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj" "gcc" "src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj.d"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/ClubInfoView.cpp" "src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj" "gcc" "src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj.d"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/ClubLogView.cpp" "src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj" "gcc" "src/views/CMakeFiles/views.dir/ClubLogView.cpp.obj.d"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/MainMenuView.cpp" "src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj" "gcc" "src/views/CMakeFiles/views.dir/MainMenuView.cpp.obj.d"

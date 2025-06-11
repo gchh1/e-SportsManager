@@ -39,8 +39,862 @@
     选手、教练、赛事等元素抽象为程序中的类和对象，模拟它们之间的交互和俱乐部的运营流程。系统应注重用户体
     验的流畅性和功能的完整性，让用户能够沉浸式地管理自己的电竞帝国。
 
+    \subsection{人员分工}
+        \begin{itemize}
+            \item 李睿：后台开发
+            \item 杨华城：客户端开发
+        \end{itemize}
+
+
     \section{方案论证（设计理念）}
+        本系统使用了类似MVC（即Model-View-Controller）的设计模式，并在设计类时充分考虑了接口的使用、
+        多态性的使用等。最后在页面跳转协调和日志生成方面，使用了枚举表示状态。下面具体进行阐释。
+        \subsection{MVC设计模式}
+            MVC设计模式使前后端分离。视图层只需处理交互，而不需要进行具体的业务逻辑处理；
+            控制器层和模型层则负责处理视图层的请求，进行业务逻辑处理。。
+            \begin{itemize}
+                \item{\bf{模型层（Model）}}
+                            负责封装应用的核心数据和业务逻辑。在本项目中，Club、Staff（及其派
+                            生类 Coach、Player）、Tournament、Log类构成了模型层。它们不仅包含各
+                            自的属性，还定义了相关的操作方法（如资金变动、人员增删、战力计算等）。
+                            总体而言，模型层是系统中的最直接数据，并为controllers的业务操作提供
+                            相应的业务函数。
+                \item{\bf{视图层（View）}}
+                            负责展示模型层的数据，以及用户与系统交互的界面。在本项目中，WelcomeView、
+                            MainMenuView、ClubInfoView、MarketView、TournamentView 等类属于视图层。
+                            它们接收用户的输入，并将模型数据显示给用户。视图层不直接处理业务逻辑，
+                            而是将用户操作传递给控制器。
+                \item{\bf{控制器层（Controller）}}
+                            作为模型和视图之间的协调者。ClubController、MarketController、
+                            TournamentController 等类是控制器层。它们接收来自视图的用户请求，
+                            调用模型层相应的方法处理业务逻辑，并进行数据的更新。
+            \end{itemize} 
+
+        \subsection{类的设计}
+            在对每一个类进行设计时，我们都尽量考虑接口以及抽象类的使用，以降低代码的耦合度，提高代码的复用性以及可维护性
+            并使得代码逻辑更加清晰。
+
+            如在view层中，我们让其中的每一个类都继承于IView接口，然后在main函数中，利用多态性使用指向IView类的
+            指针实现对不同view的调用，这体现了依赖倒置原则和接口隔离原则。
+
+            \begin{lstlisting}[caption=IView接口定义]
+#pragma once
+
+#include <iostream>
+#include "ViewState.h"
+
+class IView {
+public:
+    virtual ViewState run() = 0;  // 运行视图，返回下一级视图状态
+    virtual void initCtrl() = 0;  // 初始化控制器
+};
+
+            \end{lstlisting}
+            而在secret板块，我们设计了ISecret接口，让需要接入secret的Club类和Manager类继承，
+            随后在\verb|secret.cpp|中定义\verb|secret|相关的函数，在进行相关密码的操作时进行
+            调用，避免重复使用相同的代码。
+
+            \begin{lstlisting}[caption=ISecret接口定义]
+#pragma once
+#include <string>
+
+class ISecret {
+public:
+    virtual std::string getSecret() = 0;
+    virtual void setSecret(std::string secret) = 0;
+};
+            \end{lstlisting}
+
+            \begin{lstlisting}[caption=secret相关函数声明]
+#pragma once
+
+#include <string>
+#include "ISecret.h"
+
+// 模拟密钥输入
+void Input(std::string &secret);
+
+// 验证密钥
+bool Verify(ISecret *sub, std::string secret);
+
+// 修改密钥
+void Change(ISecret *sub);
+            \end{lstlisting}
+
+            
+
+        \subsection{枚举表示状态}
+            在页面跳转协调和日志生成的实现上，使用了枚举表示状态。在页面方面，我们定义了ViewState枚举类型，
+            用于表示不同的的页面状态。
+            \begin{lstlisting}[caption=ViewState枚举定义]
+#pragma once
+
+enum class ViewState {
+    WelcomeView,
+    CreateClub,
+    LoadClub,
+    InitMainMenu,
+    MainMenuView,
+    ClubInfoView,
+    ClubLogView,
+    MarketView,
+    TournamentView,
+    RankView,
+    Exit
+};
+            \end{lstlisting}
+
+            在日志生成方面，我们定义了LogOperation枚举类型，用于表示针对不同的操作生成不同的日志。
+            \begin{lstlisting}[caption=LogOperation枚举定义]
+#pragma once
+
+enum LogOperation {
+    ParticipateTournament,
+    SellStaff,
+    BuyStaff
+};
+                \end{lstlisting}
     
+            这样做的好处是，当需要添加新的操作或界面时，只需要在枚举类型中添加即可，并添加对应的
+            类或函数，而不需要修改更加底层的代码，提高了可拓展性。同时，通过枚举类型，我们能够方便地
+            判断当前的页面状态，从而对代码进行理解，提高了代码的可读性。
+            
+            \subsection{cmake项目管理}
+            由于采用了多文件的项目结构，并且为模型层、视图层、控制器层和include层分别设置了不同的文件夹，
+            因此，我们使用cmake进行项目管理，让不同路径的源文件或头文件能够被正确地编译和链接。
+
+
+            \begin{lstlisting}[caption=项目文件结构]
+ \texttt{e-sportsManager}
+├─ CMakeLists.txt
+├─ src
+│  ├─ CMakeLists.txt
+│  ├─ backstage.cpp
+│  ├─ test1.cpp
+│  ├─ views
+│  │  ├─ BackStageMenuView.cpp
+│  │  ├─ BackStageStaffView.cpp
+│  │  ├─ BackStageTourView.cpp 
+│  │  ├─ ClubInfoView.cpp
+│  │  ├─ ClubLogView.cpp
+│  │  ├─ CMakeLists.txt
+│  │  ├─ MainMenuView.cpp
+│  │  ├─ MarketView.cpp
+│  │  ├─ RankView.cpp
+│  │  ├─ TournamentView.cpp
+│  │  ├─ WelcomeView.cpp
+│  │  └─ heads
+│  │     ├─ BackStageMenuView.h
+│  │     ├─ BackStageStaffView.h 
+│  │     ├─ BackStageTourView.h
+│  │     ├─ ClubInfoView.h
+│  │     ├─ ClubLogView.h
+│  │     ├─ MainMenuView.h
+│  │     ├─ MarketView.h
+│  │     ├─ RankView.h
+│  │     ├─ TournamentView.h
+│  │     └─ WelcomeView.h
+│  ├─ models
+│  │  ├─ Club.cpp
+│  │  ├─ CMakeLists.txt
+│  │  ├─ Log.cpp
+│  │  ├─ Staff.cpp
+│  │  ├─ Tournament.cpp
+│  │  ├─ Manager.cpp 
+│  │  └─ heads
+│  │     ├─ Club.h
+│  │     ├─ Log.h
+│  │     ├─ Staff.h
+│  │     ├─ Manager.h
+│  │     └─ Tournament.h
+│  ├─ utils
+│  │  ├─ secret.h
+│  │  ├─ secret.cpp
+│  │  └─ CMakeLists.txt
+│  ├─ include
+│  │  ├─ IData.h
+│  │  ├─ IDataRepo.h
+│  │  ├─ ISecret.h
+│  │  ├─ IView.h
+│  │  ├─ LogOperation.h
+│  │  └─ ViewState.h
+│  ├─ dataHandlers
+│  │  ├─ BinaryClubDataRepo.cpp
+│  │  ├─ BinaryStaffDataRepo.cpp
+│  │  ├─ BinaryTournamentDataRepo.cpp
+│  │  ├─ CMakeLists.txt
+│  │  └─ heads
+│  │     ├─ BinaryClubDataRepo.h
+│  │     ├─ BinaryStaffDataRepo.h
+│  │     └─ BinaryTournamentDataRepo.h
+│  ├─ controllers
+│  │  ├─ ClubController.cpp
+│  │  ├─ CMakeLists.txt
+│  │  ├─ MarketController.cpp
+│  │  ├─ TournamentController.cpp
+│  │  └─ heads
+│  │     ├─ ClubController.h
+│  │     ├─ MarketController.h
+│  │     └─ TournamentController.h
+├─ data
+│  ├─ club_repo.dat
+│  ├─ staff_data.dat
+│  ├─ manager.dat
+│  └─ Tournament_repo.dat
+├─ build
+├─ bin
+   ├─ e-sportsManager.exe
+   └─ backstage.exe
+
+           
+            \end{lstlisting}
+            
+            另外，cmake的使用为后续的项目管理提供了便利，通过cmake，我们能够方便地链接第三方库，如链接
+            qt库进行GUI的开发。同时，cmake的使用也提高了项目的可移植性，经过测试，我们的系统在linux系统上
+            也能够正常运行。
+
+        \subsection{实现的功能}            
+        本系统设计了客户端和后台管理两部分。后台功能包括创建新的选手并添加到市场上，以及赛事的创建，同时还提供了删除功能。
+        客户端是主要的功能分布部分，下面根据页面进行分述。
+
+        \begin{enumerate}
+            \item 欢迎界面
+                \begin{enumerate}
+                    \item 新建俱乐部并载入文件中
+                    \item 从文件存档中加载俱乐部
+                    \item 删除俱乐部
+                    \item 密码验证，新建俱乐部时需创建密码，加载俱乐部时需验证密码
+                \end{enumerate}
+            \item 俱乐部信息界面
+                \begin{enumerate}
+                    \item 显示俱乐部信息
+                    \item 显示俱乐部成员信息
+                    \item 显示俱乐部动态
+                    \item 修改密码
+                \end{enumerate}
+            \item 市场界面
+                \begin{enumerate}
+                    \item 显示市场信息
+                    \item 买入选手
+                    \item 卖出选手
+                \end{enumerate}
+            \item 赛事界面
+                \begin{enumerate}
+                    \item 显示赛事信息
+                    \item 参与赛事
+                    \item 根据比赛模拟算法计算出比赛结果
+                \end{enumerate}
+            \item 排名界面
+                \begin{enumerate}
+                    \item 按积分显示排名
+                    \item 按战力显示排名
+                    \item 按资金显示排名
+                \end{enumerate}
+            
+        \end{enumerate}
+
+        \subsection{系统安全性}
+        \begin{enumerate}
+            \item 用户选择俱乐部时，需要输入密码，确保俱乐部的安全性
+            \item 用户修改俱乐部密码时，需要两次输入原密码
+            \item 在进入后台时，需要输入管理员密码
+            \item 在用户进行选择时，通过输入验证保证程序不会崩溃
+            \item 在用户进行市场交易或比赛时，会对俱乐部的资金进行判断，保证俱乐部的资金不会为负
+        \end{enumerate}
+            
+        \subsection{数据的完整性}
+            通过二进制文件存档的方式，保证了数据的完整性。在启动系统时，会自动从数据文件中
+            对俱乐部数据、职员数据以及赛事数据进行读取；在退出系统时，会自动保存数据到数据文件中，保证了数据的完整性。
+
+        \subsection{应用的运行环境及对应要求}
+
+        \subsubsection{运行环境}
+            系统通过原生c++进行开发，并通过终端进行输出，在windows系统上具有最佳的运行效果。
+            在linux和mac上需要重新使用cmake进行build，生成可执行文件后，即可运行。
+
+        \subsubsection{对于要求}
+            \begin{enumerate}
+                \item windows：在windows上需要保证系统有GCC/G++编译器
+                \item linux、mac：由于需要重新使用cmake进行build，因此需要保证系统有cmake
+            \end{enumerate}
+
+    \section{过程论述}
+    \subsection{宏观框架}
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/frame.png}
+        \caption{宏观框架}
+    \end{figure}
+
+    \subsection{欢迎界面}
+    \subsubsection{主界面}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/welcome.png}
+        \caption{欢迎界面}
+    \end{figure}
+    在欢迎界面中，使用“=”进行页面状态的提示，让用户直接输入数字进行选择，直接了当。
+
+    \subsubsection{新建俱乐部}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/createClub1.png}
+        \caption{新建俱乐部}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/createClub2.png}
+        \caption{新建俱乐部（错误密码）}
+    \end{figure}
+
+    新建俱乐部在代码中的体现就是创建一个Club对象，并把其添加到ClubRepo中。考虑到MVC模式，
+    view层中通过\verb|ClubController|进行与model层的交互;而\verb|ClubController|则定义了 \verb|std::shared_ptr<BinaryClubDataRepo>| 的私用成员
+    进行与数据层的交互。
+
+    在输入密码时，使用了密码隐藏的方式，模拟真实的密码输入，并要求用户两次输入密码，保证能够准确记忆密码。
+    以下是具体实现的代码，同样后面在涉及密码输入时，都采用了相同的方式，便不再赘述。
+    
+    \begin{lstlisting}[caption=密码隐藏实现]
+std::string secret1, secret2;
+// 模拟密钥输入
+secret1.clear();
+char ch;
+while (true) {
+    ch = _getch();
+    if (ch == '\r' || ch == '\n') {
+        break;
+    } else if (ch == '\b') {
+        if (!secret1.empty()) {
+            secret1.pop_back();
+            std::cout << "\b \b";
+        }
+    } else {
+        secret1 += ch;
+        std::cout << '*';
+    }
+}
+
+int attempt = 4;
+std::cout << "\n请再次输入俱乐部密钥：";
+do {
+    // 模拟密钥输入
+    secret2.clear();
+    while (true) {
+        ch = _getch();
+        if (ch == '\r' || ch == '\n') {
+            break;
+        } else if (ch == '\b') {
+            if (!secret2.empty()) {
+                secret2.pop_back();
+                std::cout << "\b \b";
+            }
+        } else {
+            secret2 += ch;
+            std::cout << '*';
+        }
+    }
+
+    if (secret1 == secret2) break;
+
+    attempt--;
+    if (attempt == 0) break;
+    std::cout << "\n两次输入不一致，请重新输入！(剩余" << attempt << "次机会)：";
+} while (true);
+
+if (attempt == 0) {
+    std::cout << "\n创建失败！\n";
+    std::cout << std::endl;
+    return false;
+}   
+    \end{lstlisting}
+    
+    \subsubsection{载入俱乐部}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/loadClub.png}
+        \caption{载入俱乐部}
+    \end{figure}
+    
+    载入俱乐部在代码中的体现就是从ClubRepo中读取俱乐部数据，并显示在欢迎界面中，再
+    让用户选择俱乐部，把选中的俱乐部设置为当前俱乐部，即将\verb|ClubController|中的\verb|currentClub*|指向选中的俱乐部，
+    随即进行密码验证。
+
+    \subsubsection{删除俱乐部}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/removeClub.png}
+        \caption{删除俱乐部}
+    \end{figure}
+    
+    删除俱乐部在\verb|ClubController|中的操作则与载入俱乐部相反，
+    
+    \subsection{主菜单}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/mainMenu.png}
+        \caption{主菜单}
+    \end{figure}
+
+    主菜单负责导航功能，下面给出页面导航的实现代码并进行说明。
+
+
+    代码为整个客户端的main函数，首先通过构造函数建立起数据仓库和相应控制器连接
+    \begin{lstlisting}[caption=连接]
+// 数据仓库
+auto clubRepo = std::make_shared<BinaryClubDataRepo>();
+auto staffRepo = std::make_shared<BinaryStaffDataRepo>();
+auto tourRepo = std::make_shared<BinaryTournamentDataRepo>();
+
+clubRepo->load();
+staffRepo->load();
+tourRepo->load();
+
+
+//  控制器
+auto clubCtrl = new ClubController(clubRepo, staffRepo);
+auto marketCtrl = new MarketController(staffRepo, clubRepo);
+auto tourCtrl = new TournamentController(tourRepo, clubRepo);
+
+    \end{lstlisting}
+    
+
+    然后在视图上定义了一个无序map容器，用于存储不同状态的视图，还定义了ViewState类型
+    的state变量，用于存储下一状态
+    
+    \begin{lstlisting}[caption=视图定义]
+// 视图
+std::unordered_map<ViewState, std::unique_ptr<IView>> views;
+
+views[ViewState::WelcomeView] = std::make_unique<WelcomeView>(clubCtrl);
+views[ViewState::MainMenuView] = std::make_unique<MainMenuView>(clubCtrl, marketCtrl, tourCtrl);
+views[ViewState::ClubInfoView] = std::make_unique<ClubInfoView>(clubCtrl);
+views[ViewState::ClubLogView] = std::make_unique<ClubLogView>(clubCtrl);
+views[ViewState::MarketView] = std::make_unique<MarketView>(marketCtrl);
+views[ViewState::TournamentView] = std::make_unique<TournamentView>(tourCtrl);
+views[ViewState::RankView] = std::make_unique<RankView>(clubCtrl);
+
+ViewState state = ViewState::WelcomeView;   
+    \end{lstlisting}
+
+    最后只需在主循环中，通过state变量的值，调用views中对应状态的视图的run方法，即可实现页面跳转，
+    在\verb|state == ViewState::Exit|时，退出循环，结束程序。
+
+    \begin{lstlisting}[caption=主循环]
+// 程序主循环
+// 程序主循环
+while (state != ViewState::Exit) {
+    if (state == ViewState::InitMainMenu) {
+        views[ViewState::MainMenuView]->initCtrl();
+        state = ViewState::MainMenuView;
+    }
+    state = views[state]->run();
+}
+    \end{lstlisting}
+
+    \subsection{俱乐部信息}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/clubInfo.png}
+        \caption{俱乐部信息}
+    \end{figure}
+
+    首先对当前俱乐部相关信息进行打印。
+
+    \subsubsection{日志（动态）}
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/Log.png}
+        \caption{日志}
+    \end{figure}
+
+    一条log的构成为：时间+事件+资金变化+当前资金+积分变化+当前积分。实际上作为
+    一个\verb|std::string|对象添加到当前俱乐部的\verb|logs|中。
+    下面具体说明log的生成代码。    
+
+    首先是\verb|Log|类的定义
+
+    \begin{lstlisting}[caption=Log类定义]
+class Log {   
+    std::string log;
+    std::string staff_name;
+    std::string tournament_name;
+    public:
+        // 设置选手
+        void setStaff(std::string staff) {this->staff_name = staff;}
+
+        // 设置赛事
+        void setTournament(std::string tournament) {this->tournament_name = tournament;}
+
+        // 生成日志
+        void generateLog(LogOperation operation, int fund_change, int points_change, int fund, int points);
+
+        // 获取日志
+        std::string getLog() const {return log;}
+
+};
+    \end{lstlisting}
+
+    重点看\verb|generateLog|函数的实现。首先通过ctime库的\verb|time|函数获取当前时间，然后通过\verb|localtime|函数获取
+    \verb|tm*| 格式的实际以便进行格式化，最后通过\verb|std::stringstream|加入到\verb|log|中
+
+    \begin{lstlisting}[caption=时间戳生成]
+// 设置时间
+auto now = std::time(nullptr);
+auto local_time = std::localtime(&now);
+
+std::stringstream ss;
+ss << std::put_time(local_time, "%Y-%m-%d %H:%M:%S");
+this->log += ss.str();
+this->log += std::string(25 - ss.str().length(), ' ');
+    \end{lstlisting}
+
+    然后是具体的日志生成，由于不同操作对应的日志生成机制类似，这里就仅展示参加赛事操作
+    的具体代码。fix用于消除int为负带来的格式影响。
+
+    \begin{lstlisting}[caption=日志生成]
+int fix = 0;
+// 生成日志
+switch (operation) {
+    // 参加赛事
+    case LogOperation::ParticipateTournament:
+        this->log += "参加 " + tournament_name + std::string(15 - tournament_name.length(), ' ');
+
+        fix = 0;
+        if (fund_change >= 0) {this->log += "+"; fix = 1;}
+            
+        this->log += std::to_string(fund_change) + std::string(10 - std::to_string(fund_change).length() - fix, ' ')
+                    + std::to_string(fund) + std::string(10 - std::to_string(fund).length(), ' ')
+                    + '|' + std::string(5, ' ');
+
+        fix = 0;
+        if (points_change >= 0) {this->log += "+"; fix = 1;}
+            
+
+        this->log += std::to_string(points_change) + std::string(10 - std::to_string(points_change).length() - fix, ' ')
+                        + std::to_string(points) + std::string(10 - std::to_string(points).length(), ' ');
+        break;
+} 
+    \end{lstlisting}
+
+    在\verb|TournamentController|中，调用\verb|Log|的相关函数函数进行具体的日志生成，并添加到当前俱乐部中
+    \begin{lstlisting}[caption=日志添加]
+// 生成日志
+Log log;
+log.setTournament(current_tour->getName());
+log.generateLog(LogOperation::ParticipateTournament, fund_bonus[i] - current_tour->getEntryFee(), points_bonus[i], club->getFund(), club->getPoints());
+club->addLog(log.getLog());
+    \end{lstlisting}
+
+    
+    \subsection{市场}
+
+    \subsubsection{购买选手}
+    在市场主界面中会展示当前的市场选手    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/market.png}
+        \caption{市场}
+    \end{figure}
+
+
+    进行买入操作后选手会被添加到当前俱乐部的选手列表中，并从市场中移除。
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/buy.png}
+        \caption{购买选手}
+    \end{figure}
+
+    购买选手操作与\verb|MarketController|有关，下面将根据代码进行分析。
+
+
+    首先在构造\verb|MarketController|时，会从\verb|StaffRepo|中读取所有\verb|state|为\verb|false|的选手，即未加入俱乐部的选手，
+    并添加到\verb|marketStaff|中，随后进行打印。
+    
+    \begin{lstlisting}[caption=MarketController构造]
+MarketController(std::shared_ptr<BinaryStaffDataRepo> staffRepo, std::shared_ptr<BinaryClubDataRepo> clubRepo) : 
+    staff_repo(std::move(staffRepo)), club_repo(std::move(clubRepo)) {
+    // 市场选手
+    auto & repo = staff_repo->getRepo();
+    if (!repo.empty()) {
+        for (const auto & item : repo) {
+            if (!item->getState()) {
+                market_staff.push_back(item->getID());
+            }
+        }
+    }
+}
+    \end{lstlisting}    
+    
+    接下来进行购买操作，其涉及的操作如下：
+    \begin{enumerate}
+        \item 扣除俱乐部资金，若资金不足则无法购买
+        \item 添加选手至俱乐部中并更新俱乐部战力
+        \item 在市场中删除该选手
+        \item 生成日志
+    \end{enumerate}
+    
+    \begin{lstlisting}[caption=买入操作]
+// 处理买入操作
+// 1. 扣除俱乐部资金
+if (current_club->getFund() < target_staff->getPrice()) {
+    std::cout << "俱乐部资金不足！\n";
+    return false;
+}
+current_club->changeFund(-target_staff->getPrice());
+
+// 2. 添加选手
+if (auto target_coach = dynamic_cast<Coach*>(target_staff)) {
+    target_coach->changeState();
+    current_club->addCoach(target_coach->getID());
+} else if (auto target_player = dynamic_cast<Player*>(target_staff)) {
+    target_player->changeState();
+    current_club->addPlayer(target_player->getID());
+}
+
+// 3. 更新俱乐部战力
+current_club->setPower(staff_repo);
+
+// 4. 市场中删除该选手
+market_staff.erase(it_target_staff);
+
+// 5. 生成日志
+Log log;
+log.setStaff(target_staff->getName());
+log.generateLog(LogOperation::BuyStaff, -(target_staff->getPrice()), 0, current_club->getFund(), current_club->getPoints());
+current_club->addLog(log.getLog());
+    \end{lstlisting}
+
+
+    \subsubsection{卖出选手}
+    选择卖出操作时，首先会将俱乐部选手列表打印，以供用户选择
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/sell.png}
+        \caption{卖出选手}
+    \end{figure}
+
+    卖出选手操作与买入操作类似，首先设置可卖出选手列表，即俱乐部中所有选手，在代码中体现为遍历。然后进行
+    与买入完全相反的操作即可。
+    
+
+    \subsection{赛事}
+    进入赛事界面后同样会打印当前的赛事，用户可选择参加
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/tour.png}
+        \caption{赛事}
+    \end{figure}
+
+    赛事部分最核心的是对赛事的模拟，我们设计了\verb|TournamentController|类，并通过random库设置概率，
+    下面是具体的实现。
+
+    考虑到参赛队伍数量的限制，首先需要对参赛队伍进行设置。先将当前俱乐部添加至参赛队伍中，
+    然后定义一个\verb|indices|，用于存储除当前俱乐部外其他俱乐部的ID，将其随机打乱后，取出前
+    \verb|tour->getTeamNum() - 1|个俱乐部作为参赛队伍。
+
+    \begin{lstlisting}[caption=参赛队伍设置]
+// 设置比赛队伍
+void TournamentController::setGameClubs() {
+    // 设置参赛队伍
+    game_clubs.resize(current_tour->getTeamNum());
+    game_clubs[0] = current_club->getID();
+
+    // 随机选择参赛队伍
+    std::vector<int> clubs = club_repo->getRepoID();    
+    std::vector<int> indices;
+
+    for (size_t i = 0; i < clubs.size(); i++) {
+        if (clubs[i] == current_club->getID()) {
+            continue;
+        }
+        indices.push_back(clubs[i]);
+    }
+    std::shuffle(indices.begin(), indices.end(), rng);
+    
+    for (int i = 1; i < current_tour->getTeamNum(); i++) {
+        game_clubs[i] = indices[i - 1];
+    }   
+}
+    \end{lstlisting}
+
+    接下来是具体的比赛模拟，采用淘汰赛机制，参赛队伍两两间进行比赛，淘汰败者，直至冠军产生。这样的赛制要求
+    比赛队伍数量必须为2的幂次。
+
+    两队比赛时，使用\verb|logistic|函数计算胜率，战力高的一方胜率更高。
+
+    \begin{lstlisting}[caption=模拟两队比赛]
+// 计算A队击败B队的概率
+double TournamentController::calculateWinProbability(int a, int b) {
+    // 获取队伍
+    auto club_a = club_repo->getClub(a);
+    auto club_b = club_repo->getClub(b);
+    
+    // 计算A队击败B队的概率（使用logistic函数）
+    double diff = club_a->getPower() - club_b->getPower();
+    double prob = 1 / (1 + exp(-diff));
+    return prob;
+}
+
+// 模拟两队比赛
+int TournamentController::simulateGame(int a, int b) {
+    // 计算A队击败B队的概率
+    double prob = calculateWinProbability(a, b);
+
+    std::uniform_real_distribution<double> dist(0, 1);
+    double random = dist(rng);
+
+    return random < prob ? a : b;
+}
+    \end{lstlisting}
+    
+    
+    匹配机制上，由于参赛队伍已进行随机打乱，因此无需再次打乱，直接两两配对即可，然后将败者排至末尾，将胜者排至前面。
+
+    \begin{lstlisting}[caption=比赛模拟]
+// 模拟赛事
+int round = 0;
+int num = current_tour->getTeamNum();
+while ((num /= 2) != 1) {
+    round++;
+}
+round++;
+
+int team_num = current_tour->getTeamNum();
+game_result = game_clubs;
+for (int i = 0; i < round; i++) {
+    std::vector<int> team_round = game_result;
+    for (int j = 0; j < team_num; j += 2) {
+        int winner = simulateGame(team_round[j], team_round[j + 1]);
+        game_result[j / 2] = winner;
+        game_result[j / 2 + team_num / 2] = team_round[j] + team_round[j + 1] - winner;
+    }
+    team_num /= 2;
+}
+
+const std::vector<int> & fund_bonus = current_tour->getFundBonus();
+const std::vector<int> & points_bonus = current_tour->getPointsBonus();
+
+std::reverse(game_result.begin(), game_result.end());
+    \end{lstlisting}
+    
+    最后，根据比赛结果，更新俱乐部资金和积分，并为每支队伍生成日志，并打印比赛结果。
+    
+    \begin{lstlisting}[caption=比赛结果处理]
+// 按照名次分配奖励
+for (int i = 0; i < current_tour->getTeamNum(); i++) {
+    auto club = club_repo->getClub(game_result[i]);
+    club->changeFund(fund_bonus[i]);
+    club->changePoints(points_bonus[i]);
+
+    // 生成日志
+    Log log;
+    log.setTournament(current_tour->getName());
+    log.generateLog(LogOperation::ParticipateTournament, fund_bonus[i] - current_tour->getEntryFee(), points_bonus[i], club->getFund(), club->getPoints());
+    club->addLog(log.getLog());
+    }
+    \end{lstlisting}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/result.png}
+        \caption{比赛结果}
+    \end{figure}
+
+    \subsection{排名}
+    
+    排名部分，我们预设了积分、战力和资金三种排名方式供用户选择
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/rank.png}
+        \caption{排名}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/rank2.png}
+        \caption{三种排名方式}
+    \end{figure}
+
+    排序时主要使用到了\verb|algorithm|库中的\verb|sort|函数，通过定义不同的\verb|lambda|函数的实现
+    不同属性的排序，下面仅给出战力排序的代码，其余类似
+    \begin{lstlisting}[caption=排名]
+// 按战力排序
+void ClubController::printRankByPower() {
+    auto & rank_clubs = club_repo->getRepo();
+
+    // 按战力进行排序
+    std::sort(rank_clubs.begin(), rank_clubs.end(),
+    [](const std::unique_ptr<Club> & club1, const std::unique_ptr<Club> & club2) {
+        return club1->getPower() >= club2->getPower();
+    });
+
+    // 打印排名
+    int rank = 1;
+    for (const auto & club : rank_clubs) {
+        std::cout << rank << "-" << club->getName() << std::string(15 - club->getName().length(), ' ') << club->getPower() << std::endl;
+        rank++;
+    }
+}
+    \end{lstlisting}
+
+    \section{结果分析}
+    系统成功实现了电子竞技俱乐部管理的核心功能，包括俱乐部的创建、登录、信息查看、
+    资金管理、人员（教练和选手）的雇佣与解雇、市场交易以及参与锦标赛的框架。用户可以
+    通过控制台界面与系统进行交互，完成一系列管理操作。
+
+    在数据持久化上，俱乐部、职员和赛事数据能够正确地通过二进制文件（.dat）进行加载
+    和保存。这意味着用户的游戏进度可以被保留，下次启动程序时可以继续之前的状态。
+
+    MVC-like的架构使得代码职责分明。例如，Club 类的修改主要影响数据层面，
+    而 ClubInfoView 的修改主要影响界面展示，两者通过 ClubController 解耦。
+
+    系统通过一系列视图（WelcomeView, MainMenuView 等）和 ViewState 状态机来管理
+    用户交互流程，提供了相对清晰的操作路径。
+
+    \section{课程设计总结}
+
+    \subsection{遇到的问题和解决方法}
+    在系统构建初期，由于对智能指针的理解问题，在main函数中构造模型层、数据仓库、
+    控制器层以及视图层的对象时一律使用了\verb|shared_ptr|，在成员函数中又使用
+    \verb|shared_ptr|，进而导致了内存泄漏。通过对智能指针的进一步学习以及debug，
+    将模型层的对象置于各自的repo类中进行存储，并通过ID进行数据的访问；尽可能将\verb|shared_ptr|
+    改为\verb|unique_ptr|，仅保留repo类的\verb|shared_ptr|。
+
+    编码问题也带来了不少困扰。由于使用vscode作为编辑器，开始想使用GBK以支持
+    中文，但依旧出现了中文乱码问题。在网上搜查资料后发现，问题出在windows的
+    powershell默认使用GB2312编码，而cmd默认使用UTF-8编码。最后将系统的powershell
+    编码和文件编码统一改为UTF-8，解决了问题。
+
+    \subsection{程序调试能力的思考}
+    引入cmake进行项目管理后，程序的调试变得清晰便捷。通过\verb|CMake:Set launch\debug target|
+    将目标设置在想要的测试程序上，并设置好断点，便可以轻松进行调试，观察变量、指针的变化，
+    便可以发现问题点，准确进行修正。
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/debug.png}
+        \caption{调试}
+    \end{figure}
+
+    \subsection{华为云资源的使用}
+    通过华为云的资源，成功部署了服务器，并在服务器上成功运行了系统，为系统的运行提供了便利。
+    
+
+
+    \subsection{课程设计过程中的收获和体会}
+    整个实现过程是一次宝贵的学习经历。从最初只有一个模糊的想法，到逐步设计数据结构、模块接口，
+    再到一行行代码的编写和调试，最终看到系统能够顺利运行，带来了巨大的成就感。
+    在这个过程中，MVC设计模式以及视图状态机给了很大的启发
+    
+    我体会到，清晰
+    的设计是成功的一半，良好的代码规范和模块化思想能极大提高开发效率和后续维护的便利性。同时，
+    也认识到软件开发往往是一个迭代的过程，不可能一蹴而就，需要不断地测试、发现问题、解决问题
+    并进行优化。这次设计也让我对C++语言的强大功能以及其在内存方面的局限性有了更深的理解。
 
 \end{spacing}
 \end{document}

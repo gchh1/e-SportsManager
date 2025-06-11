@@ -175,11 +175,14 @@ src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_heap.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/uniform_int_dist.h \
  C:/msys64/ucrt64/include/c++/14.1.0/pstl/glue_algorithm_defs.h \
+ C:/msys64/ucrt64/include/search.h \
+ C:/msys64/ucrt64/include/sec_api/search_s.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Club.h \
  C:/msys64/ucrt64/include/c++/14.1.0/vector \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/vector.tcc \
+ D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/ISecret.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Staff.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IData.h \
  C:/msys64/ucrt64/include/c++/14.1.0/fstream \
@@ -192,4 +195,5 @@ src/controllers/CMakeFiles/controllers.dir/ClubController.cpp.obj: \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IDataRepo.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/heads/BinaryClubDataRepo.h \
  C:/msys64/ucrt64/include/conio.h \
- C:/msys64/ucrt64/include/sec_api/conio_s.h
+ C:/msys64/ucrt64/include/sec_api/conio_s.h \
+ D:/yhc/cpp/e-sportsManager/e-sportsManager/src/utils/secret.h

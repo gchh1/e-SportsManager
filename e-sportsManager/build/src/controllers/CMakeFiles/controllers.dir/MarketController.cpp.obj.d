@@ -186,6 +186,7 @@ src/controllers/CMakeFiles/controllers.dir/MarketController.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_heap.h \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/uniform_int_dist.h \
  C:/msys64/ucrt64/include/c++/14.1.0/pstl/glue_algorithm_defs.h \
+ D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/ISecret.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Log.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/LogOperation.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/heads/BinaryStaffDataRepo.h \

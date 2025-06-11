@@ -196,6 +196,7 @@ src/controllers/CMakeFiles/controllers.dir/TournamentController.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/stl_heap.h \
  C:/msys64/ucrt64/include/c++/14.1.0/pstl/glue_algorithm_defs.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Club.h \
+ D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/ISecret.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Staff.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IData.h \
  C:/msys64/ucrt64/include/c++/14.1.0/fstream \

@@ -3,6 +3,8 @@
  ***********/
 
 #include "WelcomeView.h"
+#include "../utils/secret.h"
+
 #include <iostream>
 #include <string>
 #include <conio.h>
@@ -72,58 +74,18 @@ bool WelcomeView::createNewClub() {
     std::cout << "请输入俱乐部名称：";
     std::cin >> name;
     std::cout << "请输入俱乐部密钥：";
-            
-    // 模拟密钥输入
-    secret1.clear();
-    char ch;
-    while (true) {
-        ch = _getch();
-        if (ch == '\r' || ch == '\n') {
-            break;
-        } else if (ch == '\b') {
-            if (!secret1.empty()) {
-                secret1.pop_back();
-                std::cout << "\b \b";
-            }
-        } else {
-            secret1 += ch;
-            std::cout << '*';
-        }
-    }
+    Input(secret1);
 
-    int attempt = 4;
-    std::cout << "\n请再次输入俱乐部密钥：";
     do {
-        // 模拟密钥输入
-        secret2.clear();
-        while (true) {
-            ch = _getch();
-            if (ch == '\r' || ch == '\n') {
-                break;
-            } else if (ch == '\b') {
-                if (!secret2.empty()) {
-                    secret2.pop_back();
-                    std::cout << "\b \b";
-                }
-            } else {
-                secret2 += ch;
-                std::cout << '*';
-            }
-        }
+        std::cout << "\n请再次输入密钥：";
+        Input(secret2);
 
         if (secret1 == secret2) break;
-
-        attempt--;
-        if (attempt == 0) break;
-        std::cout << "\n两次输入不一致，请重新输入！(剩余" << attempt << "次机会)：";
+        else {
+            std::cout << "\n两次输入不一致，请重新输入！\n";
+        }
     } while (true);
-
-    if (attempt == 0) {
-        std::cout << "\n创建失败！\n";
-        std::cout << std::endl;
-        return false;
-    }
-
+    
     std::cout << "\n请输入俱乐部初始资金：";
     std::cin >> fund;
 

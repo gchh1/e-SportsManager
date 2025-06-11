@@ -15,5 +15,8 @@ enum class ViewState {
     MarketView,
     TournamentView,
     RankView,
-    Exit
+    Exit,
+    BackStageMenuView,
+    BackStageStaffView,
+    BackStageTourView
 };

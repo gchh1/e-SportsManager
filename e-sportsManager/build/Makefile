@@ -129,43 +129,17 @@ e-sportsManager/fast:
 .PHONY : e-sportsManager/fast
 
 #=============================================================================
-# Target rules for targets named createStaff
+# Target rules for targets named backstage
 
 # Build rule for target.
-createStaff: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 createStaff
-.PHONY : createStaff
+backstage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 backstage
+.PHONY : backstage
 
 # fast build rule for target.
-createStaff/fast:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createStaff.dir\build.make src/CMakeFiles/createStaff.dir/build
-.PHONY : createStaff/fast
-
-#=============================================================================
-# Target rules for targets named createTour
-
-# Build rule for target.
-createTour: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 createTour
-.PHONY : createTour
-
-# fast build rule for target.
-createTour/fast:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\createTour.dir\build.make src/CMakeFiles/createTour.dir/build
-.PHONY : createTour/fast
-
-#=============================================================================
-# Target rules for targets named generateTestData
-
-# Build rule for target.
-generateTestData: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 generateTestData
-.PHONY : generateTestData
-
-# fast build rule for target.
-generateTestData/fast:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\generateTestData.dir\build.make src/CMakeFiles/generateTestData.dir/build
-.PHONY : generateTestData/fast
+backstage/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\backstage.dir\build.make src/CMakeFiles/backstage.dir/build
+.PHONY : backstage/fast
 
 #=============================================================================
 # Target rules for targets named models
@@ -219,6 +193,19 @@ views/fast:
 	$(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/build
 .PHONY : views/fast
 
+#=============================================================================
+# Target rules for targets named utils
+
+# Build rule for target.
+utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 utils
+.PHONY : utils
+
+# fast build rule for target.
+utils/fast:
+	$(MAKE) $(MAKESILENT) -f src\utils\CMakeFiles\utils.dir\build.make src/utils/CMakeFiles/utils.dir/build
+.PHONY : utils/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -227,13 +214,12 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... backstage
 	@echo ... controllers
-	@echo ... createStaff
-	@echo ... createTour
 	@echo ... dataHandlers
 	@echo ... e-sportsManager
-	@echo ... generateTestData
 	@echo ... models
+	@echo ... utils
 	@echo ... views
 .PHONY : help
 

@@ -146,6 +146,7 @@ src/models/CMakeFiles/models.dir/Club.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/atomic_lockfree_defines.h \
  C:/msys64/ucrt64/include/c++/14.1.0/backward/auto_ptr.h \
  C:/msys64/ucrt64/include/c++/14.1.0/pstl/glue_memory_defs.h \
+ D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/ISecret.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Staff.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IData.h \
  C:/msys64/ucrt64/include/c++/14.1.0/fstream \

@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/CMakeLists.txt"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/CMakeLists.txt"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/CMakeLists.txt"
+  "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/utils/CMakeLists.txt"
   "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/CMakeLists.txt"
   )
 
@@ -65,16 +66,16 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/dataHandlers/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/controllers/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/views/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/utils/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/e-sportsManager.dir/DependInfo.cmake"
-  "src/CMakeFiles/createStaff.dir/DependInfo.cmake"
-  "src/CMakeFiles/createTour.dir/DependInfo.cmake"
-  "src/CMakeFiles/generateTestData.dir/DependInfo.cmake"
+  "src/CMakeFiles/backstage.dir/DependInfo.cmake"
   "src/models/CMakeFiles/models.dir/DependInfo.cmake"
   "src/dataHandlers/CMakeFiles/dataHandlers.dir/DependInfo.cmake"
   "src/controllers/CMakeFiles/controllers.dir/DependInfo.cmake"
   "src/views/CMakeFiles/views.dir/DependInfo.cmake"
+  "src/utils/CMakeFiles/utils.dir/DependInfo.cmake"
   )

@@ -102,6 +102,7 @@ D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/views/li
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/controllers/libcontrollers.a
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/dataHandlers/libdataHandlers.a
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/models/libmodels.a
+D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/utils/libutils.a
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/CMakeFiles/e-sportsManager.dir/linkLibs.rsp
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/CMakeFiles/e-sportsManager.dir/objects1.rsp
 D:/yhc/cpp/e-sportsManager/e-sportsManager/bin/e-sportsManager.exe: src/CMakeFiles/e-sportsManager.dir/link.txt

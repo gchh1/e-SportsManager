@@ -129,6 +129,78 @@ views/fast:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/build
 .PHONY : views/fast
 
+BackStageMenuView.obj: BackStageMenuView.cpp.obj
+.PHONY : BackStageMenuView.obj
+
+# target to build an object file
+BackStageMenuView.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj
+.PHONY : BackStageMenuView.cpp.obj
+
+BackStageMenuView.i: BackStageMenuView.cpp.i
+.PHONY : BackStageMenuView.i
+
+# target to preprocess a source file
+BackStageMenuView.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.i
+.PHONY : BackStageMenuView.cpp.i
+
+BackStageMenuView.s: BackStageMenuView.cpp.s
+.PHONY : BackStageMenuView.s
+
+# target to generate assembly for a file
+BackStageMenuView.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.s
+.PHONY : BackStageMenuView.cpp.s
+
+BackStageStaffView.obj: BackStageStaffView.cpp.obj
+.PHONY : BackStageStaffView.obj
+
+# target to build an object file
+BackStageStaffView.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj
+.PHONY : BackStageStaffView.cpp.obj
+
+BackStageStaffView.i: BackStageStaffView.cpp.i
+.PHONY : BackStageStaffView.i
+
+# target to preprocess a source file
+BackStageStaffView.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.i
+.PHONY : BackStageStaffView.cpp.i
+
+BackStageStaffView.s: BackStageStaffView.cpp.s
+.PHONY : BackStageStaffView.s
+
+# target to generate assembly for a file
+BackStageStaffView.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.s
+.PHONY : BackStageStaffView.cpp.s
+
+BackStageTourVIew.obj: BackStageTourVIew.cpp.obj
+.PHONY : BackStageTourVIew.obj
+
+# target to build an object file
+BackStageTourVIew.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj
+.PHONY : BackStageTourVIew.cpp.obj
+
+BackStageTourVIew.i: BackStageTourVIew.cpp.i
+.PHONY : BackStageTourVIew.i
+
+# target to preprocess a source file
+BackStageTourVIew.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.i
+.PHONY : BackStageTourVIew.cpp.i
+
+BackStageTourVIew.s: BackStageTourVIew.cpp.s
+.PHONY : BackStageTourVIew.s
+
+# target to generate assembly for a file
+BackStageTourVIew.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\views\CMakeFiles\views.dir\build.make src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.s
+.PHONY : BackStageTourVIew.cpp.s
+
 ClubInfoView.obj: ClubInfoView.cpp.obj
 .PHONY : ClubInfoView.obj
 
@@ -306,6 +378,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... views
+	@echo ... BackStageMenuView.obj
+	@echo ... BackStageMenuView.i
+	@echo ... BackStageMenuView.s
+	@echo ... BackStageStaffView.obj
+	@echo ... BackStageStaffView.i
+	@echo ... BackStageStaffView.s
+	@echo ... BackStageTourVIew.obj
+	@echo ... BackStageTourVIew.i
+	@echo ... BackStageTourVIew.s
 	@echo ... ClubInfoView.obj
 	@echo ... ClubInfoView.i
 	@echo ... ClubInfoView.s

@@ -7,21 +7,9 @@
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/createStaff.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\createStaff.dir\\createStaff.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\createStaff.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/createStaff.cpp",
-  "output": "src/CMakeFiles/createStaff.dir/createStaff.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/createTour.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\createTour.dir\\createTour.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\createTour.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/createTour.cpp",
-  "output": "src/CMakeFiles/createTour.dir/createTour.cpp.obj"
-},
-{
-  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/generateTestData.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\generateTestData.dir\\generateTestData.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\generateTestData.cpp",
-  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/generateTestData.cpp",
-  "output": "src/CMakeFiles/generateTestData.dir/generateTestData.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/backstage.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\backstage.dir\\backstage.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\backstage.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/backstage.cpp",
+  "output": "src/CMakeFiles/backstage.dir/backstage.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
@@ -34,6 +22,12 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\models.dir\\Log.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Log.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Log.cpp",
   "output": "src/models/CMakeFiles/models.dir/Log.cpp.obj"
+},
+{
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/models.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\models.dir\\Manager.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\models\\Manager.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/Manager.cpp",
+  "output": "src/models/CMakeFiles/models.dir/Manager.cpp.obj"
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/models",
@@ -85,6 +79,24 @@
 },
 {
   "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\BackStageMenuView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\BackStageMenuView.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/BackStageMenuView.cpp",
+  "output": "src/views/CMakeFiles/views.dir/BackStageMenuView.cpp.obj"
+},
+{
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\BackStageStaffView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\BackStageStaffView.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/BackStageStaffView.cpp",
+  "output": "src/views/CMakeFiles/views.dir/BackStageStaffView.cpp.obj"
+},
+{
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\BackStageTourVIew.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\BackStageTourVIew.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/BackStageTourVIew.cpp",
+  "output": "src/views/CMakeFiles/views.dir/BackStageTourVIew.cpp.obj"
+},
+{
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/views",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\ClubInfoView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\ClubInfoView.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/ClubInfoView.cpp",
   "output": "src/views/CMakeFiles/views.dir/ClubInfoView.cpp.obj"
@@ -124,5 +136,11 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/views.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\views.dir\\WelcomeView.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\views\\WelcomeView.cpp",
   "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/WelcomeView.cpp",
   "output": "src/views/CMakeFiles/views.dir/WelcomeView.cpp.obj"
+},
+{
+  "directory": "D:/yhc/cpp/e-sportsManager/e-sportsManager/build/src/utils",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/utils.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\utils.dir\\secret.cpp.obj -c D:\\yhc\\cpp\\e-sportsManager\\e-sportsManager\\src\\utils\\secret.cpp",
+  "file": "D:/yhc/cpp/e-sportsManager/e-sportsManager/src/utils/secret.cpp",
+  "output": "src/utils/CMakeFiles/utils.dir/secret.cpp.obj"
 }
 ]

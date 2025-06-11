@@ -23,4 +23,5 @@ target_link_libraries(controllers
 PUBLIC
     models
     dataHandlers
+    utils
 )

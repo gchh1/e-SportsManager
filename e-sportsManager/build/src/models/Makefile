@@ -177,6 +177,30 @@ Log.cpp.s:
 	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/Log.cpp.s
 .PHONY : Log.cpp.s
 
+Manager.obj: Manager.cpp.obj
+.PHONY : Manager.obj
+
+# target to build an object file
+Manager.cpp.obj:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/Manager.cpp.obj
+.PHONY : Manager.cpp.obj
+
+Manager.i: Manager.cpp.i
+.PHONY : Manager.i
+
+# target to preprocess a source file
+Manager.cpp.i:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/Manager.cpp.i
+.PHONY : Manager.cpp.i
+
+Manager.s: Manager.cpp.s
+.PHONY : Manager.s
+
+# target to generate assembly for a file
+Manager.cpp.s:
+	cd /d D:\yhc\cpp\e-sportsManager\e-sportsManager\build && $(MAKE) $(MAKESILENT) -f src\models\CMakeFiles\models.dir\build.make src/models/CMakeFiles/models.dir/Manager.cpp.s
+.PHONY : Manager.cpp.s
+
 Staff.obj: Staff.cpp.obj
 .PHONY : Staff.obj
 
@@ -240,6 +264,9 @@ help:
 	@echo ... Log.obj
 	@echo ... Log.i
 	@echo ... Log.s
+	@echo ... Manager.obj
+	@echo ... Manager.i
+	@echo ... Manager.s
 	@echo ... Staff.obj
 	@echo ... Staff.i
 	@echo ... Staff.s

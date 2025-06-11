@@ -16,7 +16,8 @@ PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/heads
     ${CMAKE_SOURCE_DIR}/src/controllers/heads
     ${CMAKE_SOURCE_DIR}/src/models/heads
-    ${CMAKE_SOURCE_DIR}/src/dataHandlers/heads)
+    ${CMAKE_SOURCE_DIR}/src/dataHandlers/heads
+)
 
 # Link the views library against controllers so that symbols are resolved
 target_link_libraries(views 

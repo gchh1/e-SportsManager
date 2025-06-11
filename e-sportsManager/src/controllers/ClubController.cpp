@@ -6,6 +6,7 @@
 #include "ClubController.h"
 #include <string>
 #include <conio.h>
+#include "../utils/secret.h"
 
 // 新建俱乐部
 void ClubController::createNewClub(std::string name, std::string secret, int fund) {
@@ -58,25 +59,9 @@ void ClubController::selectClub() {
         do {
             std::cout << "\n请输入密钥：";
         
-            // 模拟密钥输入
-            input.clear();
-            char ch;
-            while (true) {
-                ch = _getch();
-                if (ch == '\r' || ch == '\n') {
-                    break;
-                } else if (ch == '\b') {
-                    if (!input.empty()) {
-                        input.pop_back();
-                        std::cout << "\b \b";
-                    }
-                } else {
-                    input += ch;
-                    std::cout << '*';
-                }
-            }
-
-            if ((*it)->verifySecret(input)) {
+            Input(input);
+            
+            if (Verify(it->get(), input)) {
                 current_club = it->get();
                 flag = true;
             } else {
@@ -222,107 +207,10 @@ void ClubController::removeClub() {
 }
 
 
-// 修改密钥
 void ClubController::changeSecret() {
-    std::string secret0;
-    int attempt = 4;
+    Change(current_club);
+}
 
-    std::cout << "\n请输入当前密钥：";
-    
-    do {
-        // 模拟密钥输入
-        secret0.clear();
-        char ch;
-        while (true) {
-            ch = _getch();
-            if (ch == '\r' || ch == '\n') {
-                break;
-            } else if (ch == '\b') {
-                if (!secret0.empty()) {
-                    secret0.pop_back();
-                    std::cout << "\b \b";
-                }
-            } else {
-                secret0 += ch;
-                std::cout << '*';
-            }
-        }
-
-        if (current_club->verifySecret(secret0)) break;
-        else {
-            attempt--;
-            if (attempt == 0) break;
-            std::cout << "\n密钥错误，请重试！(剩余" << attempt << "次机会)：";
-        }
-    } while (true);
-
-    if (attempt == 0) {
-        std::cout << "\n密钥错误，修改失败！\n";
-        std::cout << std::endl;
-        return;
-    }
-
-    std::cout << std::endl;
-
-    std::string secret1;
-    std::string secret2;
-    
-    std::cout << "\n请输入新密钥：";
-    
-    // 模拟密钥输入
-    char ch;
-    while (true) {
-        ch = _getch();
-        if (ch == '\r' || ch == '\n') {
-            break;
-        } else if (ch == '\b') {
-            if (!secret1.empty()) {
-                secret1.pop_back();
-                std::cout << "\b \b";
-            }
-        } else {
-            secret1 += ch;
-            std::cout << '*';
-        }
-    }
-
-    attempt = 4;
-
-    std::cout << "\n请再次输入新密钥：";
-    do {
-        // 模拟密钥输入
-        secret2.clear();
-        char ch;
-        while (true) {
-            ch = _getch();
-            if (ch == '\r' || ch == '\n') {
-                break;
-            } else if (ch == '\b') {
-                if (!secret2.empty()) {
-                    secret2.pop_back();
-                    std::cout << "\b \b";
-                }
-            } else {
-                secret2 += ch;
-                std::cout << '*';
-            }
-        }
-
-        if (secret1 == secret2) break;
-        else {
-            attempt--;
-            if (attempt == 0) break;
-            std::cout << "\n两次输入不一致，请重新输入！(剩余" << attempt << "次机会)：";
-        }
-    } while (true);    
-
-    if (attempt == 0) {
-        std::cout << "\n修改失败！\n";
-        std::cout << std::endl;
-        return;
-    }
-
-    current_club->setSecret(secret1);
-    std::cout << "\n修改成功！\n";
-    std::cout << std::endl;
+bool ClubController::verifySecret(std::string secret) {
+    return Verify(current_club, secret);
 }

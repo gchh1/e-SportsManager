@@ -153,6 +153,7 @@ src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/atomic_lockfree_defines.h \
  C:/msys64/ucrt64/include/c++/14.1.0/backward/auto_ptr.h \
  C:/msys64/ucrt64/include/c++/14.1.0/pstl/glue_memory_defs.h \
+ D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/ISecret.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/models/heads/Staff.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IData.h \
  C:/msys64/ucrt64/include/c++/14.1.0/fstream \
@@ -203,6 +204,8 @@ src/CMakeFiles/e-sportsManager.dir/test1.cpp.obj: \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/IView.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/include/ViewState.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/controllers/heads/ClubController.h \
+ C:/msys64/ucrt64/include/search.h \
+ C:/msys64/ucrt64/include/sec_api/search_s.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/dataHandlers/heads/BinaryClubDataRepo.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/heads/ClubLogView.h \
  D:/yhc/cpp/e-sportsManager/e-sportsManager/src/views/heads/MainMenuView.h \

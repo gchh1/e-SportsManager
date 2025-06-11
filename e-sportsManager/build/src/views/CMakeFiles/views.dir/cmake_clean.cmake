@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/views.dir/BackStageMenuView.cpp.obj"
+  "CMakeFiles/views.dir/BackStageMenuView.cpp.obj.d"
+  "CMakeFiles/views.dir/BackStageStaffView.cpp.obj"
+  "CMakeFiles/views.dir/BackStageStaffView.cpp.obj.d"
+  "CMakeFiles/views.dir/BackStageTourVIew.cpp.obj"
+  "CMakeFiles/views.dir/BackStageTourVIew.cpp.obj.d"
   "CMakeFiles/views.dir/ClubInfoView.cpp.obj"
   "CMakeFiles/views.dir/ClubInfoView.cpp.obj.d"
   "CMakeFiles/views.dir/ClubLogView.cpp.obj"

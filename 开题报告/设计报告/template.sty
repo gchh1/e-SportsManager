@@ -27,7 +27,10 @@
 \usepackage{indentfirst} % Required for the indent before each paragraph
 \usepackage[bookmarks=true,colorlinks=true,linkcolor=black,anchorcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 
-\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{forest}
+\usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for custom colors
 \usepackage[font=footnotesize,tableposition=top]{caption} % Required for the footnote size captions of figures and tables
 %----------------------------------------------------------------------------------------
 %   数学宏包
@@ -40,6 +43,29 @@
 \usepackage{amsthm} % Required for the theorem edition
 \usepackage{array} % Required for the array in math display
 \usepackage{ifthen} % Required for the conditional commands
+
+%----------------------------------------------------------------------------------------
+%  tikz
+%----------------------------------------------------------------------------------------
+\usetikzlibrary{trees,shadows.blur,positioning,decorations.pathreplacing,shapes.symbols}
+
+% Color definitions
+\definecolor{rootbg}{RGB}{255,255,255}
+\definecolor{rootborder}{RGB}{44,62,80}
+\definecolor{branch1}{RGB}{52,152,219}
+\definecolor{branch2}{RGB}{231,76,60}
+\definecolor{branch3}{RGB}{46,204,113}
+\definecolor{branch4}{RGB}{155,89,182}
+
+% General styles
+\tikzset{
+  root/.style={rectangle, draw=rootborder, thick, fill=rootbg, rounded corners=3pt, inner sep=6pt, font=\sffamily\bfseries, minimum width=3cm, align=center},
+  branch/.style={draw, thick, rounded corners=2pt, font=\sffamily, text width=2.5cm, align=left, inner sep=4pt},
+  branch line/.style={thick, rounded corners=2pt},
+  leaf/.style args={#1}{circle, fill=#1, inner sep=0pt, minimum size=6pt}
+}
+
+
 
 %----------------------------------------------------------------------------------------
 %   Superscript citation
@@ -103,6 +129,34 @@ stepnumber=1 % Line numbers go in steps of 1
         \end{spacing}
     \end{itemize}
 }
+\lstset{
+  backgroundcolor=\color{black!10},
+  frame=shadowbox,
+  rulesepcolor=\color{black}
+}
+
+\lstloadlanguages{C++}
+\lstset{language=C++, % Use C++ in this example
+    frame=shadowbox, % Shadow box frame around code (matching Python style)
+    keywordstyle=[1]\color{Blue}\bf, % C++ keywords bold and blue
+    keywordstyle=[2]\color{Purple}\it, % C++ function arguments purple
+    keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+    identifierstyle=, % Nothing special about identifiers                                         
+    commentstyle=\color{Gray}, % Comments gray (matching Python style)
+    stringstyle=\color{Green}, % Strings green (matching Python style)
+    showstringspaces=false, % Don't put marks in string spaces
+    tabsize=4, % 4 spaces per tab
+    numbers=left, % Line numbers on left
+    firstnumber=1, % Line numbers start with line 1
+    numberstyle=\color{Blue}, % Line numbers are blue and small
+    stepnumber=1, % Line numbers go in steps of 1
+    backgroundcolor=\color{black!10}, % Light gray background
+    rulesepcolor=\color{black}, % Black rule separator
+    breaklines=true, % Break long lines
+    breakatwhitespace=true, % Break at whitespace
+    captionpos=b % Caption at bottom
+}
+
 
 %----------------------------------------------------------------------------------------
 %   Section related equations' number
@@ -118,11 +172,9 @@ stepnumber=1 % Line numbers go in steps of 1
 % section
 \titleformat{\section}{\zihao{4}\bfseries}{\zhnumber{\thesection}}{1em}{}
 % subsection
-\titleformat{\subsection}{\zihao{-4}\bfseries}{\zhnumber{\thesubsection}}{1.5em}{}
+\titleformat{\subsection}{\zihao{-4}\bfseries}{\hspace{2em}\thesubsection}{1em}{}
 % subsubsection
-\titleformat{\subsubsection}{\zihao{-4}\bfseries}{\zhnumber{\thesubsubsection}}{2em}{}
-
-
+\titleformat{\subsubsection}{\zihao{-4}\bfseries}{\hspace{4em}\thesubsubsection}{1em}{}
 
 % 重新定义paragraph样式
 \titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{0.75ex plus .2ex}
@@ -148,7 +200,7 @@ stepnumber=1 % Line numbers go in steps of 1
 %----------------------------------------------------------------------------------------
 \pagestyle{fancy}
 \fancyhf{}
-\renewcommand{\sectionmark}[1]{\markboth{第\zhnumber{\thesection}章{\color{white}.} #1}{}}
+%\renewcommand{\sectionmark}[1]{\markboth{第\zhnumber{\thesection}章{\color{white}.} #1}{}}
 
 \fancyhead[C]{\songti{电竞经理}}
 \fancyhead[CO]{\songti\leftmark}

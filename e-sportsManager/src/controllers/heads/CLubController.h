@@ -11,6 +11,7 @@
 #include <memory>
 #include <algorithm>
 
+#include "search.h"
 #include "Club.h"
 #include "BinaryClubDataRepo.h"
 #include "BinaryStaffDataRepo.h"
@@ -61,4 +62,7 @@ class ClubController {
 
         // 修改密钥
         void changeSecret();
+
+        // 验证密钥
+        bool verifySecret(std::string secret);
 };

@@ -54,7 +54,8 @@
         "ratio": "cpp",
         "iomanip": "cpp",
         "sstream": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "charconv": "cpp"
     },
     "files.autoGuessEncoding": false
 }

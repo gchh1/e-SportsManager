@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\backstage.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\backstage.dir/objects.a @CMakeFiles\backstage.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\backstage.dir/objects.a -Wl,--no-whole-archive -o D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\backstage.exe -Wl,--out-implib,D:\yhc\cpp\e-sportsManager\e-sportsManager\bin\libbackstage.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\backstage.dir\linkLibs.rsp
