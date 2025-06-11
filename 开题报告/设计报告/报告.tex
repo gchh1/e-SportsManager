@@ -798,13 +798,19 @@ void ClubController::printRankByPower() {
     powershell默认使用GB2312编码，而cmd默认使用UTF-8编码。最后将系统的powershell
     编码和文件编码统一改为UTF-8，解决了问题。
 
+    在优化\verb|BinaryXXXRepo|时，我们考虑将整个需要进行存储的模型层类继承于IData类，
+    然后只定义\verb|BinaryDataRepo|这一统一数据仓库，其中使用\verb|vector<unique_ptr<IData>>|
+    存储数据。但后来发现，这一方案难以实现对不同模型层类的分别存储。后面考虑了使用模板类，
+    但由于Staff类是抽象类，无法进行模板实例化，同时我们已经完成了其他部分的编写，为Player类和
+    Coach类分别建立仓库也许需要变动很多，加之时间不足，就放弃了这一方案。
+
     \subsection{程序调试能力的思考}
     引入cmake进行项目管理后，程序的调试变得清晰便捷。通过\verb|CMake:Set launch\debug target|
     将目标设置在想要的测试程序上，并设置好断点，便可以轻松进行调试，观察变量、指针的变化，
     便可以发现问题点，准确进行修正。
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.8\textwidth]{img/debug.png}
+        \includegraphics[width=0.5\textwidth]{img/debug.png}
         \caption{调试}
     \end{figure}
 
@@ -825,7 +831,7 @@ void ClubController::printRankByPower() {
     我体会到，清晰
     的设计是成功的一半，良好的代码规范和模块化思想能极大提高开发效率和后续维护的便利性。同时，
     也认识到软件开发往往是一个迭代的过程，不可能一蹴而就，需要不断地测试、发现问题、解决问题
-    并进行优化。这次设计也让我对C++语言的强大功能以及其在内存方面的局限性有了更深的理解。
+    并进行优化。这次设计也让我对C++语言的强大功能以及其在内存方面的使用有了更深的理解。
 
 \end{spacing}
 \end{document}

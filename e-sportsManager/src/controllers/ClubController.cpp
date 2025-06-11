@@ -105,8 +105,10 @@ void ClubController::printClubInfo() {
         if (coach) { // 检查指针是否有效
             std::cout << "教练"
                       << std::string(5, ' ') << coach->getName()
-                      << std::string(15 - coach->getName().length(), ' ') << coach->getPower() 
-                      << std::string(24 - std::to_string(coach->getPower()).length(), ' ') << coach->getPrice() << std::endl;
+                      << std::string(15 - coach->getName().length(), ' ') 
+                      << coach->getPower() 
+                      << std::string(24 - std::to_string(coach->getPower()).length(), ' ') 
+                      << coach->getPrice() << std::endl;
         }
     }
 
@@ -115,8 +117,10 @@ void ClubController::printClubInfo() {
         if (player) { // 检查指针是否有效
             std::cout << "选手"
                       << std::string(5, ' ') << player->getName()
-                      << std::string(15 - player->getName().length(), ' ') << player->getPower() 
-                      << std::string(24 - std::to_string(player->getPower()).length(), ' ') << player->getPrice() << std::endl;
+                      << std::string(15 - player->getName().length(), ' ') 
+                      << player->getPower() 
+                      << std::string(24 - std::to_string(player->getPower()).length(), ' ') 
+                      << player->getPrice() << std::endl;
         }
     }
     std::cout << std::endl;

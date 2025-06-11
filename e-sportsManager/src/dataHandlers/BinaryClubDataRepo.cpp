@@ -11,7 +11,7 @@ void BinaryClubDataRepo::load() {
     if (!in.read(reinterpret_cast<char*>(&count), sizeof(count)))
         return;
     
-    // 精确循环count次
+    // 循环count次
     for (size_t i = 0; i < count; ++i) {
         auto club = std::make_unique<Club>();
         if (!club->load(in)) {
@@ -20,7 +20,7 @@ void BinaryClubDataRepo::load() {
         }
         repo.push_back(std::move(club));
     }
-}
+} 
 
 
 void BinaryClubDataRepo::save() {

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.19)  11 JUN 2025 20:56
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.19)  12 JUN 2025 02:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1315,10 +1315,14 @@ File: img/rank2.png Graphic file (type bmp)
 Overfull \vbox (300.5722pt too high) has occurred while \output is active []
 
  [27] [28]
+Overfull \hbox (29.43745pt too wide) in paragraph at lines 801--806
+\TU/SimSun(1)/m/n/12.045 类，|  然 后 只 定 义[][]\TU/Consolas(0)/m/n/12.045 BinaryDataRepo[]\TU/SimSun(1)/m/n/12.045 这 一 统 一 数 据 仓 库，|  其 中 使 用[][]\TU/Consolas(0)/m/n/12.045 vector<unique_ptr<IData>>
+ []
+
 File: img/debug.png Graphic file (type bmp)
 <img/debug.png>
 
-Overfull \hbox (72.05763pt too wide) in paragraph at lines 802--809
+Overfull \hbox (72.05763pt too wide) in paragraph at lines 808--815
 []\TU/SimSun(1)/m/n/12.045 引 入 \TU/TimesNewRoman(0)/m/n/12.045 cmake \TU/SimSun(1)/m/n/12.045 进 行 项 目 管 理 后，|  程 序 的 调 试 变 得 清 晰 便 捷。|  通 过[][]\TU/Consolas(0)/m/n/12.045 CMake:Set launch\debug target
  []
 
